@@ -1,22 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- Core Theme -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@5/dist/themes/core.min.css">
+
+  <!--
+  Dark Theme (add-on)
+  -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@5/dist/themes/addons/core-dark.min.css" />
+
+  <!-- Custom Settings -->
+  <style>
+    :root {
+      --code-color: #ffff00;
+      --font-weight: 400;
+      --blockquote-color: var(--color-text);
+      --link-color: var(--theme-color);
+      --link-color-hover: #E96900;
+      --link-underline-color-hover: #E96900;
+      --content-max-width: 80%;
+    }
+
+    .markdown-section>*:not(table) {
+      max-width: 75% !important;
+    }
+
+    .markdown-section {
+      margin-inline: 150px auto !important;
+    }
+
+    .markdown-section a {
+      text-underline-offset: 3px;
+    }
+
+    .markdown-section img:not(.emoji) {
+      margin-top: 10px !important;
+      margin-bottom: 10px !important;
+      display: block;
+    }
+
+    .markdown-section table tr:nth-child(2n) {
+      background-color: transparent !important;
+    }
+
+    .markdown-section th,
+    .markdown-section td {
+      text-align: center !important;
+      vertical-align: middle !important;
+    }
+
+    .markdown-section table code {
+      white-space: nowrap !important;
+    }
+  </style>
 </head>
-<body>
+
+<body class="sidebar-toggle-chevron sidebar-chevron-right">
   <div id="app"></div>
+
+  <!-- Configuration -->
   <script>
     window.$docsify = {
-      name: '',
-      repo: ''
+      name: 'Conventions',
+      repo: 'https://github.com/arthousedotexe/music-library-conventions',
+      loadSidebar: true,
+      loadNavbar: true,
+      subMaxLevel: 2,
+      search: {
+        insertAfter: '.app-name',
+        namespace: 'docs',
+        paths: 'auto',
+        placeholder: {
+          '/ru-ru/': 'Поиск',
+          '/': 'Search',
+        },
+        noData: {
+          '/ru-ru/': 'Ничего не найдено!',
+          '/': 'Nothing found!',
+        },
+        depth: 2,
+      },
     }
   </script>
-  <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+
+  <!-- Docsify v5 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@5/dist/docsify.min.js"></script>
+
+  <!-- Search Plugin -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@5/dist/plugins/search.min.js"></script>
 </body>
+
 </html>
