@@ -111,6 +111,10 @@
 - ```Compilation``` - флаг, который указывает, что трек является частью сборника.  
   **Сортировка по данному тегу:** Poweramp (-), Foobar2000 (необходима настройка паттерна)
 
+- ```Copyright``` - информация об авторском праве на релиз.  
+  **Пример:** ```A Polydor Records Release / An Interscope Records Release in the USA; ℗ 2021 Lana Del Rey, under exclusive licence to Universal Music Operations Limited```  
+  **Отображение:** Poweramp (-), Foobar2000 (+)
+
 - ```ISRC``` - уникальный международный код, который присваивается аудиозаписи. Нужен для идентификации конкретной аудиозаписи в цифровых магазинах и стриминговых сервисах.  
   **Отображение:** Poweramp (-), Foobar2000 (+)  
   **Сортировка по данному тегу:** Poweramp (-), Foobar2000 (+)
@@ -137,11 +141,11 @@
   **Сортировка по данному тегу:** Poweramp (-), Foobar2000 (+)
 
 - ```MusicBrainz Tags``` - теги, содержащие уникальные идентификаторы из базы данных MusicBrainz.  
-  **Примеры:** ```MUSICBRAINZ_ALBUMARTISTID```, ```MUSICBRAINZ_RELEASEGROUPID```, ```MUSICBRAINZ_TRACKID```
+  **Теги:** ```MusicBrainz Artist ID```, ```MusicBrainz Composer ID```, ```MusicBrainz Disc ID```, ```MusicBrainz Original Artist ID```, ```MusicBrainz Original Release ID```, ```MusicBrainz Recording ID```, ```MusicBrainz Release Artist ID```, ```MusicBrainz Release Group ID```, ```MusicBrainz Release ID```, ```MusicBrainz Track ID```, ```MusicBrainz Work ID```  
   **Отображение:** Poweramp (-), Foobar2000 (+)  
   **Сортировка по данному тегу:** Poweramp (-), Foobar2000 (+)  
-  **Примечание:** читать подробнее [здесь](https://musicbrainz.org/doc/MusicBrainz_Identifier) и [здесь](https://picard-docs.musicbrainz.org/en/latest/variables/tags_basic.html).  
-  Также теги полезны для связи с каталогами (Navidrome, Plex), скробблерами (ListenBrainz, self-hosted скробберы), ну и с самой базой данных MusicBrainz.
+  **Примечание:** читать подробнее [здесь](https://musicbrainz.org/doc/MusicBrainz_Identifier), [здесь](https://picard-docs.musicbrainz.org/en/latest/variables/tags_basic.html) и [здесь](https://picard-docs.musicbrainz.org/en/latest/appendices/tag_mapping.html).  
+  Также эти теги полезны для связи с каталогами (Navidrome, Plex), скробблерами (ListenBrainz, self-hosted скробберы), ну и с самой базой данных MusicBrainz.
 
 - ```Performer``` - теги, которые за роли музыкантов. Например, кто гитарист, кто вокалист, кто на барабанах и так далее.  
   **Примеры:** ```Юрий Каплан (Vocals, Electric Guitar)```, ```Владимир Яковлев (Drums)```, ```Константин Пыжов (Electric Guitar)```, ```Станислав Мурашко (Bass Guitar)```  
@@ -153,9 +157,13 @@
   **Сортировка по данному тегу:** Poweramp (-), Foobar2000 (+)
 
 - ```ReplayGain Tags``` - теги, которые отвечают за ReplayGain.  
-  **Примеры:** ```REPLAYGAIN_TRACK_GAIN```, ```REPLAYGAIN_TRACK_PEAK``` , ```REPLAYGAIN_ALBUM_GAIN```, ```REPLAYGAIN_ALBUM_PEAK```  
+  **Теги:**  
+  - ```ReplayGain Track Gain``` - тег, который содержит значение коррекции громкости (в дБ) для одного конкретного трека, чтобы он соответствовал уровню 89 дБ SPL;
+  - ```ReplayGain Track Peak``` - тег, который содержит максимальный пиковый уровень громкости внутри одного трека. Если усиление вызовет превышение максимально допустимого цифрового порога (0 dBFS), плеер снизит уровень, чтобы не возникло клиппинга;
+  - ```ReplayGain Album Gain``` - тег, который содержит значение коррекции громкости (в дБ) для всего альбома целиком. Это выравнивает общий уровень альбома относительно 89 dB SPL, но при этом полностью сохраняет контраст между тихими и громкими песнями внутри альбома;
+  - ```ReplayGain Album Peak``` - тег, который содержит максимальный пиковый уровень громкости среди всех треков альбома.
   **Работа с ReplayGain:** Poweramp (+), Foobar2000 (+)  
-  **Примечание:** читать подробнее [здесь](https://ru.wikipedia.org/wiki/ReplayGain).  
+  **Примечание:** читать подробнее [здесь](https://ru.wikipedia.org/wiki/ReplayGain) и [здесь](https://wiki.hydrogenaudio.org/index.php/ReplayGain).  
 
 ![Пример №3](example3.png)
 
@@ -170,9 +178,6 @@
 
 - ```Artists``` - мультитег, в котором хранится список нескольких артистов.
   **Примечание:** этот тег генерируется и заполняется автоматически MusicBrainz Picard, если соответствующая информация доступна в базе данных MusicBrainz. Подробнее [здесь](https://picard-docs.musicbrainz.org/en/latest/variables/tags_basic.html).  
-
-- ```Copyright``` - информация об авторском праве на релиз.  
-  **Пример:** ```℗ 2021 Lana Del Rey, under exclusive licence to Universal Music Operations Limited```  
 
 - ```Encoder``` - программа-кодировщик/библиотека, которая создала/перекодировала аудиофайл.  
 
@@ -212,8 +217,13 @@
 
 - Все форматы: [exiftool](https://exiftool.org/)
 - FLAC: [metaflac](https://xiph.org/flac/documentation_tools.html)
-- MP4 (ALAC/AAC): [atomicparsley](https://github.com/wez/atomicparsley)
-- MP3: [eyeD3](https://github.com/nicfit/eyeD3)
+- iTunes MP4 (ALAC/AAC): [atomicparsley](https://github.com/wez/atomicparsley)
+- MP3 (ID3v2.3, ID3v2.4): [eyeD3](https://github.com/nicfit/eyeD3)
+
+**Заметки к форматам:**
+
+- iTunes MP4:  
+  Все теги начинающиеся с ```----``` являются пользовательскими метаданными, остальные теги являются стандартными атомами.
 
 ### Таблица основных тегов
 
@@ -262,7 +272,7 @@
     <tr>
       <td style="font-weight: bold">Disc Total</td>
       <td><code>DISCTOTAL</code></td>
-      <td><code>----com.apple.iTunes;TRACKTOTAL</code>
+      <td><code>----:com.apple.iTunes:DISCTOTAL</code>
       <td colspan="2"><code>TXXX_DISCTOTAL</code>
     </tr>
     <tr>
@@ -280,7 +290,7 @@
     <tr>
       <td style="font-weight: bold">Track Total</td>
       <td><code>TRACKTOTAL</code></td>
-      <td><code>----com.apple.iTunes;TRACKTOTAL</code>
+      <td><code>----:com.apple.iTunes:TRACKTOTAL</code>
       <td colspan="2"><code>TXXX_TRACKTOTAL</code></td>
     </tr>
     <tr>
@@ -336,7 +346,7 @@
       <td>-</td>
       <td>+</td>
       <td><code>ORIGINALDATE</code></td>
-      <td><code>----:com.apple.iTunes;ORIGINALYEAR</code></td>
+      <td><code>----:com.apple.iTunes:ORIGINALYEAR</code></td>
       <td colspan="2"><code>TXXX_ORIGINALDATE</code></td>
     </tr>
     <tr>
@@ -344,7 +354,7 @@
       <td>-</td>
       <td>+</td>
       <td><code>PRODUCER</code></td>
-      <td><code>----:com.apple.iTunes;PRODUCER</code></td>
+      <td><code>----:com.apple.iTunes:PRODUCER</code></td>
       <td colspan="2"><code>TXXX_PRODUCER</code></td>
     </tr>
     <tr>
@@ -352,7 +362,7 @@
       <td>-</td>
       <td>+</td>
       <td><code>STYLE</code></td>
-      <td><code>----:com.apple.iTunes;STYLE</code></td>
+      <td><code>----:com.apple.iTunes:STYLE</code></td>
       <td colspan="2"><code>TXXX_STYLE</code></td>
     </tr>
   </tbody>
@@ -374,7 +384,7 @@
   </thead>
   <tbody>
     <tr>
-      <td>Album Artist Sort</td>
+      <td style="font-weight: bold">Album Artist Sort</td>
       <td>-</td>
       <td>+</td>
       <td><code>ALBUMARTISTSORT</code></td>
@@ -382,7 +392,7 @@
       <td colspan="2"><code>TSO2</code></td>
     </tr>
     <tr>
-      <td>Artist Sort</td>
+      <td style="font-weight: bold">Artist Sort</td>
       <td>-</td>
       <td>+</td>
       <td><code>ARTISTSORT</code></td>
@@ -390,15 +400,15 @@
       <td colspan="2"><code>TSOP</code></td>
     </tr>
     <tr>
-      <td>Barcode</td>
+      <td style="font-weight: bold">Barcode</td>
       <td>-</td>
       <td>+</td>
       <td><code>BARCODE</code></td>
-      <td><code>----:com.apple.iTunes;BARCODE</code></td>
+      <td><code>----:com.apple.iTunes:BARCODE</code></td>
       <td colspan="2"><code>TXXX_BARCODE</code></td>
     </tr>
     <tr>
-      <td>BPM</td>
+      <td style="font-weight: bold">BPM</td>
       <td>-</td>
       <td>+</td>
       <td><code>BPM</code></td>
@@ -406,15 +416,15 @@
       <td colspan="2"><code>TBPM</code></td>
     </tr>
     <tr>
-      <td>Catalogue Number</td>
+      <td style="font-weight: bold">Catalogue Number</td>
       <td>-</td>
       <td>+</td>
       <td><code>CATALOGNUMBER</code></td>
-      <td><code>----:com.apple.iTunes;CATALOGNUMBER</code></td>
+      <td><code>----:com.apple.iTunes:CATALOGNUMBER</code></td>
       <td colspan="2"><code>TXXX_CATALOGNUMBER</code></td>
     </tr>
     <tr>
-      <td>Comment</td>
+      <td style="font-weight: bold">Comment</td>
       <td>+</td>
       <td>+</td>
       <td><code>COMMENT</code></td>
@@ -422,7 +432,7 @@
       <td colspan="2"><code>COMM</code></td>
     </tr>
     <tr>
-      <td>Compilation</td>
+      <td style="font-weight: bold">Compilation</td>
       <td>-</td>
       <td>+</td>
       <td><code>COMPILATION</code></td>
@@ -430,23 +440,31 @@
       <td colspan="2"><code>TCMP</code></td>
     </tr>
     <tr>
-      <td>ISRC</td>
+      <td style="font-weight: bold">Copyright</td>
+      <td>-</td>
+      <td>+</td>
+      <td><code>COPYRIGHT</code></td>
+      <td><code>cprt</code></td>
+      <td colspan="2"><code>TCOP</code></td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold">ISRC</td>
       <td>-</td>
       <td>+</td>
       <td><code>ISRC</code></td>
-      <td><code>----com.apple.iTunes;ISRC</code></td>
+      <td><code>----:com.apple.iTunes:ISRC</code></td>
       <td colspan="2"><code>TSRC</code></td>
     </tr>
     <tr>
-      <td>Grouping</td>
+      <td style="font-weight: bold">Grouping</td>
       <td>-</td>
       <td>+</td>
       <td><code>GROUPING</code></td>
-      <td><code>----com.apple.iTunes;GROUPING</code></td>
+      <td><code>----:com.apple.iTunes:GROUPING</code></td>
       <td colspan="2"><code>GRP1</code></td>
     </tr>
     <tr>
-      <td>Label</td>
+      <td style="font-weight: bold">Label</td>
       <td>-</td>
       <td>+</td>
       <td><code>LABEL</code></td>
@@ -454,7 +472,7 @@
       <td colspan="2"><code>TXXX_LABEL</code></td>
     </tr>
     <tr>
-      <td>Language</td>
+      <td style="font-weight: bold">Language</td>
       <td>-</td>
       <td>+</td>
       <td><code>LANGUAGE</code></td>
@@ -462,7 +480,7 @@
       <td colspan="2"><code>TLAN</code></td>
     </tr>
     <tr>
-      <td>Media</td>
+      <td style="font-weight: bold">Media</td>
       <td>-</td>
       <td>+</td>
       <td><code>MEDIA</code></td>
@@ -470,23 +488,103 @@
       <td colspan="2"><code>TXXX_MEDIA</code></td>
     </tr>
     <tr>
-      <td>MusicBrainz Tags</td>
+      <td style="font-weight: bold">MusicBrainz Artist ID</td>
       <td>-</td>
       <td>+</td>
-      <td>Разные значения</td>
-      <td>Пример: <code>----com.apple.iTunes;MusicBrainz Track Id</code></td>
-      <td colspan="2"><code>UFID</code> для Track Id и пример для остальных: <code>TXXX_MusicBrainz Work Id</code></td>
+      <td><code>MUSICBRAINZ_ARTISTID</code></td>
+      <td><code>----:com.apple.iTunes:MusicBrainz Artist Id</code></td>
+      <td colspan="2"><code>TXXX:MusicBrainz Artist Id</code></td>
     </tr>
     <tr>
-      <td>Performer</td>
+      <td style="font-weight: bold">MusicBrainz Composer ID</td>
+      <td>-</td>
+      <td>+</td>
+      <td><code>MUSICBRAINZ_COMPOSERID</code></td>
+      <td><code>----:com.apple.iTunes:MUSICBRAINZ_COMPOSERID</code></td>
+      <td colspan="2"><code>TXXX:MUSICBRAINZ_COMPOSERID</code></td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold">MusicBrainz Disc ID</td>
+      <td>-</td>
+      <td>+</td>
+      <td><code>MUSICBRAINZ_DISCID</code></td>
+      <td><code>----:com.apple.iTunes:MusicBrainz Disc Id</code></td>
+      <td colspan="2"><code>TXXX:MusicBrainz Disc Id</code></td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold">MusicBrainz Original Artist ID</td>
+      <td>-</td>
+      <td>+</td>
+      <td><code>MUSICBRAINZ_ORIGINALARTISTID</code></td>
+      <td><code>----:com.apple.iTunes:MusicBrainz Original Artist Id</code></td>
+      <td colspan="2"><code>TXXX:MusicBrainz Original Artist Id</code></td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold">MusicBrainz Original Release ID</td>
+      <td>-</td>
+      <td>+</td>
+      <td><code>MUSICBRAINZ_ORIGINALALBUMID</code></td>
+      <td><code>----:com.apple.iTunes:MusicBrainz Original Album Id</code></td>
+      <td colspan="2"><code>TXXX:MusicBrainz Original Album Id</code></td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold">MusicBrainz Recording ID</td>
+      <td>-</td>
+      <td>+</td>
+      <td><code>MUSICBRAINZ_TRACKID</code></td>
+      <td><code>----:com.apple.iTunes:MusicBrainz Track Id</code></td>
+      <td colspan="2"><code>UFID</code></td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold">MusicBrainz Release Artist ID</td>
+      <td>-</td>
+      <td>+</td>
+      <td><code>MUSICBRAINZ_ALBUMARTISTID</code></td>
+      <td><code>----:com.apple.iTunes:MusicBrainz Album Artist Id</code></td>
+      <td colspan="2"><code>TXXX:MusicBrainz Album Artist Id</code></td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold">MusicBrainz Release Group ID</td>
+      <td>-</td>
+      <td>+</td>
+      <td><code>MUSICBRAINZ_RELEASEGROUPID</code></td>
+      <td><code>----:com.apple.iTunes:MusicBrainz Release Group Id</code></td>
+      <td colspan="2"><code>TXXX:MusicBrainz Release Group Id</code></td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold">MusicBrainz Release ID</td>
+      <td>-</td>
+      <td>+</td>
+      <td><code>MUSICBRAINZ_ALBUMID</code></td>
+      <td><code>----:com.apple.iTunes:MusicBrainz Album Id</code></td>
+      <td colspan="2"><code>TXXX:MusicBrainz Album Id</code></td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold">MusicBrainz Track ID</td>
+      <td>-</td>
+      <td>+</td>
+      <td><code>MUSICBRAINZ_RELEASETRACKID</code></td>
+      <td><code>----:com.apple.iTunes:MusicBrainz Release Track Id</code></td>
+      <td colspan="2"><code>TXXX:MusicBrainz Release Track Id</code></td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold">MusicBrainz Work ID</td>
+      <td>-</td>
+      <td>+</td>
+      <td><code>MUSICBRAINZ_WORKID</code></td>
+      <td><code>----:com.apple.iTunes:MusicBrainz Work Id</code></td>
+      <td colspan="2"><code>TXXX:MusicBrainz Work Id</code></td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold">Performer</td>
       <td>-</td>
       <td>+</td>
       <td><code>PERFORMER</code></td>
-      <td><code>----com.apple.iTunes;PERFORMER</code></td>
+      <td><code>----:com.apple.iTunes:PERFORMER</code></td>
       <td colspan="2"><code>TXXX_PERFORMER</code></td>
     </tr>
     <tr>
-      <td>Remixer</td>
+      <td style="font-weight: bold">Remixer</td>
       <td>-</td>
       <td>+</td>
       <td><code>REMIXER</code></td>
@@ -494,12 +592,36 @@
       <td colspan="2"><code>TXXX_REMIXER</code></td>
     </tr>
     <tr>
-      <td>ReplayGain Tags</td>
+      <td style="font-weight: bold">ReplayGain Track Gain</td>
       <td>+</td>
       <td>+</td>
-      <td><code>REPLAYGAIN_*</code></td>
-      <td>Пример: <code>----com.apple.iTunes;replaygain_track_gain</code></td>
-      <td colspan="2">Пример: <code>TXXX_replaygain_track_gain</code></td>
+      <td><code>REPLAYGAIN_TRACK_GAIN</code></td>
+      <td><code>----:com.apple.iTunes:replaygain_track_gain</code></td>
+      <td colspan="2"><code>TXXX_replaygain_track_gain</code></td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold">ReplayGain Track Peak</td>
+      <td>+</td>
+      <td>+</td>
+      <td><code>REPLAYGAIN_TRACKPEAK</code></td>
+      <td><code>----:com.apple.iTunes:replaygain_track_peak</code></td>
+      <td colspan="2"><code>TXXX_replaygain_track_peak</code></td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold">ReplayGain Album Gain</td>
+      <td>+</td>
+      <td>+</td>
+      <td><code>REPLAYGAIN_ALBUM_GAIN</code></td>
+      <td><code>----:com.apple.iTunes:replaygain_album_gain</code></td>
+      <td colspan="2"><code>TXXX_replaygain_album_gain</code></td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold">ReplayGain Album Peak</td>
+      <td>+</td>
+      <td>+</td>
+      <td><code>REPLAYGAIN_ALBUM_PEAK</code></td>
+      <td><code>----:com.apple.iTunes:replaygain_album_peak</code></td>
+      <td colspan="2"><code>TXXX_replaygain_album_peak</code></td>
     </tr>
   </tbody>
 </table>
