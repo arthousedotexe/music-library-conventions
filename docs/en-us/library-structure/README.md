@@ -37,14 +37,6 @@ Files containing the corresponding song lyrics use the same name but a different
 - ``1.07. It Was a Good Day.lrc``
 - ``2.01. Ride.lrc``
 
-Allowed characters in names:
-
-- Letters from English, Russian, and other alphabets;
-- Chinese, Japanese and other characters;
-- Numbers;
-- Single quotes (```'```), double quotes ```"```, comma (```,```), period (```.```), hyphen ("-"), and two types of dashes (en dash "–" and em dash "—");
-- Exclamation marks (```!```).
-
 Forbidden characters in names:
 
 - Characters that are invalid in Windows: ```/\\:*?<>|```;

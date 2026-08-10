@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041 -->
-- Language
+- Язык
 
   - [:gb: EN](/en-us/library-structure/)
   - [:ru: RU](/ru-ru/library-structure/)

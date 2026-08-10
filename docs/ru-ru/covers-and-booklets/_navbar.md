@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041 -->
-- Language
+- Язык
 
   - [:gb: EN](/en-us/covers-and-booklets/)
   - [:ru: RU](/ru-ru/covers-and-booklets/)
