@@ -2,24 +2,24 @@
 
 # Indexing
 
-The index file (```index.txt```) is located next to the audio files. File syntax: Markdown, file language: English.
+The index file (```index.md```) is located next to the audio files. File syntax: Markdown, file language: English.
 It contains brief information about the release, namely:
 
-- Album title;
+- Album title (```Album```);
 
 - Alternative album titles, romaji, translated album titles — when necessary;
   For example: ```エルマ, Eruma```
 
-- Artist;
+- Album artist (```Album Artist```);
 
 - Other artist aliases, romaji, translated aliases — when necessary;
   For example: ```Lana Del Ray, Lizzy Grant, Elizabeth Grant, May Jailer, Sparkle Jump Rope Queen```
 
-- Release year;
+- Release year (year from `Date` tag);
 
-- Album genres;
+- Album genres (```Genre```);
 
-- Album subgenres — when necessary;
+- Album subgenres (```Style```);
   Note: the contents of genre and subgenre tags may duplicate, for example ```Drumstep```.
 
 - Total duration of the album;
@@ -29,7 +29,7 @@ It contains brief information about the release, namely:
 - Quality in the format: `<Source> [<Codec>/<Bit depth or bitrate and bitrate type>/<Sample rate>]: <Track numbers if necessary>`;
   - For example, for a lossless album: `WEB [FLAC/24-bit/96 kHz]`
   - For a lossy album: `WEB [AAC/256 kbps VBR/48 kHz]`
-  - For a compilation:
+  - For a compilation/an album of tracks with variable quality:
 
     ```text
     WEB [FLAC/16-bit/44.1 kHz]: tracks 1-7, 10-14
@@ -39,7 +39,7 @@ It contains brief information about the release, namely:
 
 - Tracklist;
   Note 1: if the release has one disc, the track numbers are written without the disc number, but the leading zero is preserved, for example: ```01```, ```09```.
-  If the release has multiple discs, the disc number is included, for example: ```1.02```, ```2.13```. The disc number is also written.
+  If the release has multiple discs, the disc number is included, for example: ```1.02```, ```2.13```. The disc number is also written before tracks.
   Note 2: if the original track title was in another language, for example Japanese, the original title should be written in parentheses: ```The flowers are also noisy (花も騒めく)```
 
 - Various notes — when necessary;
@@ -52,7 +52,7 @@ It contains brief information about the release, namely:
   - Genres (hyphens and spaces removed), more details [here](https://support.discogs.com/hc/en-us/articles/360005055213-Database-Guidelines-9-Genres-Styles);
   - Subgenres (hyphens and spaces removed);
   - Vocal or instrumental. If vocal, then female, male, or something else (for example, ```instrumental```, ```femalevocalist```, ```malevocalist```, ```choir```);
-  - Indie hashtag (```indie```);
+  - Indie hashtag (i.e. ```indie```);
   - Performance language (for example, ```english```, ```russian```, ```german```, ```japanese```);
   - Other hashtags.
 
