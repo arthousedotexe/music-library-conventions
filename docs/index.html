@@ -25,12 +25,14 @@
       --content-max-width: 80%;
     }
 
-    .markdown-section>*:not(table) {
-      max-width: 75% !important;
-    }
+    @media (min-width: 769px) {
+      .markdown-section>*:not(table) {
+        max-width: 75% !important;
+      }
 
-    .markdown-section {
-      margin-inline: 150px auto !important;
+      .markdown-section {
+        margin-inline: 150px auto !important;
+      }
     }
 
     .markdown-section a {
