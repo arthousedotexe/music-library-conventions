@@ -29,7 +29,6 @@ For example:
 
 Forbidden characters in the text:
 
-- Square brackets, since they are used for tags;
 - Alternative quotes and apostrophes: ```„```, ```“```, ```’```, ```‘``` and other typography;
 - Control ASCII characters and non-breaking spaces;
 - Other funny characters that no audio player in the world will read.

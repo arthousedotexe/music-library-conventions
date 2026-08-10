@@ -7,8 +7,6 @@ The lossless codec I use is ```FLAC```, compression level 8.
 When converting from other lossless codecs (```ALAC```, ```WAV```) to ```FLAC```, I preserve the original bit depth and sample rate.
 
 If I was not able to obtain a release in lossless format, then I look for a release in lossy format with the best bitrate / best quality.
-So, ```MP3``` with a genuine bitrate of 256 kbps is preferable to ```MP3``` with a genuine bitrate of 192 kbps.
-But ```OPUS``` with a genuine bitrate of 160 kbps is preferable to ```MP3``` with a genuine bitrate of 256 kbps.
 
 ## Checksums
 

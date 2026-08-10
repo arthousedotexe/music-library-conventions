@@ -19,10 +19,11 @@ Actually, in **FLAC (Vorbis Comment)** this is handled by the ```ALBUMARTIST``` 
 - ```Album Artist``` — album artist;
 
 - ```Artist``` — track artist or artists;  
-  **Note:** if there are multiple artists for a track, they are written separated by ```\\```;  
+  **Note:** if there are several artists on the track, then characters ``\\`` are used as a separator between them.  
+  I do not use following symbols to separate artists: ``feat.``, ``&``, ``,``, ``;``, as well as any others.
   **Examples:** ```Lana Del Rey\\Zella Day\\Weyes Blood```, ```Zachz Winner\\Frozy\\joyful```
 
-- ```Date``` — album release date;  
+- ```Date``` — release date of a specific release;  
   **Format:** YYYY-MM-DD
 
 - ```Disc Number``` — disc number;
@@ -59,10 +60,10 @@ Starting with this group, I will add information about display and the ability t
   **Display:** Poweramp (+), Foobar2000 (+)  
   **Note:** instead of this tag, I use .lrc files, more details [here](/en-us/lyrics/).
 
-- ```Original Date``` — original album release date;  
+- ```Original Date``` — original release date;  
   **Format:** YYYY-MM-DD  
   **Example:** tag allows saving the original release date of the album (for example, 1973), while the ```Date``` tag stores the year of a specific reissue or remaster (for example, 2011).  
-  **Note:** If Original Date duplicates the date in Date, then I do not save it.  
+  **Note:** If date in ```Date``` and ```Original Date``` tags is identical, then I don't save ```Original Date``` tag.  
   **Display:** Poweramp (-) ([discussion](https://forum.powerampapp.com/topic/28077-originaldate-tag-support/)), Foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), Foobar2000 (+)
 
@@ -88,7 +89,7 @@ Now we will add these tags and see how it will look:
 - ```Artist Sort``` — similar to the previous tag, but it sets the sorting rule not for the album artist but for the artist;  
   **Sorting by this tag:** Poweramp (-) (there is another setting to ignore articles), Foobar2000 (+) (pattern setup required)
 
-- ```Barcode``` — a unique barcode for the music release, needed to identify the album in digital stores and streaming services.  
+- ```Barcode``` — a unique barcode for the music release, needed to identify specific music release in digital stores and streaming services.  
   **Display:** Poweramp (-), Foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), Foobar2000 (+)
 
@@ -96,7 +97,7 @@ Now we will add these tags and see how it will look:
   **Display:** Poweramp (-) ([discussion](https://forum.powerampapp.com/topic/24384-sort-option-for-beats-per-minute-bpm/)), Foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), Foobar2000 (+)
 
-- ```Catalogue Number``` — a unique code assigned to a specific physical edition.  
+- ```Catalogue Number``` — a unique serial number of the music label's release. It is necessary for systematization and identification of releases within a specific label.  
   **Display:** Poweramp (-), Foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), Foobar2000 (+)
 
@@ -104,12 +105,13 @@ Now we will add these tags and see how it will look:
   **Display:** Poweramp (+), Foobar2000 (+)  
   **Sorting by this tag:** Poweramp (+), Foobar2000 (+)  
   **Note:** I store the original name of the artist, track, and release in this tag if it is not initially Russian/English.  
+  **Structure:** [Original Artist Name] - [Original Track Title] ([Original Album Name])  
   **Example:** ```ヨルシカ - 思想犯 (盗作)```
 
-- ```Compilation``` — a flag indicating that a track is part of a compilation of different artists.  
+- ```Compilation``` — a flag indicating that a track is part of a compilation.  
   **Sorting by this tag:** Poweramp (-), Foobar2000 (pattern setup required)
 
-- ```ISRC``` — a unique international code assigned to a specific audio recording, needed to identify the album in digital stores and streaming services.  
+- ```ISRC``` — a unique international code assigned to audio recording, needed to identify specific audio recording in digital stores and streaming services.  
   **Display:** Poweramp (-), Foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), Foobar2000 (+)
 
@@ -161,9 +163,15 @@ And final touch:
 
 ### Excluded Tags
 
-**Excluded tags** are useless / practically useless tags or tags with exceptional subjectivity.
+**Excluded tags** are tags that I don't use for any of these reasons:
 
-- ```Artists``` — multi-tag used by MusicBrainz to store multiple artists.
+- They contain information that others don't need, i.e. information that only makes sense to one person;
+- They contain information that has no practical value, or it cannot be considered reliable evidence of the file's origin;
+- They duplicate or partially duplicate information that is already stored in other tags;
+- They contain information that I am not interested in.
+
+- ``Artists`` - multi-value tag that stores a list of several artists.
+  **Note:** This tag is generated and populated automatically by MusicBrainz Picard if the relevant information is available in the MusicBrainz database. More details [here](https://picard-docs.musicbrainz.org/en/latest/variables/tags_basic.html).
 
 - ```Copyright``` — copyright information for the release.  
   **Example:** ```℗ 2021 Lana Del Rey, under exclusive licence to Universal Music Operations Limited```
@@ -191,8 +199,8 @@ And final touch:
 - ```Recording Copyright``` — copyright information for a specific recording.
 
 - ```Subtitle``` — track subtitle.  
-  **Example:** ```Acoustic Version```, while in the ```Title``` tag the title without the version will be stored at that moment.  
-  Without using this tag, the name in the ```Title``` tag would look like ```Title (Acoustic Version)```.
+  **Example:** let ```Subtitle``` tag contain value "Acoustic version", then `Title` tag will contain "Track name".  
+  Without using ```Subtitle``` tag, the name in ``Title`` tag will look like this: ```Track name (Acoustic version)```.
 
 - ```URL``` — a link to anything (source of the track, streaming service, and so on).
 
@@ -204,9 +212,10 @@ And final touch:
 
 **Console utilities for obtaining exact tag names for different formats:**
 
+- All formats: [exiftool](https://exiftool.org/)
 - FLAC: [metaflac](https://xiph.org/flac/documentation_tools.html)
 - MP4 (ALAC/AAC): [atomicparsley](https://github.com/wez/atomicparsley)
-- MP3: [eyeD3](https://github.com/nicfit/eyeD3), [exiftool](https://exiftool.org/)
+- MP3: [eyeD3](https://github.com/nicfit/eyeD3)
 
 ### Main Tags Table
 
