@@ -2,7 +2,7 @@
 
 # Indexing
 
-The index file (```index.md```) is located next to the audio files. File syntax: Markdown, file language: English.
+The index file (```index.md```) is located in the same folder as the audio files. File syntax: Markdown, file language: English.
 It contains brief information about the release, namely:
 
 - Album title (```Album```);

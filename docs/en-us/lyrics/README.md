@@ -2,7 +2,7 @@
 
 # Lyrics
 
-Lyrics files are located next to the audio files. They have the same name but a different extension: ```.lrc```.
+Lyrics files are located in the same folder as the audio files, and have the same name with a different extension: ```.lrc```.
 
 For example: next to a song named ```1.03. Evening calm,Somewhere,Fireworks.flac``` there will be a lyrics file ```1.03. Evening calm,Somewhere,Fireworks.lrc```.
 

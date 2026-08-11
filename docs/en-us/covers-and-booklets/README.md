@@ -68,7 +68,7 @@ For example: ```booklet-11-12.jpg```, ```booklet-06.png```.
 
 I do not use or save animated covers for the following reasons:
 
-1. A large part of animated covers are just pulsating static images, which look rather strange in my opinion;
+1. Many animated covers are just pulsating static images, which look rather strange in my opinion;
 2. They take up a lot of space;
 3. An animated cover cannot be placed in audio file tags; formats do not support them, so need to use external cover, which is inconvenient;
 4. Animated covers are not natively supported almost anywhere, namely:  

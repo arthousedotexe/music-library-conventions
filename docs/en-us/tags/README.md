@@ -6,13 +6,13 @@ Let's start with what tags I actually use, given the huge number of them.
 
 ## Separation by Priority
 
-**Note:** this refers not to the tags themselves that are written in audio file formats, but only to their abstract designations for clarity.
+**Note:** this refers not to tags that are written in audio file formats, but only to their abstract designations for clarity.  
 So ```Album Artist``` means an abstract tag that corresponds to the album artist.
 Actually, in **FLAC (Vorbis Comment)** this is handled by the ```ALBUMARTIST``` tag, in **ALAC (iTunes MP4)** by the ```aART``` tag, and in **MP3 (ID3v2.3, ID3v2.4)** by the ```TPE2``` frame.
 
 ### Main Tags
 
-**Main tags** are the tags that should be in every audio file in 100% of cases without exception. In essence, these are the most important tags.
+**Main tags** should be in every audio file in 100% of cases without exception. In essence, these are the most important tags.
 
 - ```Album``` — album title;
 
@@ -20,7 +20,7 @@ Actually, in **FLAC (Vorbis Comment)** this is handled by the ```ALBUMARTIST``` 
 
 - ```Artist``` — track artist or artists;  
   **Note:** if there are several artists on the track, then characters ``\\`` are used as a separator between them.  
-  I do not use following symbols to separate artists: ``feat.``, ``&``, ``,``, ``;``, as well as any others.
+  I do not use the following symbols to separate artists: ``feat.``, ``&``, ``,``, ``;``, as well as any others.
   **Examples:** ```Lana Del Rey\\Zella Day\\Weyes Blood```, ```Zachz Winner\\Frozy\\joyful```
 
 - ```Date``` — release date of a specific release;  
@@ -44,7 +44,7 @@ Note: in Mp3Tag, the ```Date``` tag is displayed as ```YEAR```.
 
 ### Extended Tags
 
-**Extended tags** are tags that expand information about the release. They are quite useful, and almost all of them can be applied to almost all releases.
+**Extended tags** expand information about release. They are quite useful, and almost all of them can be applied to almost all releases.
 
 Starting with this group, I will add information about display and the ability to sort by these tags in the audio players I use.
 
@@ -80,7 +80,7 @@ Now we will add these tags and see how it will look:
 
 ### Specialized Tags
 
-**Specialized tags** are situational tags that can be very useful in certain cases; many of these tags are filled in automatically by taggers. It is desirable to have these tags if it makes sense. But without them, essentially nothing changes.
+**Specialized tags** are situational and can be very useful in certain cases. Many of them are filled in automatically by taggers: it is best to fill these if useful, but not strictly necessary.
 
 - ```Album Artist Sort``` — a tag that sets the sorting rule for the album artist, allowing the name to appear in the audio player in a familiar way while sorting by surname or ignoring articles;  
   **Example:** ```Beatles, The``` instead of ```The Beatles```, so they will sort by B rather than T.  
@@ -108,12 +108,12 @@ Now we will add these tags and see how it will look:
   **Structure:** [Original Artist Name] - [Original Track Title] ([Original Album Name])  
   **Example:** ```ヨルシカ - 思想犯 (盗作)```
 
+- ```Compilation``` — a flag indicating that a track is part of a compilation.  
+  **Sorting by this tag:** Poweramp (-), Foobar2000 (pattern setup required)
+
 - ```Copyright``` — copyright information for the release.  
   **Example:** ```A Polydor Records Release / An Interscope Records Release in the USA; ℗ 2021 Lana Del Rey, under exclusive licence to Universal Music Operations Limited```  
   **Display:** Poweramp (-), Foobar2000 (+)  
-
-- ```Compilation``` — a flag indicating that a track is part of a compilation.  
-  **Sorting by this tag:** Poweramp (-), Foobar2000 (pattern setup required)
 
 - ```ISRC``` — a unique international code assigned to audio recording, needed to identify specific audio recording in digital stores and streaming services.  
   **Display:** Poweramp (-), Foobar2000 (+)  
@@ -141,7 +141,14 @@ Now we will add these tags and see how it will look:
   **Sorting by this tag:** Poweramp (-), Foobar2000 (+)
 
 - ```MusicBrainz Tags``` — tags containing unique identifiers from the MusicBrainz database.  
-  **Tags:** ```MusicBrainz Artist ID```, ```MusicBrainz Composer ID```, ```MusicBrainz Disc ID```, ```MusicBrainz Original Artist ID```, ```MusicBrainz Original Release ID```, ```MusicBrainz Recording ID```, ```MusicBrainz Release Artist ID```, ```MusicBrainz Release Group ID```, ```MusicBrainz Release ID```, ```MusicBrainz Track ID```, ```MusicBrainz Work ID```  
+  **Tags:**
+  - ```MusicBrainz Artist ID``` - multi-value tag containing the MBIDs for the track artists;
+  - ```MusicBrainz Recording ID``` - tag containing the MBID for the recording;
+  - ```MusicBrainz Release Artist ID``` - multi-value tag containing the MBIDs for the release artists;
+  - ```MusicBrainz Release Group ID``` - tag containing the MBID for the release group;
+  - ```MusicBrainz Release ID``` - tag containing the MBID for the release;
+  - ```MusicBrainz Track ID``` - tag containing the MBID for the track;
+  - ```MusicBrainz Work ID``` - tag containing the MBID for the Work if a related work exists.
   **Display:** Poweramp (-), Foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), Foobar2000 (+)  
   **Note:** read more [here](https://musicbrainz.org/doc/MusicBrainz_Identifier), [here](https://picard-docs.musicbrainz.org/en/latest/variables/tags_basic.html) and [here](https://picard-docs.musicbrainz.org/en/latest/appendices/tag_mapping.html).  
@@ -177,6 +184,8 @@ And final touch:
 - They contain information that has no practical value, or it cannot be considered reliable evidence of the file's origin;
 - They duplicate or partially duplicate information that is already stored in other tags;
 - They contain information that I am not interested in.
+
+---
 
 - ``Artists`` - multi-value tag that stores a list of several artists.
   **Note:** This tag is generated and populated automatically by MusicBrainz Picard if the relevant information is available in the MusicBrainz database. More details [here](https://picard-docs.musicbrainz.org/en/latest/variables/tags_basic.html).
@@ -496,38 +505,6 @@ And final touch:
       <td><code>MUSICBRAINZ_ARTISTID</code></td>
       <td><code>----:com.apple.iTunes:MusicBrainz Artist Id</code></td>
       <td colspan="2"><code>TXXX:MusicBrainz Artist Id</code></td>
-    </tr>
-    <tr>
-      <td style="font-weight: bold">MusicBrainz Composer ID</td>
-      <td>-</td>
-      <td>+</td>
-      <td><code>MUSICBRAINZ_COMPOSERID</code></td>
-      <td><code>----:com.apple.iTunes:MUSICBRAINZ_COMPOSERID</code></td>
-      <td colspan="2"><code>TXXX:MUSICBRAINZ_COMPOSERID</code></td>
-    </tr>
-    <tr>
-      <td style="font-weight: bold">MusicBrainz Disc ID</td>
-      <td>-</td>
-      <td>+</td>
-      <td><code>MUSICBRAINZ_DISCID</code></td>
-      <td><code>----:com.apple.iTunes:MusicBrainz Disc Id</code></td>
-      <td colspan="2"><code>TXXX:MusicBrainz Disc Id</code></td>
-    </tr>
-    <tr>
-      <td style="font-weight: bold">MusicBrainz Original Artist ID</td>
-      <td>-</td>
-      <td>+</td>
-      <td><code>MUSICBRAINZ_ORIGINALARTISTID</code></td>
-      <td><code>----:com.apple.iTunes:MusicBrainz Original Artist Id</code></td>
-      <td colspan="2"><code>TXXX:MusicBrainz Original Artist Id</code></td>
-    </tr>
-    <tr>
-      <td style="font-weight: bold">MusicBrainz Original Release ID</td>
-      <td>-</td>
-      <td>+</td>
-      <td><code>MUSICBRAINZ_ORIGINALALBUMID</code></td>
-      <td><code>----:com.apple.iTunes:MusicBrainz Original Album Id</code></td>
-      <td colspan="2"><code>TXXX:MusicBrainz Original Album Id</code></td>
     </tr>
     <tr>
       <td style="font-weight: bold">MusicBrainz Recording ID</td>

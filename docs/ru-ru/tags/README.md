@@ -6,7 +6,7 @@
 
 ## Разделение по приоритетам
 
-**Примечание:** здесь имеются ввиду не сами теги, которые прописаны в форматах аудиофайлов, а только их абстрактные обозначения для ясности.  
+**Примечание:** здесь имеются в виду не сами теги, которые прописаны в форматах аудиофайлов, а только их абстрактные обозначения для ясности.  
 Так ```Album Artist (Исполнитель альбома)``` означает абстрактный тег, который отвечает за исполнителя альбома.  
 На деле же в **FLAC (Vorbis Comment)** за это отвечает тег ```ALBUMARTIST```, в **ALAC (iTunes MP4)** за это отвечает тег ```aART```, а в **MP3 (ID3v2.3, ID3v2.4)** - ```TPE2``` фрейм.
 
@@ -141,7 +141,14 @@
   **Сортировка по данному тегу:** Poweramp (-), Foobar2000 (+)
 
 - ```MusicBrainz Tags``` - теги, содержащие уникальные идентификаторы из базы данных MusicBrainz.  
-  **Теги:** ```MusicBrainz Artist ID```, ```MusicBrainz Composer ID```, ```MusicBrainz Disc ID```, ```MusicBrainz Original Artist ID```, ```MusicBrainz Original Release ID```, ```MusicBrainz Recording ID```, ```MusicBrainz Release Artist ID```, ```MusicBrainz Release Group ID```, ```MusicBrainz Release ID```, ```MusicBrainz Track ID```, ```MusicBrainz Work ID```  
+  **Теги:**
+  - ```MusicBrainz Artist ID``` - мультитег, содержащий идентификаторы MBID для исполнителей трека;
+  - ```MusicBrainz Recording ID``` - тег, содержащий идентификатор MBID для записи;
+  - ```MusicBrainz Release Artist ID``` - мультитег, содержащий идентификаторы MBID для исполнителей релиза;
+  - ```MusicBrainz Release Group ID``` - тег, содержащий идентификатор MBID для группы релизов;
+  - ```MusicBrainz Release ID``` - тег, содержащий идентификатор MBID для релиза;
+  - ```MusicBrainz Track ID``` - тег, содержащий идентификатор MBID для трека;
+  - ```MusicBrainz Work ID``` - тег, содержащий идентификатор MBID для произведения, если существует соответствующее произведение.
   **Отображение:** Poweramp (-), Foobar2000 (+)  
   **Сортировка по данному тегу:** Poweramp (-), Foobar2000 (+)  
   **Примечание:** читать подробнее [здесь](https://musicbrainz.org/doc/MusicBrainz_Identifier), [здесь](https://picard-docs.musicbrainz.org/en/latest/variables/tags_basic.html) и [здесь](https://picard-docs.musicbrainz.org/en/latest/appendices/tag_mapping.html).  
@@ -176,17 +183,19 @@
 - Они дублируют или частично дублируют информацию, которая уже хранится в других тегах;
 - Они содержат неинтересующую меня информацию.
 
+---
+
 - ```Artists``` - мультитег, в котором хранится список нескольких артистов.
   **Примечание:** этот тег генерируется и заполняется автоматически MusicBrainz Picard, если соответствующая информация доступна в базе данных MusicBrainz. Подробнее [здесь](https://picard-docs.musicbrainz.org/en/latest/variables/tags_basic.html).  
 
 - ```Encoder``` - программа-кодировщик/библиотека, которая создала/перекодировала аудиофайл.  
 
-- ```Encoded By``` - человек, которая создал/перекодировал аудиофайл, по сути автор рипа.  
+- ```Encoded By``` - человек, который создал/перекодировал аудиофайл, по сути автор рипа.  
 
-- ```First Played``` - дата, когда вы впервые воспроизвели трек.  
+- ```First Played``` - дата, когда человек впервые воспроизвел трек.  
   **Формат:** обычно YYYY-MM-DD HH:MM:SS  
 
-- ```Last Played``` - дата, когда вы в последний раз воспроизвели трек.  
+- ```Last Played``` - дата, когда человек в последний раз воспроизвел трек.  
   **Формат:** обычно YYYY-MM-DD HH:MM:SS  
 
 - ```Mood``` - настроение трека.  
@@ -223,7 +232,7 @@
 **Заметки к форматам:**
 
 - iTunes MP4:  
-  Все теги начинающиеся с ```----``` являются пользовательскими метаданными, остальные теги являются стандартными атомами.
+  Все теги, начинающиеся с ```----```, являются пользовательскими метаданными, остальные теги являются стандартными атомами.
 
 ### Таблица основных тегов
 
@@ -494,38 +503,6 @@
       <td><code>MUSICBRAINZ_ARTISTID</code></td>
       <td><code>----:com.apple.iTunes:MusicBrainz Artist Id</code></td>
       <td colspan="2"><code>TXXX:MusicBrainz Artist Id</code></td>
-    </tr>
-    <tr>
-      <td style="font-weight: bold">MusicBrainz Composer ID</td>
-      <td>-</td>
-      <td>+</td>
-      <td><code>MUSICBRAINZ_COMPOSERID</code></td>
-      <td><code>----:com.apple.iTunes:MUSICBRAINZ_COMPOSERID</code></td>
-      <td colspan="2"><code>TXXX:MUSICBRAINZ_COMPOSERID</code></td>
-    </tr>
-    <tr>
-      <td style="font-weight: bold">MusicBrainz Disc ID</td>
-      <td>-</td>
-      <td>+</td>
-      <td><code>MUSICBRAINZ_DISCID</code></td>
-      <td><code>----:com.apple.iTunes:MusicBrainz Disc Id</code></td>
-      <td colspan="2"><code>TXXX:MusicBrainz Disc Id</code></td>
-    </tr>
-    <tr>
-      <td style="font-weight: bold">MusicBrainz Original Artist ID</td>
-      <td>-</td>
-      <td>+</td>
-      <td><code>MUSICBRAINZ_ORIGINALARTISTID</code></td>
-      <td><code>----:com.apple.iTunes:MusicBrainz Original Artist Id</code></td>
-      <td colspan="2"><code>TXXX:MusicBrainz Original Artist Id</code></td>
-    </tr>
-    <tr>
-      <td style="font-weight: bold">MusicBrainz Original Release ID</td>
-      <td>-</td>
-      <td>+</td>
-      <td><code>MUSICBRAINZ_ORIGINALALBUMID</code></td>
-      <td><code>----:com.apple.iTunes:MusicBrainz Original Album Id</code></td>
-      <td colspan="2"><code>TXXX:MusicBrainz Original Album Id</code></td>
     </tr>
     <tr>
       <td style="font-weight: bold">MusicBrainz Recording ID</td>

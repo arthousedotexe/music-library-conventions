@@ -53,7 +53,7 @@ Each album directory follows this structure:
 - Audio files (```.flac```, ```.m4a```, ```.mp3``` and so on), more details [here](/en-us/audio-formats/ 'Audio Formats')
 - Lyrics files (```.lrc```), more details [here](/en-us/lyrics/ 'Lyrics')
 - External album cover (```cover```), more details [here](/en-us/covers-and-booklets/?id=External-album-cover 'Covers and Booklets')
-- Index file (```index.txt```), more details [here](/en-us/indexing/ 'Indexing')
+- Index file (```index.md```), more details [here](/en-us/indexing/ 'Indexing')
 - Directory with booklets (```booklet```) — when needed, more details [here](/en-us/covers-and-booklets/?id=Booklets 'Covers and Booklets')
 - Directory with additional covers (```covers```) — when needed, more details [here](/en-us/covers-and-booklets/?id=Additional-covers 'Covers and Booklets')
 
