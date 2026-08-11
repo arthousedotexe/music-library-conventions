@@ -4,7 +4,7 @@
 
 ## Directory Structure
 
-The root folder of the library is ``Music``.
+The library root folder is ``Music``.
 
 For convenience, I treat an album as the main structural unit of the library.
 
@@ -44,18 +44,18 @@ Forbidden characters in names:
 
 For track names, I use English and Russian titles. If a track has a title in another language, such as Japanese, I use either the romaji title or an English translation, with romanization preferred.
 For example, a track titled ```心に穴が空いた``` will be named either ```Kokoro ni Ana ga Aita``` or ```Hole In The Heart```.  
-This makes the tracks easier to search for.
+This makes tracks easier to find.
 
 ## Album Structure
 
 Each album directory follows this structure:
 
-- Audio files (```.flac```, ```.m4a```, ```.mp3``` and so on), more details [here](/en-us/audio-formats/ 'Audio Formats')
-- Lyrics files (```.lrc```), more details [here](/en-us/lyrics/ 'Lyrics')
-- External album cover (```cover```), more details [here](/en-us/covers-and-booklets/?id=External-album-cover 'Covers and Booklets')
-- Index file (```index.md```), more details [here](/en-us/indexing/ 'Indexing')
-- Directory with booklets (```booklet```) — when needed, more details [here](/en-us/covers-and-booklets/?id=Booklets 'Covers and Booklets')
-- Directory with additional covers (```covers```) — when needed, more details [here](/en-us/covers-and-booklets/?id=Additional-covers 'Covers and Booklets')
+- Audio files (```.flac```, ```.m4a```, ```.mp3``` and so on), see [here](/en-us/audio-formats/ 'Audio Formats')
+- Lyrics files (```.lrc```), see [here](/en-us/lyrics/ 'Lyrics')
+- External album cover (```cover```), see [here](/en-us/covers-and-booklets/?id=External-album-cover 'Covers and Booklets')
+- Index file (```index.md```), see [here](/en-us/indexing/ 'Indexing')
+- Directory with booklets (```booklet```) — when needed, see [here](/en-us/covers-and-booklets/?id=Booklets 'Covers and Booklets')
+- Directory with additional covers (```covers```) — when needed, see [here](/en-us/covers-and-booklets/?id=Additional-covers 'Covers and Booklets')
 
 For example:
 

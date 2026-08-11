@@ -18,7 +18,7 @@ I embed only one cover per track — Front Cover.
 
 **Resolution:** any maximum possible.
 
-**Location:** next to the audio files.
+**Location:** in the same folder as the audio files.
 
 ## Additional Covers
 
@@ -32,7 +32,7 @@ Additional covers are alternative covers for songs that I want to keep. Consider
 
 3. Thus the single cover is lost, which is not good, so I save it separately and add it to the covers folder.
 
-Additional covers can also come from other places, for example, unreleased materials, scans, and so on.
+Additional covers can also come from other places, for example, unreleased materials, scans, and so on.  
 A fun example can be seen [here](https://www.reddit.com/r/lanadelrey/comments/14x4amo/did_you_know_that_theres_a_tunnel_under_ocean/); this album has six covers in total (and one even has boobs :grin:)!
 
 ---
@@ -71,7 +71,7 @@ I do not use or save animated covers for the following reasons:
 1. Many animated covers are just pulsating static images, which look rather strange in my opinion;
 2. They take up a lot of space;
 3. An animated cover cannot be placed in audio file tags; formats do not support them, so need to use external cover, which is inconvenient;
-4. Animated covers are not natively supported almost anywhere, namely:  
+4. Animated covers are not natively supported almost anywhere, specifically:  
   **Foobar2000** — not supported natively, requires a plugin ([discussion #1](https://www.reddit.com/r/musichoarder/comments/1aeucbn/comment/koa83a9/), [discussion #2](https://www.reddit.com/r/foobar2000/comments/1dpgijy/does_animated_cover_art_work/)):
   ![Discussion of animated covers on Reddit](foobar-animated.png)
   **Poweramp** — not supported ([discussion](https://forum.powerampapp.com/topic/29600-animated-song-cover/)):

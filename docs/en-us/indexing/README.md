@@ -3,28 +3,28 @@
 # Indexing
 
 The index file (```index.md```) is located in the same folder as the audio files. File syntax: Markdown, file language: English.
-It contains brief information about the release, namely:
+It contains brief information about the release, specifically:
 
 - Album title (```Album```);
 
-- Alternative album titles, romaji, translated album titles — when necessary;
+- Alternative album titles and translations - if needed;
   For example: ```エルマ, Eruma```
 
 - Album artist (```Album Artist```);
 
-- Other artist aliases, romaji, translated aliases — when necessary;
+- Other artist aliases, romaji, translated aliases — if needed;
   For example: ```Lana Del Ray, Lizzy Grant, Elizabeth Grant, May Jailer, Sparkle Jump Rope Queen```
 
 - Release year (year from `Date` tag);
 
-- Album genres (```Genre```);
+- Genres (```Genre```);
 
-- Album subgenres (```Style```);
-  Note: the contents of genre and subgenre tags may duplicate, for example ```Drumstep```.
+- Subgenres (```Style```);
+  Note: ```Genre``` and ```Style``` tags may overlap, for example ```Drumstep```.
 
-- Total duration of the album;
+- Total duration;
 
-- A note about extras (booklets, covers, lyrics) — when necessary;
+- A note about extras (booklets, covers, lyrics) — if needed;
 
 - Quality in the format: `<Source> [<Codec>/<Bit depth or bitrate and bitrate type>/<Sample rate>]: <Track numbers if necessary>`;
   - For example, for a lossless album: `WEB [FLAC/24-bit/96 kHz]`
@@ -37,26 +37,26 @@ It contains brief information about the release, namely:
     WEB [AAC/192 kbps VBR/48 kHz]: track 9
     ```
 
-- Tracklist;
-  Note 1: if the release has one disc, the track numbers are written without the disc number, but the leading zero is preserved, for example: ```01```, ```09```.
-  If the release has multiple discs, the disc number is included, for example: ```1.02```, ```2.13```. The disc number is also written before tracks.
-  Note 2: if the original track title was in another language, for example Japanese, the original title should be written in parentheses: ```The flowers are also noisy (花も騒めく)```
+- Tracklist;  
+  Note 1: if the release has one disc, track numbers omit the disc number while keeping the leading zero, for example: ```01```, ```09```.  
+  If the release has multiple discs, the disc number is included, for example: ```1.02```, ```2.13```. The disc number is added before tracks.
+  Note 2: if the original track title was in another language, for example Japanese, the original title will be shown in parentheses: ```The flowers are also noisy (花も騒めく)```
 
-- Various notes — when necessary;
+- Additional notes — if needed;
 
-- Search hashtags, namely:
+- Search tags:
   - Source;
-  - Release year;
-    Note: the year comes first, followed by the letter y, because tags containing only numbers are interpreted as colors. For example: ```2012y```
+  - Release year;  
+    Note: the year comes first, followed by the letter y, because tags containing only numbers are interpreted as colors. For example: ```2012y```.
   - The decade in which the album was released (for example, ```2010s```, ```1980s```);
-  - Genres (hyphens and spaces removed), more details [here](https://support.discogs.com/hc/en-us/articles/360005055213-Database-Guidelines-9-Genres-Styles);
-  - Subgenres (hyphens and spaces removed);
+  - Genres with spaces and hyphens removed, see [here](https://support.discogs.com/hc/en-us/articles/360005055213-Database-Guidelines-9-Genres-Styles);
+  - Subgenres with spaces and hyphens removed;
   - Vocal or instrumental. If vocal, then female, male, or something else (for example, ```instrumental```, ```femalevocalist```, ```malevocalist```, ```choir```);
   - Indie hashtag (i.e. ```indie```);
   - Performance language (for example, ```english```, ```russian```, ```german```, ```japanese```);
   - Other hashtags.
 
-Example of such indexing:
+Example of indexing:
 
 ```text
 💿 **Album:** second person

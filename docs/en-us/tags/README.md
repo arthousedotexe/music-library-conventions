@@ -6,9 +6,9 @@ Let's start with what tags I actually use, given the huge number of them.
 
 ## Separation by Priority
 
-**Note:** this refers not to tags that are written in audio file formats, but only to their abstract designations for clarity.  
+**Note:** this does not apply to tags in audio file formats, but only to their abstract designations for clarity.  
 So ```Album Artist``` means an abstract tag that corresponds to the album artist.
-Actually, in **FLAC (Vorbis Comment)** this is handled by the ```ALBUMARTIST``` tag, in **ALAC (iTunes MP4)** by the ```aART``` tag, and in **MP3 (ID3v2.3, ID3v2.4)** by the ```TPE2``` frame.
+Actually, in **FLAC (Vorbis Comment)** this is handled by ```ALBUMARTIST``` tag, in **ALAC (iTunes MP4)** by ```aART``` atom, in **MP3 (ID3v2.3, ID3v2.4)** by ```TPE2``` frame.
 
 ### Main Tags
 
@@ -20,7 +20,7 @@ Actually, in **FLAC (Vorbis Comment)** this is handled by the ```ALBUMARTIST``` 
 
 - ```Artist``` — track artist or artists;  
   **Note:** if there are several artists on the track, then characters ``\\`` are used as a separator between them.  
-  I do not use the following symbols to separate artists: ``feat.``, ``&``, ``,``, ``;``, as well as any others.
+  I do not use the following separators for artists: ``feat.``, ``&``, ``,``, ``;``, as well as any others.  
   **Examples:** ```Lana Del Rey\\Zella Day\\Weyes Blood```, ```Zachz Winner\\Frozy\\joyful```
 
 - ```Date``` — release date of a specific release;  
@@ -58,7 +58,7 @@ Starting with this group, I will add information about display and the ability t
 
 - ```Lyrics``` — synchronized or unsynchronized song lyrics;  
   **Display:** Poweramp (+), Foobar2000 (+)  
-  **Note:** instead of this tag, I use .lrc files, more details [here](/en-us/lyrics/).
+  **Note:** instead of this tag, I use .lrc files, see [here](/en-us/lyrics/).
 
 - ```Original Date``` — original release date;  
   **Format:** YYYY-MM-DD  
@@ -82,11 +82,11 @@ Now we will add these tags and see how it will look:
 
 **Specialized tags** are situational and can be very useful in certain cases. Many of them are filled in automatically by taggers: it is best to fill these if useful, but not strictly necessary.
 
-- ```Album Artist Sort``` — a tag that sets the sorting rule for the album artist, allowing the name to appear in the audio player in a familiar way while sorting by surname or ignoring articles;  
+- ```Album Artist Sort``` — tag that controls how the album artist is sorted, such as by surname or by articles;  
   **Example:** ```Beatles, The``` instead of ```The Beatles```, so they will sort by B rather than T.  
   **Sorting by this tag:** Poweramp (-) (there is another setting to ignore articles), Foobar2000 (+) (pattern setup required)
 
-- ```Artist Sort``` — similar to the previous tag, but it sets the sorting rule not for the album artist but for the artist;  
+- ```Artist Sort``` — similar to the previous tag, but it how the track artist is sorted;  
   **Sorting by this tag:** Poweramp (-) (there is another setting to ignore articles), Foobar2000 (+) (pattern setup required)
 
 - ```Barcode``` — a unique barcode for the music release, needed to identify specific music release in digital stores and streaming services.  
@@ -112,7 +112,7 @@ Now we will add these tags and see how it will look:
   **Sorting by this tag:** Poweramp (-), Foobar2000 (pattern setup required)
 
 - ```Copyright``` — copyright information for the release.  
-  **Example:** ```A Polydor Records Release / An Interscope Records Release in the USA; ℗ 2021 Lana Del Rey, under exclusive licence to Universal Music Operations Limited```  
+  **Example:** ```A Polydor Records Release / An Interscope Records Release in the USA; ℗ 2021 Lana Del Rey, under exclusive licence to Universal Music Operations Limited```.  
   **Display:** Poweramp (-), Foobar2000 (+)  
 
 - ```ISRC``` — a unique international code assigned to audio recording, needed to identify specific audio recording in digital stores and streaming services.  
@@ -123,7 +123,7 @@ Now we will add these tags and see how it will look:
   **Example:**  
   Consider [this release](https://open.spotify.com/album/6eOuqhCfrTPp1H0YbQ9PmL); it contains two symphonies: No. 5 and No. 7.  
   ![Example with the Grouping tag](grouping.png)
-  The point is that if you write ```Symphony No. 5 in C Minor, Op. 67``` in the ```Grouping``` tag for the first four tracks and ```Symphony No. 7 in A Major, Op. 92``` for the remaining ones, then the first track will display a badge for Symphony No. 5 and the fifth track will display a badge for Symphony No. 7 (if the audio player supports such display)  
+  If you add ```Symphony No. 5 in C Minor, Op. 67``` to ```Grouping``` tag for tracks 1-4 and ```Symphony No. 7 in A Major, Op. 92``` for the rest, then track 1 will display a badge for Symphony No. 5 and track 5 will display a badge for Symphony No. 7 (if the audio player supports such display)  
   **Display:** Poweramp (-) ([discussion](https://forum.powerampapp.com/topic/28102-grouping-tag-support/)), Foobar2000 (+) (pattern setup required)
 
 - ```Label``` — label.  
@@ -141,7 +141,7 @@ Now we will add these tags and see how it will look:
   **Sorting by this tag:** Poweramp (-), Foobar2000 (+)
 
 - ```MusicBrainz Tags``` — tags containing unique identifiers from the MusicBrainz database.  
-  **Tags:**
+  **Specifically:**
   - ```MusicBrainz Artist ID``` - multi-value tag containing the MBIDs for the track artists;
   - ```MusicBrainz Recording ID``` - tag containing the MBID for the recording;
   - ```MusicBrainz Release Artist ID``` - multi-value tag containing the MBIDs for the release artists;
@@ -154,7 +154,7 @@ Now we will add these tags and see how it will look:
   **Note:** read more [here](https://musicbrainz.org/doc/MusicBrainz_Identifier), [here](https://picard-docs.musicbrainz.org/en/latest/variables/tags_basic.html) and [here](https://picard-docs.musicbrainz.org/en/latest/appendices/tag_mapping.html).  
   These tags are also useful for linking with catalogs (Navidrome, Plex), scrobblers (ListenBrainz, self-hosted scrobblers), and the MusicBrainz database itself.
 
-- ```Performer``` — tags for musician roles. For example, who is the guitarist, vocalist, drummer, and so on.  
+- ```Performer``` — tags containing musician roles. For example, who is the guitarist, vocalist, drummer, and so on.  
   **Examples:** ```Yuri Kaplan (Vocals, Electric Guitar)```, ```Vladimir Yakovlev (Drums)```, ```Konstantin Pyzhov (Electric Guitar)```, ```Stanislav Murashko (Bass Guitar)```  
   **Display:** Poweramp (-), Foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), Foobar2000 (+)
@@ -164,11 +164,12 @@ Now we will add these tags and see how it will look:
   **Sorting by this tag:** Poweramp (-), Foobar2000 (+)
 
 - ``ReplayGain Tags`` - tags that are responsible for ReplayGain.  
-  **Tags:**
+  **Specifically:**
   - ``ReplayGain Track Gain`` - tag that contains the volume correction value (in dB) for one specific track to match the 89 dB SPL level;
   - ``ReplayGain Track Peak`` - tag that contains the maximum peak volume level within one track. If gain exceeds the maximum allowable digital level (0 dBFS), audio player will lower level so that clipping does not occur;
   - ``ReplayGain Album Gain`` - tag that contains the volume correction value (in dB) for the entire album. This equalizes the overall level of the album relative to 89 dB SPL, but at the same time completely preserves contrast between quiet and loud songs inside the album;
   - ``ReplayGain Album Peak`` - tag that contains the maximum peak volume level among all album tracks.
+
   **Working with ReplayGain:** Poweramp (+), Foobar2000 (+)  
   **Note:** read more [here](https://ru.wikipedia.org/wiki/ReplayGain ) and [here](https://wiki.hydrogenaudio.org/index.php/ReplayGain).
 
@@ -187,21 +188,21 @@ And final touch:
 
 ---
 
-- ``Artists`` - multi-value tag that stores a list of several artists.
+- ``Artists`` - multi-value tag that stores a list of several artists.  
   **Note:** This tag is generated and populated automatically by MusicBrainz Picard if the relevant information is available in the MusicBrainz database. More details [here](https://picard-docs.musicbrainz.org/en/latest/variables/tags_basic.html).
 
 - ```Encoder``` — the encoder program/library that created/re-encoded the audio file.
 
-- ```Encoded By``` — the person who created/re-encoded the audio file, essentially the ripper.
+- ```Encoded By``` — the person who created/re-encoded the audio file, for example, ripper.
 
-- ```First Played``` — the date when you first played the track.  
+- ```First Played``` — the date when the person first played the track.
   **Format:** usually YYYY-MM-DD HH:MM:SS
 
-- ```Last Played``` — the date when you last played the track.  
+- ```Last Played``` — the date when the person last played the track.
   **Format:** usually YYYY-MM-DD HH:MM:SS
 
 - ```Mood``` — the mood of the track.  
-  **Note:** a decent mood taxonomy is provided [here](https://sites.tufts.edu/eeseniordesignhandbook/2015/music-mood-classification/).
+  **Note:** a decent mood methodology is provided [here](https://sites.tufts.edu/eeseniordesignhandbook/2015/music-mood-classification/).
 
 - ```Play Count``` — number of times the track has been played.
 
@@ -213,8 +214,8 @@ And final touch:
 - ```Recording Copyright``` — copyright information for a specific recording.
 
 - ```Subtitle``` — track subtitle.  
-  **Example:** let ```Subtitle``` tag contain value "Acoustic version", then `Title` tag will contain "Track name".  
-  Without using ```Subtitle``` tag, the name in ``Title`` tag will look like this: ```Track name (Acoustic version)```.
+  **Example:** let ```Subtitle``` tag contain value ```Acoustic version```, then `Title` tag will contain ```Track name```.  
+  Without using ```Subtitle``` tag, name in ``Title`` tag will look like this: ```Track name (Acoustic version)```.
 
 - ```URL``` — a link to anything (source of the track, streaming service, and so on).
 
@@ -234,7 +235,7 @@ And final touch:
 **Format-specific notes:**
 
 - iTunes MP4:  
-  All tags starting with ```----``` are freeform metadata, the rest of tags are standard atoms.
+  All tags starting with ```----``` are freeform metadata, the rest of tags are standard format atoms.
 
 ### Main Tags Table
 
