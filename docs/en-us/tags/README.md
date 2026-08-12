@@ -219,6 +219,9 @@ And final touch:
 
 - ```URL``` — a link to anything (source of the track, streaming service, and so on).
 
+- ```Work``` - a distinct intellectual or artistic creation, which can be expressed in the form of one or more audio recordings. A work does not have to be musical. For example, a work could be a novel, play, poem or essay, later recorded as an audiobook.  
+  **Note:** more details [here](https://musicbrainz.org/doc/Work).  
+
 - ```Writer``` — songwriter (the person who wrote the words for the song).
 
 ## Tag Mapping Tables
