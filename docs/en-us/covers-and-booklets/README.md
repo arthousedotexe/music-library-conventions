@@ -37,11 +37,11 @@ A fun example can be seen [here](https://www.reddit.com/r/lanadelrey/comments/14
 
 ---
 
-**Names of tracks covers:** ```cover<Disc number>-<Track number with leading zero>```.  
-For example: ```cover1-03.jpg```, ```cover1-09.png```.
+**Names of tracks covers:** ```cover-<Disc number>-<Track number with leading zero>```.  
+For example: ```cover-1-03.jpg```, ```cover-1-09.png```.
 
-**Names of album covers:** ```cover<Cover number>```.  
-For example: ```cover3``` means the third alternative album cover.
+**Names of album covers:** ```cover-<Cover number>```.  
+For example: ```cover-3``` means the third alternative album cover.
 
 **Other names:** ```back-spine```, ```medium```, ```tray```, ```back-spine-front``` and so on.  
 More details can be read [here](https://musicbrainz.org/doc/Cover_Art/Types).  
@@ -55,8 +55,13 @@ I do not save obi, stickers, and some other cover types.
 
 ## Booklets
 
+A booklet does not necessarily have to match a specific release.  
+For example: a digital release may have a CD booklet; a UK release may have a booklet for a Japanese release, and so on.
+
 **Name:** ```booklet-<Page number with leading zero>``` or ```booklet-<Page number with leading zero>-<Next page number with leading zero>```.  
 For example: ```booklet-11-12.jpg```, ```booklet-06.png```.
+
+**Other names:** ```booklet-outside```.  
 
 **Format:** ```.png```, if possible to obtain, otherwise ```.jpg```. Conversion from ```.jpg``` to ```.png``` is not allowed.
 
