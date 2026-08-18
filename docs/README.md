@@ -1,29 +1,29 @@
 <!-- markdownlint-disable MD025 MD041 -->
 ## Music library conventions
 
-I finally decided to write down these conventions, so I can standardize everything I possibly can and keep my music library **consistent**.
+I finally decided to write down these conventions, which are about how I organize and maintain my music library to keep it **consistent**.
 
-At first, I only wanted to deal with tags, but since I decided to write these rules anyway, I thought it would be worth standardizing everything at once: structure, naming, covers, booklets, and so on.
+At first, I intended to document only with tags, but decided to expand the scope and standardize the library as a whole, including its structure, naming rules, covers, booklets, and so on.
 
 [Read document](/en-us/ 'Table of Contents')
 
-For any suggestions, ideas, shortcomings, improvements, questions or just to get in touch, write here: [@arthousedotexe](https://t.me/arthousedotexe)
+For any suggestions, ideas, improvements, questions, general feedback or just to get in touch, write here: [@arthousedotexe](https://t.me/arthousedotexe)
 
-P.S. I use the following audio players: foobar2000 (PC) and Poweramp (android). Some things mentioned here are based on the features and limitations of these audio players.
+P.S. I use the following audio players: foobar2000 (PC) and Poweramp (Android). Some things mentioned here are based on the features and limitations of these audio players.
 
 ---
 
 ## Правила оформления музыкальной библиотеки
 
-Я наконец-таки решил сформулировать эти конвенции, в которых хочу стандартизировать абсолютно всё, что смогу стандартизировать, для сохранения **согласованности** в своей музыкальной библиотеке.
+Я наконец-таки решил сформулировать эти конвенции, которые определяют, как я организую и поддерживаю свою музыкальную библиотеку, чтобы она оставалась **согласованной**.
 
-Изначально я хотел разобраться только с тегами, но раз уж я всё равно решил написать эти правила, то думаю, что стоит стандартизировать сразу всё - структуру, названия, обложки, буклеты и так далее.
+Изначально я хотел разобраться только с тегами, но решил расширить область применения и стандартизировать библиотеку в целом, включая ее структуру, наименования, обложки, буклеты и так далее.
 
 [Читать документ](/ru-ru/ 'Оглавление')
 
 Для любых предложений, идей, недостатков, улучшений, вопросов и просто для связи со мной, писать сюда: [@arthousedotexe](https://t.me/arthousedotexe)
 
-P.S. Я использую следующие плееры: foobar2000 (ПК) и Poweramp (андроид). Некоторые вещи будут сказаны здесь, основываясь на функционале и возможностях этих плееров.
+P.S. Я использую следующие плееры: foobar2000 (ПК) и Poweramp (Андроид). Некоторые вещи будут сказаны здесь, основываясь на функционале и возможностях этих плееров.
 
 ## Changelog
 

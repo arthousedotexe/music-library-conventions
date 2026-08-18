@@ -2,58 +2,59 @@
 
 # Indexing
 
-The index file (```index.md```) is located in the same folder as the audio files. File syntax: Markdown, file language: English.
+The index file (```index.md```) is located in the same folder as the audio files. The file uses Markdown and is written in English.  
 It contains brief information about the release, specifically:
 
 - Album title (```Album```);
 
-- Alternative album titles and translations - if needed;
-  For example: ```エルマ, Eruma```
+- Alternative album titles and translations - when applicable;  
+  **For example:** ```エルマ, Eruma```
 
 - Album artist (```Album Artist```);
 
-- Other artist aliases, romaji, translated aliases — if needed;
-  For example: ```Lana Del Ray, Lizzy Grant, Elizabeth Grant, May Jailer, Sparkle Jump Rope Queen```
+- Other artist aliases, romanizations, translated aliases — when applicable;  
+  **For example:** ```Lana Del Ray, Lizzy Grant, Elizabeth Grant, May Jailer, Sparkle Jump Rope Queen```
 
 - Release year (year from `Date` tag);
 
 - Genres (```Genre```);
 
-- Subgenres (```Style```);
-  Note: ```Genre``` and ```Style``` tags may overlap, for example ```Drumstep```.
+- Subgenres (```Style```);  
+  **Note:** ```Genre``` and ```Style``` tags may overlap, for example ```Drumstep```.
 
 - Total duration;
 
-- A note about extras (booklets, covers, lyrics) — if needed;
+- A note about extras (booklets, covers, lyrics) — when applicable;
 
 - Quality in the format: `<Source> [<Codec>/<Bit depth or bitrate and bitrate type>/<Sample rate>]: <Track numbers if necessary>`;
   - For example, for a lossless album: `WEB [FLAC/24-bit/96 kHz]`
   - For a lossy album: `WEB [AAC/256 kbps VBR/48 kHz]`
-  - For a compilation/an album of tracks with variable quality:
+  - For a compilation or album containing tracks from multiple sources or quality levels:
 
     ```text
     WEB [FLAC/16-bit/44.1 kHz]: tracks 1-7, 10-14
     WEB [MP3/320 kbps CBR/44.1 kHz]: track 8
     WEB [AAC/192 kbps VBR/48 kHz]: track 9
+    CD [FLAC/16-bit/44.1 kHz]: track 15
     ```
 
 - Tracklist;  
-  Note 1: if the release has one disc, track numbers omit the disc number while keeping the leading zero, for example: ```01```, ```09```.  
-  If the release has multiple discs, the disc number is included, for example: ```1.02```, ```2.13```. The disc number is added before tracks.
-  Note 2: if the original track title was in another language, for example Japanese, the original title will be shown in parentheses: ```The flowers are also noisy (花も騒めく)```
+  **Note №1:** if the release has one disc, track numbers omit the disc number while keeping the leading zero, for example: ```01```, ```09```.  
+  If the release has multiple discs, the disc number is included, for example: ```1.02```, ```2.13```.  
+  **Note №2:** if the original track title was in another language, for example Japanese, then it will be indicated in parentheses: ```The flowers are also noisy (花も騒めく)```
 
-- Additional notes — if needed;
+- Additional notes — when applicable;
 
-- Search tags:
+- Search hashtags:
   - Source;
   - Release year;  
     Note: the year comes first, followed by the letter y, because tags containing only numbers are interpreted as colors. For example: ```2012y```.
-  - The decade in which the album was released (for example, ```2010s```, ```1980s```);
-  - Genres with spaces and hyphens removed, see [here](https://support.discogs.com/hc/en-us/articles/360005055213-Database-Guidelines-9-Genres-Styles);
-  - Subgenres with spaces and hyphens removed;
-  - Vocal or instrumental. If vocal, then female, male, or something else (for example, ```instrumental```, ```femalevocalist```, ```malevocalist```, ```choir```);
-  - Indie hashtag (i.e. ```indie```);
-  - Performance language (for example, ```english```, ```russian```, ```german```, ```japanese```);
+  - The decade in which the album was released, for example: ```2010s```, ```1980s```;
+  - Genre names normalized for hashtags by converting them to lowercase and removing spaces and hyphens, see [here](https://support.discogs.com/hc/en-us/articles/360005055213-Database-Guidelines-9-Genres-Styles);
+  - Subgenre names normalized for hashtags by converting them to lowercase and removing spaces and hyphens;
+  - Vocal classification, for example: ```instrumental```, ```femalevocalist```, ```malevocalist```, ```choir```;
+  - Indie hashtag (```indie```);
+  - Vocal or performance language, for example: ```english```, ```russian```, ```german```, ```japanese```;
   - Other hashtags.
 
 Example of indexing:

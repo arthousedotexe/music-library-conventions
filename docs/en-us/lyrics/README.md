@@ -2,14 +2,14 @@
 
 # Lyrics
 
-Lyrics files are located in the same folder as the audio files, and have the same name with a different extension: ```.lrc```.
+Lyrics files are located in the same folder as the audio files, and use the same base filename with the `.lrc` extension.
 
 For example: next to a song named ```1.03. Evening calm,Somewhere,Fireworks.flac``` there will be a lyrics file ```1.03. Evening calm,Somewhere,Fireworks.lrc```.
 
-The contents of lyrics files can be divided into two parts:
+An lyrics file consists of two main parts:
 
 - Tags at the beginning of the file, enclosed in square brackets;
-- Song text.
+- Lyrics content.
 
 ## .lrc Tags
 
@@ -25,13 +25,14 @@ For example:
 [length: 03:57]
 ```
 
-## Song Text
+## Lyrics Content
 
-Forbidden characters in the text:
+For consistency, I avoid the following characters:
 
 - Alternative quotes and apostrophes: ```„```, ```“```, ```’```, ```‘``` and other typography;
-- Control ASCII characters and non-breaking spaces;
-- Other funny characters that no audio player in the world will read.
+- Control ASCII characters;
+- Non-breaking spaces;
+- Other nonstandard or unsupported characters that cause parsing or rendering issues in the players I use.
 
 Everything else is allowed.
 
