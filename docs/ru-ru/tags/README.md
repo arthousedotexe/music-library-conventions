@@ -245,7 +245,7 @@
 
 **Дисклеймер:** в данных таблицах зафиксированы правила сопоставления тегов, используемые в этой библиотеке. Некоторые поля используют нативные фреймы или атомы конкретных форматов, в то время как другие являются пользовательскими метаданными. Их не следует рассматривать как универсальный стандарт маппинга для всех программ теггирования.
 
-**Таблицы сопоставления тегов, на которые я ссылался:** [HydrogenAudio](https://wiki.hydrogenaudio.org/index.php?title=Tag_Mapping), [Mp3tag](https://docs.mp3tag.de/mapping/)
+**Таблицы сопоставления тегов, на которые я ссылался:** [HydrogenAudio](https://wiki.hydrogenaudio.org/index.php?title=Tag_Mapping), [Mp3tag](https://docs.mp3tag.de/mapping/), [MusicBrainz](https://picard-docs.musicbrainz.org/en/latest/appendices/tag_mapping.html).
 
 **Консольные утилиты для проверки точных названий полей, фреймов и атомов в метаданных:**
 

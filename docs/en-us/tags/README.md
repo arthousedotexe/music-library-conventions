@@ -245,7 +245,7 @@ The final result looks like this:
 
 **Disclaimer:** these tables document the mappings used by this library. Some fields use native format-specific frames or atoms, while others are stored as freeform metadata fields. They should not be interpreted as a universal mapping standard for all tagging software.
 
-**Reference for tag mappings:** [HydrogenAudio](https://wiki.hydrogenaudio.org/index.php?title=Tag_Mapping), [Mp3tag](https://docs.mp3tag.de/mapping/)
+**Reference for tag mappings:** [HydrogenAudio](https://wiki.hydrogenaudio.org/index.php?title=Tag_Mapping), [Mp3tag](https://docs.mp3tag.de/mapping/), , [MusicBrainz](https://picard-docs.musicbrainz.org/en/latest/appendices/tag_mapping.html).
 
 **Command-line utilities for inspecting native metadata fields, frames, and atoms:**
 
