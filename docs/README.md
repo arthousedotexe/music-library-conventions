@@ -1,4 +1,4 @@
-<!-- markdownlint-disable MD025 MD041 -->
+<!-- markdownlint-disable MD041 -->
 ## Music library conventions
 
 I finally decided to write down these conventions, which are about how I organize and maintain my music library to keep it **consistent**.
@@ -7,9 +7,11 @@ At first, I intended to document only with tags, but decided to expand the scope
 
 [Read document](/en-us/ 'Table of Contents')
 
-For any suggestions, ideas, improvements, questions, general feedback or just to get in touch, write here: [@arthousedotexe](https://t.me/arthousedotexe)
+For any suggestions, ideas, improvements, issues, questions, general feedback or just to get in touch, write here: [@arthousedotexe](https://t.me/arthousedotexe)
 
 P.S. I use the following audio players: foobar2000 (PC) and Poweramp (Android). Some things mentioned here are based on the features and limitations of these audio players.
+
+[Changelog](CHANGELOG_EN)
 
 ---
 
@@ -25,9 +27,4 @@ P.S. I use the following audio players: foobar2000 (PC) and Poweramp (Android). 
 
 P.S. Я использую следующие плееры: foobar2000 (ПК) и Poweramp (Андроид). Некоторые вещи будут сказаны здесь, основываясь на функционале и возможностях этих плееров.
 
-## Changelog
-
-### 10.08.2026
-
-**EN:** Initial convention release  
-**RU:** Первоначальная редакция правил
+[История изменений](CHANGELOG_RU)
