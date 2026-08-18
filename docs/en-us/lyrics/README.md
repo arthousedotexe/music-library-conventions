@@ -4,7 +4,7 @@
 
 Lyrics files are located in the same folder as the audio files, and use the same base filename with the `.lrc` extension.
 
-For example: next to a song named ```1.03. Evening calm,Somewhere,Fireworks.flac``` there will be a lyrics file ```1.03. Evening calm,Somewhere,Fireworks.lrc```.
+For example: next to a song named `1.03. Evening calm,Somewhere,Fireworks.flac` there will be a lyrics file `1.03. Evening calm,Somewhere,Fireworks.lrc`.
 
 An lyrics file consists of two main parts:
 
@@ -15,7 +15,7 @@ An lyrics file consists of two main parts:
 
 More details about tags can be read [here](https://en.wikipedia.org/wiki/LRC_(file_format)).
 
-I use the following tags: ```ti```, ```ar```, ```al```, ```length```.  
+I use the following tags: `ti`, `ar`, `al`, `length`.  
 For example:
 
 ```lrc
@@ -29,7 +29,7 @@ For example:
 
 For consistency, I avoid the following characters:
 
-- Alternative quotes and apostrophes: ```„```, ```“```, ```’```, ```‘``` and other typography;
+- Alternative quotes and apostrophes: `„`, `“`, `’`, `‘` and other typography;
 - Control ASCII characters;
 - Non-breaking spaces;
 - Other nonstandard or unsupported characters that cause parsing or rendering issues in the players I use.

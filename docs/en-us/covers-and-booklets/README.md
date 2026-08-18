@@ -6,15 +6,15 @@
 
 I embed only one cover per track, using the Front Cover picture type.
 
-**Format:** always ```JPEG```.
+**Format:** always `JPEG`.
 
 **Resolution:** 1200x1200 pixels max. If cover at that resolution is unavailable, I use the highest available resolution without upscaling.
 
 ## External Album Cover
 
-**Name:** ```cover```.
+**Name:** `cover`.
 
-**Format:** ```.png```, when the original cover is available in this format; otherwise ```.jpg```. Conversion from ```.jpg``` to ```.png``` is not allowed.
+**Format:** `.png`, when the original cover is available in this format; otherwise `.jpg`. Conversion from `.jpg` to `.png` is not allowed.
 
 **Resolution:** highest available resolution.
 
@@ -37,37 +37,37 @@ A fun example can be seen [here](https://www.reddit.com/r/lanadelrey/comments/14
 
 ---
 
-**Track-cover filenames:** ```cover-<Disc number>-<Track number with leading zero>```.  
-For example: ```cover-1-03.jpg```, ```cover-1-09.png```.
+**Track-cover filenames:** `cover-<Disc number>-<Track number with leading zero>`.  
+For example: `cover-1-03.jpg`, `cover-1-09.png`.
 
-**Album-cover filenames:** ```cover-<Cover number>```.  
-For example: ```cover-3``` means the third alternative album cover.
+**Album-cover filenames:** `cover-<Cover number>`.  
+For example: `cover-3` means the third alternative album cover.
 
-**Other cover filenames:** ```back-spine```, ```medium```, ```tray```, ```back-spine-front``` and so on.  
+**Other cover filenames:** `back-spine`, `medium`, `tray`, `back-spine-front` and so on.  
 More details can be read [here](https://musicbrainz.org/doc/Cover_Art/Types).  
 I do not save obi strips, stickers, and certain other cover types.
 
-**Format:** ```.png```, when the original cover is available in this format; otherwise ```.jpg```. Conversion from ```.jpg``` to ```.png``` is not allowed.
+**Format:** `.png`, when the original cover is available in this format; otherwise `.jpg`. Conversion from `.jpg` to `.png` is not allowed.
 
 **Resolution:** highest available resolution.
 
-**Location:** in the ```covers``` directory.
+**Location:** in the `covers` directory.
 
 ## Booklets
 
 A booklet does not necessarily have to match a specific release.  
 For example: a digital release may contain a CD booklet; a UK release may contain a booklet sourced from the Japanese edition.
 
-**Name:** ```booklet-<Page number with leading zero>``` or ```booklet-<Page number with leading zero>-<Next page number with leading zero>```.  
-For example: ```booklet-11-12.jpg```, ```booklet-06.png```.
+**Name:** `booklet-<Page number with leading zero>` or `booklet-<Page number with leading zero>-<Next page number with leading zero>`.  
+For example: `booklet-11-12.jpg`, `booklet-06.png`.
 
-**Other names:** ```booklet-outside```.  
+**Other names:** `booklet-outside`.  
 
-**Format:** ```.png```, when the original cover is available in this format; otherwise ```.jpg```. Conversion from ```.jpg``` to ```.png``` is not allowed.
+**Format:** `.png`, when the original cover is available in this format; otherwise `.jpg`. Conversion from `.jpg` to `.png` is not allowed.
 
 **Resolution:** highest available resolution.
 
-**Location:** in the ```booklet``` directory.
+**Location:** in the `booklet` directory.
 
 ## Animated Covers
 

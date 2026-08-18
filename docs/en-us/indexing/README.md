@@ -2,25 +2,25 @@
 
 # Indexing
 
-The index file (```index.md```) is located in the same folder as the audio files. The file uses Markdown and is written in English.  
+The index file (`index.md`) is located in the same folder as the audio files. The file uses Markdown and is written in English.  
 It contains brief information about the release, specifically:
 
-- Album title (```Album```);
+- Album title (`Album`);
 
 - Alternative album titles and translations - when applicable;  
-  **For example:** ```エルマ, Eruma```
+  **For example:** `エルマ, Eruma`
 
-- Album artist (```Album Artist```);
+- Album artist (`Album Artist`);
 
 - Other artist aliases, romanizations, translated aliases — when applicable;  
-  **For example:** ```Lana Del Ray, Lizzy Grant, Elizabeth Grant, May Jailer, Sparkle Jump Rope Queen```
+  **For example:** `Lana Del Ray, Lizzy Grant, Elizabeth Grant, May Jailer, Sparkle Jump Rope Queen`
 
 - Release year (year from `Date` tag);
 
-- Genres (```Genre```);
+- Genres (`Genre`);
 
-- Subgenres (```Style```);  
-  **Note:** ```Genre``` and ```Style``` tags may overlap, for example ```Drumstep```.
+- Subgenres (`Style`);  
+  **Note:** `Genre` and `Style` tags may overlap, for example `Drumstep`.
 
 - Total duration;
 
@@ -39,22 +39,22 @@ It contains brief information about the release, specifically:
     ```
 
 - Tracklist;  
-  **Note №1:** if the release has one disc, track numbers omit the disc number while keeping the leading zero, for example: ```01```, ```09```.  
-  If the release has multiple discs, the disc number is included, for example: ```1.02```, ```2.13```.  
-  **Note №2:** if the original track title was in another language, for example Japanese, then it will be indicated in parentheses: ```The flowers are also noisy (花も騒めく)```
+  **Note №1:** if the release has one disc, track numbers omit the disc number while keeping the leading zero, for example: `01`, `09`.  
+  If the release has multiple discs, the disc number is included, for example: `1.02`, `2.13`.  
+  **Note №2:** if the original track title was in another language, for example Japanese, then it will be indicated in parentheses: `The flowers are also noisy (花も騒めく)`
 
 - Additional notes — when applicable;
 
 - Search hashtags:
   - Source;
   - Release year;  
-    Note: the year comes first, followed by the letter y, because tags containing only numbers are interpreted as colors. For example: ```2012y```.
-  - The decade in which the album was released, for example: ```2010s```, ```1980s```;
+    Note: the year comes first, followed by the letter y, because tags containing only numbers are interpreted as colors. For example: `2012y`.
+  - The decade in which the album was released, for example: `2010s`, `1980s`;
   - Genre names normalized for hashtags by converting them to lowercase and removing spaces and hyphens, see [here](https://support.discogs.com/hc/en-us/articles/360005055213-Database-Guidelines-9-Genres-Styles);
   - Subgenre names normalized for hashtags by converting them to lowercase and removing spaces and hyphens;
-  - Vocal classification, for example: ```instrumental```, ```femalevocalist```, ```malevocalist```, ```choir```;
-  - Indie hashtag (```indie```);
-  - Vocal or performance language, for example: ```english```, ```russian```, ```german```, ```japanese```;
+  - Vocal classification, for example: `instrumental`, `femalevocalist`, `malevocalist`, `choir`;
+  - Indie hashtag (`indie`);
+  - Vocal or performance language, for example: `english`, `russian`, `german`, `japanese`;
   - Other hashtags.
 
 Example of indexing:

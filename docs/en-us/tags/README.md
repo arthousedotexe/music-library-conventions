@@ -13,35 +13,35 @@ For example, `Album Artist` corresponds to `ALBUMARTIST` tag in **Vorbis Comment
 
 **Main tags** are required in every audio file.
 
-- ```Album``` — album title;
+- `Album` — album title;
 
-- ```Album Artist``` — album artist;
+- `Album Artist` — album artist;
 
-- ```Artist``` — track artist or artists;  
+- `Artist` — track artist or artists;  
   **Note:** if there are several artists on the track, then characters ``\\`` are used as a separator between them.  
   In [Mp3tag](https://www.mp3tag.de/en/) program, multiple values are displayed using `\\`. The `\\` separator itself is not stored in the tag field.  
   I do not use the following separators for artists: ``feat.``, ``&``, ``,``, ``;``, as well as any others.  
-  **Examples:** ```Lana Del Rey\\Zella Day\\Weyes Blood```, ```Zachz Winner\\Frozy\\joyful```
+  **Examples:** `Lana Del Rey\\Zella Day\\Weyes Blood`, `Zachz Winner\\Frozy\\joyful`
 
-- ```Date``` — release date of a specific release;  
-  **Format:** ```YYYY-MM-DD``` (or `YYYY` if the exact day and month are unknown)  
+- `Date` — release date of a specific release;  
+  **Format:** `YYYY-MM-DD` (or `YYYY` if the exact day and month are unknown)  
   **ID3v2.3 Feature**: [ID3v2.3](https://id3.org/id3v2.3.0) specification limits the `TYER` frame to only year (`YYYY`), but taggers (MusicBrainz Picard, Mp3tag) write the full date directly into `TYER` without separating it from the `TDAT` frame, as prescribed by the standard.
 
-- ```Disc Number``` — disc number;
+- `Disc Number` — disc number;
 
-- ```Disc Total``` — total number of discs;
+- `Disc Total` — total number of discs;
 
-- ```Title``` — track title;
+- `Title` — track title;
 
-- ```Track Number``` — track number;
+- `Track Number` — track number;
 
-- ```Track Total``` — total number of tracks;
+- `Track Total` — total number of tracks;
 
-- ```Cover``` — embedded cover for the track. More details [here](/en-us/covers-and-booklets/?id=Embedded-covers).
+- `Cover` — embedded cover for the track. More details [here](/en-us/covers-and-booklets/?id=Embedded-covers).
 
 A typical file with the main tags filled looks like this:
 ![Example 1](example1.png)
-**Note:** in Mp3tag, the ```Date``` tag is displayed as ```YEAR```.
+**Note:** in Mp3tag, the `Date` tag is displayed as `YEAR`.
 
 ### Extended Tags
 
@@ -49,30 +49,30 @@ A typical file with the main tags filled looks like this:
 
 For subsequent tags, I also indicate whether they can be displayed and used for sorting in the audio players I use.
 
-- ```Composer``` — composer;  
+- `Composer` — composer;  
   **Display:** Poweramp (+), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (+), foobar2000 (+)
 
-- ```Genre``` — genres;  
+- `Genre` — genres;  
   **Display:** Poweramp (+), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (+), foobar2000 (+)
 
-- ```Lyrics``` — synchronized or unsynchronized song lyrics;  
+- `Lyrics` — synchronized or unsynchronized song lyrics;  
   **Display:** Poweramp (+), foobar2000 (+)  
   **Note:** instead of this tag, I use .lrc files, see [here](/en-us/lyrics/).
 
-- ```Original Date``` — original release date;  
-  **Format:** ```YYYY-MM-DD``` (or `YYYY` if the exact day and month are unknown)  
-  **Example:** this tag stores the album's original release date (for example, 1973), while the ```Date``` tag stores the year of a specific reissue or remaster (for example, 2011).  
+- `Original Date` — original release date;  
+  **Format:** `YYYY-MM-DD` (or `YYYY` if the exact day and month are unknown)  
+  **Example:** this tag stores the album's original release date (for example, 1973), while the `Date` tag stores the year of a specific reissue or remaster (for example, 2011).  
   **Note:** if the values of `Date` and `Original Date` are identical, I omit `Original Date`.  
   **Display:** Poweramp (-) ([discussion](https://forum.powerampapp.com/topic/28077-originaldate-tag-support/)), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
-- ```Producer``` — producer;  
+- `Producer` — producer;  
   **Display:** Poweramp (-) ([discussion](https://forum.powerampapp.com/topic/21511-producer-tag/)), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
-- ```Style``` — subgenres;  
+- `Style` — subgenres;  
   **Display:** Poweramp (-), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
@@ -83,94 +83,94 @@ How it will look like:
 
 **Specialized tags** are optional and used only when relevant. Some may be filled automatically by taggers.
 
-- ```Album Artist Sort``` — controls how the album artist is sorted, for example by surname or while ignoring leading articles;  
-  **Example:** ```Beatles, The``` instead of ```The Beatles```, so they will sort by B rather than T.  
+- `Album Artist Sort` — controls how the album artist is sorted, for example by surname or while ignoring leading articles;  
+  **Example:** `Beatles, The` instead of `The Beatles`, so they will sort by B rather than T.  
   **Sorting by this tag:** Poweramp (-) (there is another setting to ignore articles), foobar2000 (+) (pattern setup required)
 
-- ```Artist Sort``` — similar to the previous tag, but controls how the track artist is sorted;  
+- `Artist Sort` — similar to the previous tag, but controls how the track artist is sorted;  
   **Sorting by this tag:** Poweramp (-) (there is another setting to ignore articles), foobar2000 (+) (pattern setup required)
 
-- ```Barcode``` — a unique barcode for the music release, useful for identifying it across databases, digital stores, streaming services and other services;  
+- `Barcode` — a unique barcode for the music release, useful for identifying it across databases, digital stores, streaming services and other services;  
   **Display:** Poweramp (-), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
-- ```BPM``` — beats per minute;  
+- `BPM` — beats per minute;  
   **Display:** Poweramp (-) ([discussion](https://forum.powerampapp.com/topic/24384-sort-option-for-beats-per-minute-bpm/)), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
-- ```Catalog Number``` — a unique serial number of the music label's release, used to identify releases within the label's catalog;  
+- `Catalog Number` — a unique serial number of the music label's release, used to identify releases within the label's catalog;  
   **Display:** Poweramp (-), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
-- ```Comment``` — comment;  
+- `Comment` — comment;  
   **Display:** Poweramp (+), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (+), foobar2000 (+)  
   **Note:** I store the original name of the artist, track, and release in this tag if it is not initially Russian/English.  
-  **Structure:** ```[Original Artist Name] - [Original Track Title] ([Original Album Name])```  
-  **Example:** ```ヨルシカ - 思想犯 (盗作)```
+  **Structure:** `[Original Artist Name] - [Original Track Title] ([Original Album Name])`  
+  **Example:** `ヨルシカ - 思想犯 (盗作)`
 
-- ```Compilation``` — a flag indicating that a track is part of a compilation;  
+- `Compilation` — a flag indicating that a track is part of a compilation;  
   **Sorting by this tag:** Poweramp (-), foobar2000 (pattern setup required)
 
-- ```Copyright``` — copyright information for the release;  
-  **Example:** ```A Polydor Records Release / An Interscope Records Release in the USA; ℗ 2021 Lana Del Rey, under exclusive licence to Universal Music Operations Limited```.  
+- `Copyright` — copyright information for the release;  
+  **Example:** `A Polydor Records Release / An Interscope Records Release in the USA; ℗ 2021 Lana Del Rey, under exclusive licence to Universal Music Operations Limited`.  
   **Display:** Poweramp (-), foobar2000 (+)  
 
-- ```ISRC``` — a unique international code assigned to audio recording, useful for identifying it across databases, digital stores, streaming services and other services;  
+- `ISRC` — a unique international code assigned to audio recording, useful for identifying it across databases, digital stores, streaming services and other services;  
   **Display:** Poweramp (-), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
-- ```Grouping``` — a tag that provides an additional grouping level between the release and individual tracks;  
+- `Grouping` — a tag that provides an additional grouping level between the release and individual tracks;  
   **Example:**  
   Consider [this release](https://open.spotify.com/album/6eOuqhCfrTPp1H0YbQ9PmL); it contains two symphonies: No. 5 and No. 7.  
   ![Example with the Grouping tag](grouping.png)
-  If you add ```Symphony No. 5 in C Minor, Op. 67``` to ```Grouping``` tag for tracks 1-4 and ```Symphony No. 7 in A Major, Op. 92``` for tracks 5 onward, then track 1 will display a badge for Symphony No. 5 and track 5 will display a badge for Symphony No. 7 (if the audio player supports such display)  
+  If you add `Symphony No. 5 in C Minor, Op. 67` to `Grouping` tag for tracks 1-4 and `Symphony No. 7 in A Major, Op. 92` for tracks 5 onward, then track 1 will display a badge for Symphony No. 5 and track 5 will display a badge for Symphony No. 7 (if the audio player supports such display)  
   **Display:** Poweramp (-) ([discussion](https://forum.powerampapp.com/topic/28102-grouping-tag-support/)), foobar2000 (+) (pattern setup required)
 
-- ```Label``` — label;  
+- `Label` — label;  
   **Display:** Poweramp (-) ([discussion](https://forum.powerampapp.com/topic/28045-support-for-displaying-publisher-tag/)), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
-- ```Language``` — the language or languages spoken or sung in the track;  
+- `Language` — the language or languages spoken or sung in the track;  
   **Note:** this is a three-character language code. MusicBrainz [uses codes](https://picard-docs.musicbrainz.org/en/latest/variables/tags_advanced.html) from the [ISO 639-3](https://en.wikipedia.org/wiki/ISO_639-3) standard, and [ID3v2.3](https://id3.org/id3v2.3.0) and [ID3v2.4](https://id3.org/id3v2.4.0-frames) specifications refer to the [ISO 639-2](https://en.wikipedia.org/wiki/ISO_639-2) standard when it comes to the `TLAN` frame.  
-  **Examples:** ```eng```, ```rus```, ```jpn```, ```zxx``` (instrumental)  
+  **Examples:** `eng`, `rus`, `jpn`, `zxx` (instrumental)  
   **Display:** Poweramp (-), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
-- ```Media``` — source of the release;  
-  **Examples:** ```CD```, ```WEB```, ```SACD```, ```Vinyl```  
+- `Media` — source of the release;  
+  **Examples:** `CD`, `WEB`, `SACD`, `Vinyl`  
   **Display:** Poweramp (-), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
-- ```MusicBrainz IDs``` — unique identifiers from the MusicBrainz database;  
+- `MusicBrainz IDs` — unique identifiers from the MusicBrainz database;  
   **Specifically:**
-  - ```MusicBrainz Artist ID``` - multi-value tag containing the MBIDs for the track artists;
-  - ```MusicBrainz Recording ID``` - tag containing the MBID for the recording;
-  - ```MusicBrainz Release Artist ID``` - multi-value tag containing the MBIDs for the release artists;
-  - ```MusicBrainz Release Group ID``` - tag containing the MBID for the release group;
-  - ```MusicBrainz Release ID``` - tag containing the MBID for the release;
-  - ```MusicBrainz Track ID``` - tag containing the MBID for the track;
-  - ```MusicBrainz Work ID``` - tag containing the MBID for the Work if a related work exists.
+  - `MusicBrainz Artist ID` - multi-value tag containing the MBIDs for the track artists;
+  - `MusicBrainz Recording ID` - tag containing the MBID for the recording;
+  - `MusicBrainz Release Artist ID` - multi-value tag containing the MBIDs for the release artists;
+  - `MusicBrainz Release Group ID` - tag containing the MBID for the release group;
+  - `MusicBrainz Release ID` - tag containing the MBID for the release;
+  - `MusicBrainz Track ID` - tag containing the MBID for the track;
+  - `MusicBrainz Work ID` - tag containing the MBID for the Work if a related work exists.
   **Display:** Poweramp (-), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)  
   **Note:** read more [here](https://musicbrainz.org/doc/MusicBrainz_Identifier), [here](https://picard-docs.musicbrainz.org/en/latest/variables/tags_basic.html) and [here](https://picard-docs.musicbrainz.org/en/latest/appendices/tag_mapping.html).  
   These tags are also useful for linking with media-servers (Navidrome, Plex), scrobblers (ListenBrainz, self-hosted scrobblers), and the MusicBrainz database itself.
 
-- ```Performer``` — tags containing performer names together with their instruments or roles;  
-  **Examples:** ```Yuri Kaplan (Vocals, Electric Guitar)```, ```Vladimir Yakovlev (Drums)```, ```Konstantin Pyzhov (Electric Guitar)```, ```Stanislav Murashko (Bass Guitar)```  
+- `Performer` — tags containing performer names together with their instruments or roles;  
+  **Examples:** `Yuri Kaplan (Vocals, Electric Guitar)`, `Vladimir Yakovlev (Drums)`, `Konstantin Pyzhov (Electric Guitar)`, `Stanislav Murashko (Bass Guitar)`  
   **Display:** Poweramp (-), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
-- ```Remixer``` — the person responsible for remixing the track;  
+- `Remixer` — the person responsible for remixing the track;  
   **Display:** Poweramp (-), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
-- ``ReplayGain Tags`` - tags that are responsible for ReplayGain;  
+- `ReplayGain Tags` - tags that are responsible for ReplayGain;  
   **Specifically:**
-  - ``ReplayGain Track Gain`` - tag that contains the volume correction value (in dB) for one specific track to match the 89 dB SPL level;
-  - ``ReplayGain Track Peak`` - tag that contains the maximum peak volume level within one track. If gain exceeds the maximum allowable digital level (0 dBFS), then clipping will occur;
-  - ``ReplayGain Album Gain`` - tag that contains the volume correction value (in dB) for the entire album. This equalizes the overall level of the album relative to 89 dB SPL, but at the same time completely preserves contrast between quiet and loud songs inside the album;
-  - ``ReplayGain Album Peak`` - tag that contains the maximum peak volume level among all album tracks.
+  - `ReplayGain Track Gain` - tag that contains the volume correction value (in dB) for one specific track to match the 89 dB SPL level;
+  - `ReplayGain Track Peak` - tag that contains the maximum peak volume level within one track. If gain exceeds the maximum allowable digital level (0 dBFS), then clipping will occur;
+  - `ReplayGain Album Gain` - tag that contains the volume correction value (in dB) for the entire album. This equalizes the overall level of the album relative to 89 dB SPL, but at the same time completely preserves contrast between quiet and loud songs inside the album;
+  - `ReplayGain Album Peak` - tag that contains the maximum peak volume level among all album tracks.
 
   **Working with ReplayGain:** Poweramp (+), foobar2000 (+)  
   **Note:** read more [here](https://ru.wikipedia.org/wiki/ReplayGain ) and [here](https://wiki.hydrogenaudio.org/index.php/ReplayGain).
@@ -190,56 +190,56 @@ The final result looks like this:
 
 ---
 
-- ``Artists`` - multi-value tag that stores a list of several artists;  
+- `Artists` - multi-value tag that stores a list of several artists;  
   **Note:** This tag is generated and filled automatically by MusicBrainz Picard if the relevant information is available in the MusicBrainz database. More details [here](https://picard-docs.musicbrainz.org/en/latest/variables/tags_basic.html).
 
-- ```Encoder``` — the encoder program/library that created/re-encoded the audio file;
+- `Encoder` — the encoder program/library that created/re-encoded the audio file;
 
-- ```Encoded By``` — the person or organization responsible for encoding or re-encoding the audio file;
+- `Encoded By` — the person or organization responsible for encoding or re-encoding the audio file;
 
-- ```First Played``` — the date when the person first played the track;  
-  **Format:** usually ```YYYY-MM-DD HH:MM:SS```
+- `First Played` — the date when the person first played the track;  
+  **Format:** usually `YYYY-MM-DD HH:MM:SS`
 
-- ```Last Played``` — the date when the person last played the track;  
-  **Format:** usually ```YYYY-MM-DD HH:MM:SS```
+- `Last Played` — the date when the person last played the track;  
+  **Format:** usually `YYYY-MM-DD HH:MM:SS`
 
-- ```Mixer``` — the person responsible for mixing the audio recording;
+- `Mixer` — the person responsible for mixing the audio recording;
 
-- ```Mood``` — the mood of the track;  
+- `Mood` — the mood of the track;  
   **Note:** a decent mood methodology is provided [here](https://sites.tufts.edu/eeseniordesignhandbook/2015/music-mood-classification/).
 
-- ```Play Count``` — number of times the track has been played;
+- `Play Count` — number of times the track has been played;
 
-- ```Original Year``` — original release year of the album;  
-  **Format:** ```YYYY```
+- `Original Year` — original release year of the album;  
+  **Format:** `YYYY`
 
-- ```Rating``` — rating of the track;
+- `Rating` — rating of the track;
 
-- ```Recording Copyright``` — copyright information for a specific recording;
+- `Recording Copyright` — copyright information for a specific recording;
 
-- ```Release Country``` — the country associated with the release;  
-  **Examples:** ```US```, ```JP```, ```GB```, ```XW``` (worldwide).
+- `Release Country` — the country associated with the release;  
+  **Examples:** `US`, `JP`, `GB`, `XW` (worldwide).
 
-- ```Release Status``` — the release's distribution status;  
-  **Examples**: ``official``, ``bootleg``.
+- `Release Status` — the release's distribution status;  
+  **Examples**: `official`, `bootleg`.
 
-- ```Release Type``` — the release's classification;  
-  **Examples**: ```album```, ```single```, ```ep```, ```remix```.
+- `Release Type` — the release's classification;  
+  **Examples**: `album`, `single`, `ep`, `remix`.
 
-- ```Script``` — the script used to write the release's tracklist;  
+- `Script` — the script used to write the release's tracklist;  
   **Note:** script here means set of graphic characters used for the written form of one or more languages, more details [here](https://en.wikipedia.org/wiki/ISO_15924).  
-  **Examples:** ```Latn```, ```Jpan```, ```Cyrl```.
+  **Examples:** `Latn`, `Jpan`, `Cyrl`.
 
-- ```Subtitle``` — track subtitle;  
+- `Subtitle` — track subtitle;  
   **Example:** if `Subtitle` tag contains `Acoustic version`, `Title` tag can remain `Track title`.  
   Without a separate `Subtitle` tag, the title would instead be stored as `Track title (Acoustic version)`.
 
-- ```URL``` — a link to anything (source of the track, streaming service, and so on);
+- `URL` — a link to anything (source of the track, streaming service, and so on);
 
-- ```Work``` - a distinct intellectual or artistic creation, which can be expressed in the form of one or more audio recordings. A work does not have to be musical. For example, a work could be a novel, play, poem or essay, later recorded as an audiobook;  
+- `Work` - a distinct intellectual or artistic creation, which can be expressed in the form of one or more audio recordings. A work does not have to be musical. For example, a work could be a novel, play, poem or essay, later recorded as an audiobook;  
   **Note:** more details [here](https://musicbrainz.org/doc/Work).  
 
-- ```Writer``` — songwriter (the person who wrote the words for the song).
+- `Writer` — songwriter (the person who wrote the words for the song).
 
 ## Tag Mapping Tables
 
@@ -256,7 +256,7 @@ The final result looks like this:
 **Format-specific notes:**
 
 - iTunes MP4:  
-  Atoms beginning with ```----``` are stored as freeform metadata.
+  Atoms beginning with `----` are stored as freeform metadata.
 
 - ID3v2.3 (MP3):  
   In practice, taggers (MusicBrainz Picard, Mp3tag) write the full date (`YYYY-MM-DD`) into the `TYER` frame, without using the `TDAT` frame.  
