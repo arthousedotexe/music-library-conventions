@@ -161,6 +161,11 @@ How it will look like:
   **Display:** Poweramp (-), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
+- `Release Country` — the country associated with the release;  
+  **Examples:** `US`, `JP`, `GB`, `XW` (worldwide).  
+  **Display:** Poweramp (-), foobar2000 (+)  
+  **Sorting by this tag:** Poweramp (-), foobar2000 (+)
+
 - `Remixer` — the person responsible for remixing the track;  
   **Display:** Poweramp (-), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
@@ -216,9 +221,6 @@ The final result looks like this:
 - `Rating` — rating of the track;
 
 - `Recording Copyright` — copyright information for a specific recording;
-
-- `Release Country` — the country associated with the release;  
-  **Examples:** `US`, `JP`, `GB`, `XW` (worldwide).
 
 - `Release Status` — the release's distribution status;  
   **Examples**: `official`, `bootleg`.
@@ -587,6 +589,14 @@ The final result looks like this:
       <td><code>PERFORMER</code></td>
       <td><code>----:com.apple.iTunes:PERFORMER</code></td>
       <td colspan="2"><code>TXXX_PERFORMER</code></td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold">Release Country</td>
+      <td>-</td>
+      <td>+</td>
+      <td><code>RELEASECOUNTRY</code></td>
+      <td><code>----:com.apple.iTunes:RELEASECOUNTRY</code></td>
+      <td colspan="2"><code>TXXX_RELEASECOUNTRY</code></td>
     </tr>
     <tr>
       <td style="font-weight: bold">Remixer</td>

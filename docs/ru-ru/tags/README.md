@@ -161,6 +161,11 @@
   **Отображение:** Poweramp (-), foobar2000 (+)  
   **Сортировка по данному тегу:** Poweramp (-), foobar2000 (+)
 
+- `Release Country` — страна, в которой был издан релиз;  
+  **Примеры:** `US`, `JP`, `GB`, `XW` (весь мир).  
+  **Отображение:** Poweramp (-), foobar2000 (+)  
+  **Сортировка по данному тегу:** Poweramp (-), foobar2000 (+)
+
 - `Remixer` - человек, ответственный за ремикс трека;  
   **Отображение:** Poweramp (-), foobar2000 (+)  
   **Сортировка по данному тегу:** Poweramp (-), foobar2000 (+)
@@ -216,9 +221,6 @@
 - `Rating` - рейтинг трека;
 
 - `Recording Copyright` - информация об авторском праве на конкретную аудиозапись;  
-
-- `Release Country` — страна, в которой был издан релиз;  
-  **Примеры:** `US`, `JP`, `GB`, `XW` (весь мир).
 
 - `Release Status` — статус дистрибуции и распространения релиза;  
   **Примеры**: `official`, `bootleg`.
@@ -587,6 +589,14 @@
       <td><code>PERFORMER</code></td>
       <td><code>----:com.apple.iTunes:PERFORMER</code></td>
       <td colspan="2"><code>TXXX_PERFORMER</code></td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold">Release Country</td>
+      <td>-</td>
+      <td>+</td>
+      <td><code>RELEASECOUNTRY</code></td>
+      <td><code>----:com.apple.iTunes:RELEASECOUNTRY</code></td>
+      <td colspan="2"><code>TXXX_RELEASECOUNTRY</code></td>
     </tr>
     <tr>
       <td style="font-weight: bold">Remixer</td>

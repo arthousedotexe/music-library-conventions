@@ -11,7 +11,7 @@ For any suggestions, ideas, improvements, issues, questions, general feedback or
 
 P.S. I use the following audio players: foobar2000 (PC) and Poweramp (Android). Some things mentioned here are based on the features and limitations of these audio players.
 
-[Changelog](CHANGELOG_EN)
+[Changelog](changelog_en)
 
 ---
 
@@ -27,4 +27,4 @@ P.S. I use the following audio players: foobar2000 (PC) and Poweramp (Android). 
 
 P.S. Я использую следующие плееры: foobar2000 (ПК) и Poweramp (Андроид). Некоторые вещи будут сказаны здесь, основываясь на функционале и возможностях этих плееров.
 
-[История изменений](CHANGELOG_RU)
+[История изменений](changelog_ru)

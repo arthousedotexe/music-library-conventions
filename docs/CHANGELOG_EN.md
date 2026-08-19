@@ -2,6 +2,14 @@
 
 # Changelog <!-- {docsify-ignore-all} -->
 
+## 2026-08-19
+
+### Changed
+
+- Moved the `Release Country` tag from Excluded Tags to Specialized Tags in the [Tags](/en-us/tags/) section.
+
+---
+
 ## Second Edition - 2026-08-18
 
 ### Changed
