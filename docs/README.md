@@ -28,3 +28,8 @@ P.S. I use the following audio players: foobar2000 (PC) and Poweramp (Android). 
 P.S. Я использую следующие плееры: foobar2000 (ПК) и Poweramp (Андроид). Некоторые вещи будут сказаны здесь, основываясь на функционале и возможностях этих плееров.
 
 [История изменений](changelog_ru)
+
+---
+
+Content is dedicated to the public domain under the [CC0 1.0 Universal license](https://creativecommons.org/publicdomain/zero/1.0/).  
+No rights reserved.
