@@ -63,7 +63,7 @@ For subsequent tags, I also indicate whether they can be displayed and used for 
 
 - `Lyrics` — synchronized or unsynchronized song lyrics;  
   **Display:** Poweramp (+), foobar2000 (+)  
-  **Note:** instead of this tag, I use .lrc files, see [here](/en-us/lyrics/).
+  **Note:** instead of this tag, I use `.lrc` files, see [here](/en-us/lyrics/).
 
 - `Original Date` — original release date;  
   **Format:** `YYYY-MM-DD` (or `YYYY` if the exact day and month are unknown)  

@@ -30,7 +30,7 @@ For example:
 - `1.07. It Was a Good Day.flac`
 - `2.01. Ride.flac`
 
-A corresponding lyrics files use the same base filename with the `.lrc` extension:
+The corresponding lyrics files use the same base filename with the `.lrc` extension:
 
 - `1.07. It Was a Good Day.lrc`
 - `2.01. Ride.lrc`

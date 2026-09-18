@@ -2,6 +2,14 @@
 
 # Changelog <!-- {docsify-ignore-all} -->
 
+## 2026-09-18
+
+### Fixed
+
+- Minor document corrections.
+
+---
+
 ## 2026-09-15
 
 ### Changed
