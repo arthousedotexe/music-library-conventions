@@ -8,7 +8,7 @@ For example: next to a song named `1.03. Evening calm,Somewhere,Fireworks.flac` 
 
 `UTF-8` encoding is used for all lyrics files.
 
-An lyrics file consists of two main parts:
+A lyrics file consists of two main parts:
 
 - ID Tags at the beginning of the file, enclosed in square brackets;
 - Lyrics content.
