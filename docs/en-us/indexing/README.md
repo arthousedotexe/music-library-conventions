@@ -6,15 +6,15 @@ The index file (`index.txt`) is located in the same folder as the audio files. T
 It contains brief information about the release, specifically:
 
 - Album title (`Album` tag);  
-  **Note:** Release type name may vary depending on the type of release: `Album`, `Compilation`, `Album/ Soundtrack`, etc.
+  **Note:** Release type name may vary depending on the type of release: `Album`, `Compilation`, `Album/ Soundtrack`, `Single`, etc.
   **For example:** `**Album / Soundtrack:** Persona 3 Reload (Original Soundtrack)`, `**Album:** Stories That Last Through the Sleepless Nights`.
 
-- Alternative release titles and translations - when applicable;  
+- Alternative release titles and translations, when applicable;  
   **For example:** `エルマ, Eruma`
 
 - Album artist (`Album Artist` tag);
 
-- Other artist aliases, romanizations, translated aliases — when applicable;  
+- Other artist aliases, romanizations, translated aliases, when applicable;  
   **For example:** `Lana Del Ray, Lizzy Grant, Elizabeth Grant, May Jailer, Sparkle Jump Rope Queen`
 
 - Release year (year from `Date` tag);
@@ -38,15 +38,15 @@ It contains brief information about the release, specifically:
     CD [FLAC/16-bit/44.1 kHz]: track 15
     ```
 
-- Extras (booklets, covers, lyrics, other files) — when applicable;
+- Extras (booklets, covers, lyrics, other files), when applicable;
 
-- Tracklist;  
+- Tracklist, when applicable;  
   **Note №1:** if the release has one disc, track numbers omit the disc number while keeping the leading zero, for example: `01`, `09`.  
   If the release has multiple discs, the disc number is included, for example: `1.02`, `2.13`.  
   **Note №2:** if track artist differs from album artist (for example, in compilations) or is a guest artist, this is indicated in tracklist.  
   For example: `05. Shihori - Bloody Night`, `11. For Free (feat. Zella Day & Weyes Blood)`.
 
-- Additional notes — when applicable;
+- Additional notes, when applicable;
 
 - Search hashtags:
   - Source;
@@ -61,6 +61,8 @@ It contains brief information about the release, specifically:
   - Other hashtags.
 
 Examples of indexing:
+
+- Album:
 
 ```text
 💿 **Album:** Nininshou
@@ -79,15 +81,15 @@ WEB [FLAC/24-bit/96 kHz]
 External cover, lyrics, additional covers
 
 📝 **Tracklist:**
-1.  Shouchou, Yuubin-uke
-2.  Kumo ni Naru
-3.  Hana mo Zawameku
-4.  Mashou
-5.  Play Sick
-6.  Post Haru
-7.  Taiyou
-8.  Haru
-9.  Wasurete Kudasai
+01.  Shouchou, Yuubin-uke
+02.  Kumo ni Naru
+03.  Hana mo Zawameku
+04.  Mashou
+05.  Play Sick
+06.  Post Haru
+07.  Taiyou
+08.  Haru
+09.  Wasurete Kudasai
 10. Shura
 11. Kaseijin
 12. Rubato
@@ -106,7 +108,7 @@ External cover, lyrics, additional covers
 #web, #2026y, #2020s, #pop, #jazz, #jazzpop, #indiepop, #jpop, #femalevocalist, #indie, #japanese
 ```
 
----
+- Album / compilation:
 
 ```text
 💿 **Album / Compilation:** TOHO EUROBEAT VOL.4 PERFECT CHERRY BLOSSOM
@@ -123,17 +125,37 @@ CD [FLAC/16-bit/44.1 kHz]
 External cover, lyrics, additional covers, booklet, .cue and .log files
 
 📝 **Tracklist:**
-01. Honeypocket - Zenmai Koi Dokei (T.E.B Summer Mix)
-02. Ranko - Dreamin' Girl
-03. Aniroku!, Mao Devil - Break into the Dark
-04. Odyssey - Adequate
-05. Shihori - Bloody Night
-06. (V)・∀・(V) - Anything for You
-07. Odyssey, The DNA Team - FINAL BREATH
-08. Nagisa, Tetsuco - Wish Upon the Sky
-09. 3L - Leave My Key
+01.  Honeypocket - Zenmai Koi Dokei (T.E.B Summer Mix)
+02.  Ranko - Dreamin' Girl
+03.  Aniroku!, Mao Devil - Break into the Dark
+04.  Odyssey - Adequate
+05.  Shihori - Bloody Night
+06.  (V)・∀・(V) - Anything for You
+07.  Odyssey, The DNA Team - FINAL BREATH
+08.  Nagisa, Tetsuco - Wish Upon the Sky
+09.  3L - Leave My Key
 10. AXEL.K - Get it Done
 
 📌 **Tags:**
-#web, #2011y, #2010s, #electronic, #doujin, #eurobeat, #touhou, #femalevocalist, #malevocalist, #english, #japanese
+#cd, #2011y, #2010s, #electronic, #doujin, #eurobeat, #touhou, #femalevocalist, #malevocalist, #english, #japanese
+```
+
+- Single:
+
+```text
+💿 **Single:** ''''''
+👤 **Artist:** x0o0x_
+📅 **Release year:** 2021
+🎺 **Genre:** Pop
+🎺 **Style:** J-Pop
+🕰 **Total duration:** 2:32
+
+🎧 **Quality:**
+WEB [FLAC/24-bit/44.1 kHz]
+
+📦 **Extra:**
+External cover, lyrics, additional covers
+
+📌 **Tags:**
+#web, #2021y, #2020s, #pop, #jpop, #femalevocalist, #indie, #japanese
 ```

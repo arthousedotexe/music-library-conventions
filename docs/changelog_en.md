@@ -2,13 +2,21 @@
 
 # Changelog <!-- {docsify-ignore-all} -->
 
+## 2026-09-20
+
+### Changed
+
+- Improved [Indexing](/en-us/indexing/) section.
+
+---
+
 ## 2026-09-19
 
 ### Added
 
 - Added a mention `.cue` and `.log` files in the [Library structure](/en-us/library-structure/) section.
 
-### Fixed
+### Changed
 
 - Improved [Indexing](/en-us/indexing/) section.
 
