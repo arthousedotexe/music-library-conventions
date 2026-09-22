@@ -93,8 +93,12 @@
 
       plugins: [
         function pageFooter(hook, vm) {
-          /* html syntax */
-          const footer = `
+          hook.afterEach(function (html) {
+            // get current path and check it if we are in 'ru-ru' dir
+            const currentPath = vm.route ? vm.route.path : window.location.hash;
+            const isRU = currentPath.includes('/ru-ru/');
+
+            const footerEN = `
             <hr/>
             <footer>
               <span>Content is dedicated to the public domain under the <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">CC0 1.0 Universal license</a>.</span><br>
@@ -103,8 +107,16 @@
             </footer>
           `;
 
-          hook.afterEach(html => {
-            return html + footer;
+            const footerRU = `
+              <hr/>
+              <footer>
+                <span>Контент передан в общественное достояние на условиях лицензии <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.ru" target="_blank">CC0 1.0 Universal license</a>.</span><br>
+                <span>Никаких авторских прав не сохраняется.</span><br>
+                <span><a href="https://arthousedotexe.github.io/music-library-conventions/#/">https://arthousedotexe.github.io/music-library-conventions/#/</a></span>
+              </footer>
+            `;
+
+            return html + (isRU ? footerRU : footerEN);
           });
         },
       ],
