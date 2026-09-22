@@ -90,6 +90,24 @@
         },
         depth: 2,
       },
+
+      plugins: [
+        function pageFooter(hook, vm) {
+          /* html syntax */
+          const footer = `
+            <hr/>
+            <footer>
+              <span>Content is dedicated to the public domain under the <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">CC0 1.0 Universal license</a>.</span><br>
+              <span>No rights reserved.</span><br>
+              <span><a href="https://arthousedotexe.github.io/music-library-conventions/#/">https://arthousedotexe.github.io/music-library-conventions/#/</a></span>
+            </footer>
+          `;
+
+          hook.afterEach(html => {
+            return html + footer;
+          });
+        },
+      ],
     }
   </script>
 

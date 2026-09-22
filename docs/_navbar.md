@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041 -->
-- Язык
+- Language
 
   - [:gb: EN](/)
   - [:ru: RU](/ru-ru/)
