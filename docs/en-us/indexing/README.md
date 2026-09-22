@@ -6,15 +6,15 @@ The index file (`index.txt`) is located in the same folder as the audio files. T
 It contains brief information about the release, specifically:
 
 - Album title (`Album` tag);  
-  **Note:** Release type name may vary depending on the type of release: `Album`, `Compilation`, `Album/ Soundtrack`, `Single`, etc.
-  **For example:** `**Album / Soundtrack:** Persona 3 Reload (Original Soundtrack)`, `**Album:** Stories That Last Through the Sleepless Nights`.
+  **Note:** Release type name may vary depending on the type of release: `Album`, `Compilation`, `Album/ Soundtrack`, `Single`, etc.  
+  **For example:** `**Album / Soundtrack:** Persona 3 Reload: Original Soundtrack`, `**Album:** Stories That Last Through the Sleepless Nights`.
 
-- Alternative release titles and translations, when applicable;  
+- Alternative release titles, transliterations and translations, when applicable;  
   **For example:** `エルマ, Eruma`
 
 - Album artist (`Album Artist` tag);
 
-- Other artist aliases, romanizations, translated aliases, when applicable;  
+- Artist aliases, transliterations and translations, when applicable;  
   **For example:** `Lana Del Ray, Lizzy Grant, Elizabeth Grant, May Jailer, Sparkle Jump Rope Queen`
 
 - Release year (year from `Date` tag);

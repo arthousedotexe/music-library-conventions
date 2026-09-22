@@ -4,15 +4,15 @@
 В нём содержится краткая информация о релизе, а именно:
 
 - Название релиза (тег `Album`);  
-  **Примечание:** название типа релиза может изменяться в зависимости от типа релиза: `Album`, `Compilation`, `Album / Soundtrack`, `Single` и так далее.
-  **Например:** `**Album / Soundtrack:** Persona 3 Reload (Original Soundtrack)`, `**Album:** Stories That Last Through the Sleepless Nights`.
+  **Примечание:** название типа релиза может изменяться в зависимости от типа релиза: `Album`, `Compilation`, `Album / Soundtrack`, `Single` и так далее.  
+  **Например:** `**Album / Soundtrack:** Persona 3 Reload: Original Soundtrack`, `**Album:** Stories That Last Through the Sleepless Nights`.
 
-- Альтернативные названия, романизированные формы, переведенные названия релиза - при необходимости;  
+- Альтернативные названия, транслитерации, переведенные названия релиза - при необходимости;  
   **Например:** `エルマ, Eruma`
 
 - Исполнитель альбома (тег `Album Artist`);
 
-- Другие псевдонимы исполнителя, романизированные формы, переведенные псевдонимы - при необходимости;  
+- Псевдонимы исполнителя, транслитерации, переведенные псевдонимы - при необходимости;  
   **Например:** `Lana Del Ray, Lizzy Grant, Elizabeth Grant, May Jailer, Sparkle Jump Rope Queen`
 
 - Год выхода релиза (год из тега `Date`);

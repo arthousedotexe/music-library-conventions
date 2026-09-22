@@ -35,16 +35,14 @@ The corresponding lyrics files use the same base filename with the `.lrc` extens
 - `1.07. It Was a Good Day.lrc`
 - `2.01. Ride.lrc`
 
-Forbidden characters in names:
+I use the original names of artists, releases and tracks and do not translate or transliterate them, as this may lead to a loss of nuances and errors.
+
+Forbidden characters in file names:
 
 - Characters that are invalid in Windows: `/\\:*?"<>|`;
 - ASCII control characters;
 - Windows-reserved device names;
 - Non-breaking spaces.
-
-For track titles, I use English and Russian titles. If a track has a title in another language, such as Japanese, I use either a romanized form or an English translation, with romanization preferred where practical.  
-For example, a track titled `心に穴が空いた` will be named either `Kokoro ni Ana ga Aita` or `Hole In The Heart`.  
-This makes tracks easier to find.
 
 ## Album Structure
 
