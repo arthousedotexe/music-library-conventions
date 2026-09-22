@@ -8,14 +8,14 @@ When converting from other lossless formats (`ALAC`, `WAV`) to `FLAC`, I preserv
 
 If I was not able to obtain a release in lossless format, then I look for the highest-quality lossy version I can obtain, taking both the codec and bitrate into account.
 
-When transferring lossless releases to devices with a small amount of memory (for example, a phone) they are converted to the `Opus` codec. Used encoder: [libopus 1.6.1](https://opus-codec.org/release/stable/2026/01/14/libopus-1_6_1.html ), selected bitrate: `192 kbps VBR`.  
+When transferring lossless releases to devices with a small amount of memory (for example, a phone) they are converted to the `Opus` codec. Used encoder: [libopus 1.6.1](https://opus-codec.org/release/stable/2026/01/14/libopus-1_6_1.html), selected bitrate: `192 kbps VBR`.  
 Lossy releases are not converted when transferred to devices.
 
 ## Checksums
 
-I use `MD5` checksums only for `FLAC`, because they are already built into it for unencoded audio data. They are stored in metadata in the `STREAMINFO` block (more details [here](https://www.rfc-editor.org/rfc/rfc9639.html#name-streaminfo)) and can therefore be used to verify the integrity of unencoded audio independently of metadata changes.  
+I use `MD5` checksums only for `FLAC`, because they are already built into it for unencoded audio data. They are stored in metadata in the `STREAMINFO` block (for more details, see [FLAC specification (RFC 9639, 8.2. Streaminfo section)](https://www.rfc-editor.org/rfc/rfc9639.html#name-streaminfo)) and can therefore be used to verify the integrity of unencoded audio independently of metadata changes.  
 I convert other lossless formats to FLAC, so they are not discussed here.
 
-I do not use audio stream checksums for lossy formats. They are non-deterministic because of compiler differences, architectures, codec implementations (for example, `Opus` has fixed-point and floating-point implementations, more details [here](https://github.com/xiph/opus/blob/main/README) in the Portability notes section), decoders, conversion settings, and other variables. Thus, decoded PCM output is not necessarily bit-identical each time, which makes the integrity check meaningless.
+I do not use audio stream checksums for lossy formats. They are non-deterministic because of compiler differences, architectures, codec implementations (for example, `Opus` has fixed-point and floating-point implementations, for more details, see [Opus repository README on Github](https://github.com/xiph/opus/blob/main/README) in the Portability notes section), decoders, conversion settings, and other variables. Thus, decoded PCM output is not necessarily bit-identical each time, which makes the integrity check meaningless.
 
 I also do not use whole-file checksums, because changes to metadata, embedded cover, tag padding, or other non-audio data would change this checksum even if the audio itself remained identical.

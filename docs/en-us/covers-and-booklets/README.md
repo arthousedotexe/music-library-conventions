@@ -35,7 +35,7 @@ Consider the following example:
 3. Thus the single cover is lost, which is not good, so I save it separately and add it to the covers folder.
 
 Additional covers can also come from other places, for example, unreleased materials, scans, and so on.  
-A fun example can be seen [here](https://www.reddit.com/r/lanadelrey/comments/14x4amo/did_you_know_that_theres_a_tunnel_under_ocean/); this album has six covers in total!
+A funny example is a [Reddit post](https://www.reddit.com/r/lanadelrey/comments/14x4amo/did_you_know_that_theres_a_tunnel_under_ocean/); this album has six covers in total!
 
 ---
 
@@ -46,7 +46,7 @@ For example: `cover-1-03.jpg`, `cover-1-09.png`.
 For example: `cover-3` means the third alternative album cover.
 
 **Other cover filenames:** `back-spine`, `medium`, `tray`, `back-spine-front` and so on.  
-More details can be read [here](https://musicbrainz.org/doc/Cover_Art/Types).  
+For more details, see [Cover Art Types guide on MusicBrainz](https://musicbrainz.org/doc/Cover_Art/Types).  
 I do not save obi strips, stickers, and certain other cover types.
 
 **Format:** `.png`, when the original cover is available in this format; otherwise `.jpg`. Conversion from `.jpg` to `.png` is not allowed.
@@ -79,7 +79,7 @@ I do not use or save animated covers for the following reasons:
 2. They take up a lot of space;
 3. Support for embedding and displaying animated covers is inconsistent across tag formats and audio players;
 4. As of August 2026, animated covers are not natively supported almost anywhere, specifically:  
-  **foobar2000** — not supported natively, requires a plugin ([discussion #1](https://www.reddit.com/r/musichoarder/comments/1aeucbn/comment/koa83a9/), [discussion #2](https://www.reddit.com/r/foobar2000/comments/1dpgijy/does_animated_cover_art_work/)):
+  **foobar2000** — not supported natively, requires a plugin ([discussion №1](https://www.reddit.com/r/musichoarder/comments/1aeucbn/comment/koa83a9/), [discussion №2](https://www.reddit.com/r/foobar2000/comments/1dpgijy/does_animated_cover_art_work/)):
   ![Discussion of animated covers on Reddit](foobar-animated.png)
   **Poweramp** — not supported ([discussion](https://forum.powerampapp.com/topic/29600-animated-song-cover/)):
   ![Discussion of animated covers on the Poweramp forum](poweramp-animated.png)

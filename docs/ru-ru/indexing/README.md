@@ -51,7 +51,7 @@
   - Год выхода релиза;  
     Примечание: сначала пишется год, а потом буква y, потому что теги, содержащие только числа, воспринимаются как цвета. Например: `2012y`.
   - Десятилетие, в котором вышел релиз, например: `2010s`, `1980s`;
-  - Жанры, которые нормализованы до хештегов путем приведения к нижнему регистру с удалением пробелов и дефисов, подробнее [здесь](https://support.discogs.com/hc/en-us/articles/360005055213-Database-Guidelines-9-Genres-Styles);
+  - Жанры, которые нормализованы до хештегов путем приведения к нижнему регистру с удалением пробелов и дефисов. Подробнее о жанрах и стилях смотрите в [руководстве Discogs](https://support.discogs.com/hc/en-us/articles/360005055213-Database-Guidelines-9-Genres-Styles);
   - Поджанры, которые нормализованы до хештегов путем приведения к нижнему регистру с удалением пробелов и дефисов;  
   - Классификация вокала, например: `instrumental`, `femalevocalist`, `malevocalist`, `choir`;
   - Инди-хештег (`indie`);
@@ -79,15 +79,15 @@ WEB [FLAC/24-bit/96 kHz]
 External cover, lyrics, additional covers
 
 📝 **Tracklist:**
-01.  Shouchou, Yuubin-uke
-02.  Kumo ni Naru
-03.  Hana mo Zawameku
-04.  Mashou
-05.  Play Sick
-06.  Post Haru
-07.  Taiyou
-08.  Haru
-09.  Wasurete Kudasai
+1.  Shouchou, Yuubin-uke
+2.  Kumo ni Naru
+3.  Hana mo Zawameku
+4.  Mashou
+5.  Play Sick
+6.  Post Haru
+7.  Taiyou
+8.  Haru
+9.  Wasurete Kudasai
 10. Shura
 11. Kaseijin
 12. Rubato

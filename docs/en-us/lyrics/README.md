@@ -13,7 +13,7 @@ A lyrics file consists of two main parts:
 - ID Tags at the beginning of the file, enclosed in square brackets;
 - Lyrics content.
 
-More details about ID tags and lyrics files can be read [here](https://en.wikipedia.org/wiki/LRC_(file_format)).
+More details about ID tags and lyrics files can be read on [Wikipedia article](https://en.wikipedia.org/wiki/LRC_(file_format)).
 
 ## ID Tags
 

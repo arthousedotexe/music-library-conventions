@@ -19,13 +19,13 @@ For example, `Album Artist` corresponds to `ALBUMARTIST` tag in **Vorbis Comment
 
 - `Artist` — track artist or artists;  
   **Note:** if there are several artists on the track, then characters ``\\`` are used as a separator between them.  
-  In [Mp3tag](https://www.mp3tag.de/en/) program, multiple values are displayed using `\\`. The `\\` separator itself is not stored in the tag field.  
+  In Mp3tag program, multiple values are displayed using `\\`. The `\\` separator itself is not stored in the tag field.  
   I do not use the following separators for artists: ``feat.``, ``&``, ``,``, ``;``, as well as any others.  
   **Examples:** `Lana Del Rey\\Zella Day\\Weyes Blood`, `Zachz Winner\\Frozy\\joyful`
 
 - `Date` — release date of a specific release;  
   **Format:** `YYYY-MM-DD` (or `YYYY` if the exact day and month are unknown)  
-  **ID3v2.3 Feature**: [ID3v2.3](https://id3.org/id3v2.3.0) specification limits the `TYER` frame to only year (`YYYY`), but taggers (MusicBrainz Picard, Mp3tag) write the full date directly into `TYER` without separating it from the `TDAT` frame, as prescribed by the standard.
+  **ID3v2.3 Feature**: [ID3v2.3](https://id3.org/id3v2.3.0) specification limits the `TYER` frame to only year (`YYYY`), but taggers write the full date directly into `TYER` without separating it from the `TDAT` frame, as prescribed by the standard.
 
 - `Disc Number` — disc number;
 
@@ -37,7 +37,7 @@ For example, `Album Artist` corresponds to `ALBUMARTIST` tag in **Vorbis Comment
 
 - `Track Total` — total number of tracks;
 
-- `Cover` — embedded cover for the track. More details [here](/en-us/covers-and-booklets/?id=Embedded-covers).
+- `Cover` — embedded cover for the track. More details see in [Covers and Booklets](/en-us/covers-and-booklets/?id=Embedded-covers) section.
 
 A typical file with the main tags filled looks like this:
 ![Example 1](example1.png)
@@ -63,7 +63,7 @@ For subsequent tags, I also indicate whether they can be displayed and used for 
 
 - `Lyrics` — synchronized or unsynchronized song lyrics;  
   **Display:** Poweramp (+), foobar2000 (+)  
-  **Note:** instead of this tag, I use `.lrc` files, see [here](/en-us/lyrics/).
+  **Note:** instead of this tag, I use `.lrc` files, see [Lyrics](/en-us/lyrics/) section.
 
 - `Original Date` — original release date;  
   **Format:** `YYYY-MM-DD` (or `YYYY` if the exact day and month are unknown)  
@@ -125,7 +125,7 @@ How it will look like:
 
 - `Grouping` — a tag that provides an additional grouping level between the release and individual tracks;  
   **Example:**  
-  Consider [this release](https://open.spotify.com/album/6eOuqhCfrTPp1H0YbQ9PmL); it contains two symphonies: No. 5 and No. 7.  
+  Consider [this release on Spotify](https://open.spotify.com/album/6eOuqhCfrTPp1H0YbQ9PmL); it contains two symphonies: No. 5 and No. 7.  
   ![Example with the Grouping tag](grouping.png)
   If you add `Symphony No. 5 in C Minor, Op. 67` to `Grouping` tag for tracks 1-4 and `Symphony No. 7 in A Major, Op. 92` for tracks 5 onward, then track 1 will display a badge for Symphony No. 5 and track 5 will display a badge for Symphony No. 7 (if the audio player supports such display)  
   **Display:** Poweramp (-) ([discussion](https://forum.powerampapp.com/topic/28102-grouping-tag-support/)), foobar2000 (+) (pattern setup required)
@@ -156,8 +156,8 @@ How it will look like:
   - `MusicBrainz Work ID` - tag containing the MBID for the Work if a related work exists.  
   **Display:** Poweramp (-), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)  
-  **Note:** read more [here](https://musicbrainz.org/doc/MusicBrainz_Identifier), [here](https://picard-docs.musicbrainz.org/en/latest/variables/tags_basic.html) and [here](https://picard-docs.musicbrainz.org/en/latest/appendices/tag_mapping.html).  
-  These tags are also useful for linking with media-servers (Navidrome, Plex), scrobblers (ListenBrainz, self-hosted scrobblers), and the MusicBrainz database itself.
+  **Note:** read more in MusicBrainz docs: [MusicBrainz Identifiers](https://musicbrainz.org/doc/MusicBrainz_Identifier), [Basic Tags](https://picard-docs.musicbrainz.org/en/latest/variables/tags_basic.html) and [Tag Mapping](https://picard-docs.musicbrainz.org/en/latest/appendices/tag_mapping.html).  
+  These tags are also useful for linking with media-servers ([Navidrome](https://www.navidrome.org/), [Jellyfin](https://jellyfin.org/)), scrobblers ([ListenBrainz](https://listenbrainz.org/), self-hosted scrobblers, for example, [Koito](https://github.com/gabehf/Koito)), and [MusicBrainz](https://musicbrainz.org/) database.
 
 - `Performer` — tags containing performer names together with their instruments or roles;  
   **Examples:** `Yuri Kaplan (Vocals, Electric Guitar)`, `Vladimir Yakovlev (Drums)`, `Konstantin Pyzhov (Electric Guitar)`, `Stanislav Murashko (Bass Guitar)`  
@@ -181,7 +181,7 @@ How it will look like:
   - `ReplayGain Album Peak` - tag that contains the maximum peak volume level among all album tracks.
 
   **Working with ReplayGain:** Poweramp (+), foobar2000 (+)  
-  **Note:** read more [here](https://ru.wikipedia.org/wiki/ReplayGain ) and [here](https://wiki.hydrogenaudio.org/index.php/ReplayGain).
+  **Note:** for more details, see the articles on [Wikipedia](https://ru.wikipedia.org/wiki/ReplayGain) and [Hydrogenaudio Knowledgebase](https://wiki.hydrogenaudio.org/index.php/ReplayGain).
 
 The final result looks like this:
 
@@ -199,7 +199,7 @@ The final result looks like this:
 ---
 
 - `Artists` - multi-value tag that stores a list of several artists;  
-  **Note:** This tag is generated and filled automatically by MusicBrainz Picard if the relevant information is available in the MusicBrainz database. More details [here](https://picard-docs.musicbrainz.org/en/latest/variables/tags_basic.html).
+  **Note:** This tag is generated and filled automatically by MusicBrainz Picard if the relevant information is available in the MusicBrainz database. More details see in [Basic Tags](https://picard-docs.musicbrainz.org/en/latest/variables/tags_basic.html) section in MusicBrainz docs.
 
 - `Encoder` — the encoder program/library that created/re-encoded the audio file;
 
@@ -218,7 +218,7 @@ The final result looks like this:
 - `Mixer` — the person responsible for mixing the audio recording;
 
 - `Mood` — the mood of the track;  
-  **Note:** a decent mood methodology is provided [here](https://sites.tufts.edu/eeseniordesignhandbook/2015/music-mood-classification/).
+  **Note:** a decent mood methodology is outlined in [Tufts University's Music Mood Classification guide](https://sites.tufts.edu/eeseniordesignhandbook/2015/music-mood-classification/).
 
 - `Play Count` — number of times the track has been played;
 
@@ -236,7 +236,7 @@ The final result looks like this:
   **Examples**: `album`, `single`, `ep`, `remix`.
 
 - `Script` — the script used to write the release's tracklist;  
-  **Note:** script here means set of graphic characters used for the written form of one or more languages, more details [here](https://en.wikipedia.org/wiki/ISO_15924).  
+  **Note:** script here means set of graphic characters used for the written form of one or more languages. For more details, see [ISO 15924 Wikipedia](https://en.wikipedia.org/wiki/ISO_15924) article.  
   **Examples:** `Latn`, `Jpan`, `Cyrl`.
 
 - `Subtitle` — track subtitle;  
@@ -246,7 +246,7 @@ The final result looks like this:
 - `URL` — a link to anything (source of the track, streaming service, and so on);
 
 - `Work` - a distinct intellectual or artistic creation, which can be expressed in the form of one or more audio recordings. A work does not have to be musical. For example, a work could be a novel, play, poem or essay, later recorded as an audiobook;  
-  **Note:** more details [here](https://musicbrainz.org/doc/Work).  
+  **Note:** for more details, see [MusicBrainz docs on Works](https://musicbrainz.org/doc/Work).  
 
 - `Writer` — the person who creates musical compositions or writes lyrics for songs, or both.
 
@@ -268,7 +268,7 @@ The final result looks like this:
   Atoms beginning with `----` are stored as freeform metadata.
 
 - ID3v2.3 (MP3):  
-  In practice, taggers (MusicBrainz Picard, Mp3tag) write the full date (`YYYY-MM-DD`) into the `TYER` frame, without using the `TDAT` frame.  
+  In practice, taggers write the full date (`YYYY-MM-DD`) into the `TYER` frame, without using the `TDAT` frame.  
   `TYER` is marked with an asterisk in the table.
 
 ### Main Tags Table

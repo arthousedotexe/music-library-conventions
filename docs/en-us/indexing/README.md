@@ -53,7 +53,7 @@ It contains brief information about the release, specifically:
   - Release year;  
     Note: the year comes first, followed by the letter y, because tags containing only numbers are interpreted as colors. For example: `2012y`.
   - The decade in which the release was released, for example: `2010s`, `1980s`;
-  - Genre names normalized for hashtags by converting them to lowercase and removing spaces and hyphens, see [here](https://support.discogs.com/hc/en-us/articles/360005055213-Database-Guidelines-9-Genres-Styles);
+  - Genre names normalized for hashtags by converting them to lowercase and removing spaces and hyphens. For more details, see [Discogs Database Guidelines (Genres & Styles)](https://support.discogs.com/hc/en-us/articles/360005055213-Database-Guidelines-9-Genres-Styles);
   - Subgenre names normalized for hashtags by converting them to lowercase and removing spaces and hyphens;
   - Vocal classification, for example: `instrumental`, `femalevocalist`, `malevocalist`, `choir`;
   - Indie hashtag (`indie`);
@@ -81,15 +81,15 @@ WEB [FLAC/24-bit/96 kHz]
 External cover, lyrics, additional covers
 
 📝 **Tracklist:**
-01.  Shouchou, Yuubin-uke
-02.  Kumo ni Naru
-03.  Hana mo Zawameku
-04.  Mashou
-05.  Play Sick
-06.  Post Haru
-07.  Taiyou
-08.  Haru
-09.  Wasurete Kudasai
+1.  Shouchou, Yuubin-uke
+2.  Kumo ni Naru
+3.  Hana mo Zawameku
+4.  Mashou
+5.  Play Sick
+6.  Post Haru
+7.  Taiyou
+8.  Haru
+9.  Wasurete Kudasai
 10. Shura
 11. Kaseijin
 12. Rubato
