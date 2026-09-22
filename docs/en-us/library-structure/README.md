@@ -17,6 +17,17 @@ For example:
 - `Music/Ice Cube/1992 - The Predator`
 - `Music/Lana Del Rey/2012 - Born to Die – The Paradise Edition (Special Version)`
 
+Forbidden characters in directory names:
+
+- Characters that are invalid in Windows: `/\\:*?"<>|`;
+- ASCII control characters;
+- Windows-reserved device names;
+- Non-breaking spaces.
+- The dot character `.`, because directory names cannot end with it on Windows;
+- Fancy Unicode characters that replace or resemble punctuation marks and any other characters from ASCII. For more details, see [MusicHoarders Wiki](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks).
+
+All forbidden characters in directory names are replaced with the underscore character `_`.
+
 ## File Naming
 
 Each track within an album directory follows this naming convention:
@@ -42,7 +53,10 @@ Forbidden characters in file names:
 - Characters that are invalid in Windows: `/\\:*?"<>|`;
 - ASCII control characters;
 - Windows-reserved device names;
-- Non-breaking spaces.
+- Non-breaking spaces;
+- Fancy Unicode characters that replace or resemble punctuation marks and any other characters from ASCII. For more details, see [MusicHoarders Wiki](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks).
+
+All forbidden characters in file names are replaced with the underscore character `_`.
 
 ## Album Structure
 

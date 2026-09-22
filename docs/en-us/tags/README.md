@@ -18,10 +18,9 @@ For example, `Album Artist` corresponds to `ALBUMARTIST` tag in **Vorbis Comment
 - `Album Artist` — album artist;
 
 - `Artist` — track artist or artists;  
-  **Note:** if there are several artists on the track, then characters ``\\`` are used as a separator between them.  
-  In Mp3tag program, multiple values are displayed using `\\`. The `\\` separator itself is not stored in the tag field.  
-  I do not use the following separators for artists: ``feat.``, ``&``, ``,``, ``;``, as well as any others.  
-  **Examples:** `Lana Del Rey\\Zella Day\\Weyes Blood`, `Zachz Winner\\Frozy\\joyful`
+  **Note:** this tag is a multi-valued tag.  
+  I do not use the following separators for artists: `feat.`, `&`, `,`, `;`, as well as any others.  
+  **Example in Vorbis Comment:** `ARTIST=Lana Del Rey; ARTIST=Zella Day; ARTIST=Weyes Blood`, `ARTIST=Zachz Winner; ARTIST=Frozy; ARTIST=joyful` (meaning three separate tag fields are used for three artists).
 
 - `Date` — release date of a specific release;  
   **Format:** `YYYY-MM-DD` (or `YYYY` if the exact day and month are unknown)  
