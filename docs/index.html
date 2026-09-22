@@ -21,10 +21,10 @@
       --blockquote-color: var(--color-text);
       --link-color: var(--theme-color);
       --link-color-hover: #E96900;
-      --link-underline-color-hover: #E96900;
       --content-max-width: 80%;
     }
 
+    /* responsive design */
     @media (min-width: 769px) {
       .markdown-section>*:not(table) {
         max-width: 75% !important;
@@ -40,7 +40,17 @@
     }
 
     .markdown-section a {
-      text-underline-offset: 4px;
+      text-decoration: none !important;
+    }
+
+    .sidebar a,
+    .app-nav a {
+      text-decoration: none !important;
+    }
+
+    .sidebar a:hover,
+    .app-nav a:hover {
+      color: var(--link-color-hover) !important;
     }
 
     .markdown-section img:not(.emoji) {
@@ -65,7 +75,7 @@
   </style>
 </head>
 
-<body class="sidebar-toggle-chevron sidebar-chevron-right">
+<body class="sidebar-toggle-chevron sidebar-chevron-right sidebar-group-box">
   <div id="app"></div>
 
   <!-- Configuration -->
@@ -99,13 +109,13 @@
             const isRU = currentPath.includes('/ru-ru/');
 
             const footerEN = `
-            <hr/>
-            <footer>
-              <span>Content is dedicated to the public domain under the <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">CC0 1.0 Universal license</a>.</span><br>
-              <span>No rights reserved.</span><br>
-              <span><a href="https://arthousedotexe.github.io/music-library-conventions/#/">https://arthousedotexe.github.io/music-library-conventions/#/</a></span>
-            </footer>
-          `;
+              <hr/>
+              <footer>
+                <span>Content is dedicated to the public domain under the <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">CC0 1.0 Universal license</a>.</span><br>
+                <span>No rights reserved.</span><br>
+                <span><a href="https://arthousedotexe.github.io/music-library-conventions/#/">https://arthousedotexe.github.io/music-library-conventions/#/</a></span>
+              </footer>
+            `;
 
             const footerRU = `
               <hr/>
