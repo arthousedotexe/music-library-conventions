@@ -50,7 +50,7 @@ I use the original names of artists, releases and tracks and do not translate or
 
 Forbidden characters in file names:
 
-- Characters that are invalid in Windows: `/\\:*?"<>|`;
+- Characters that are invalid in Windows: `\/:*?"<>|`;
 - ASCII control characters;
 - Windows-reserved device names;
 - Non-breaking spaces;

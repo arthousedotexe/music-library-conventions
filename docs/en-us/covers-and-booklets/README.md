@@ -47,7 +47,6 @@ For example: `cover-3` means the third alternative album cover.
 
 **Other cover filenames:** `back-spine`, `medium`, `tray`, `back-spine-front` and so on.  
 For more details, see [Cover Art Types guide on MusicBrainz](https://musicbrainz.org/doc/Cover_Art/Types).  
-I do not save obi strips, stickers, and certain other cover types.
 
 **Format:** `.png`, when the original cover is available in this format; otherwise `.jpg`. Conversion from `.jpg` to `.png` is not allowed.
 

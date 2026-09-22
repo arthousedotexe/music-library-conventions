@@ -2,6 +2,27 @@
 
 # Changelog
 
+## 2026-09-23
+
+### Added
+
+- Added multilingual footer indicating the license under which the document is distributed;
+- Added information about converting to Opus for devices with limited storage in the [Audio Formats](/en-us/audio-formats/) section;
+- Added a "Last updated" date to the [document's main page](/).
+
+### Changed
+
+- The document structure is made more convenient. Separated Russian and English versions;
+- Removed underlines in links, changed link hover color;
+- Improved link clarity across the document to explicitly indicate sources;
+- Updated rules for naming files and directories in the [Library structure](/en-us/library-structure/) section, added new forbidden characters.
+
+### Deleted
+
+- Deleted example with transliteration of Japanese name in the [Library structure](/en-us/library-structure/) section due to refusal to translate and transliterate artists, releases and tracks.
+
+---
+
 ## 2026-09-20
 
 ### Changed
@@ -69,7 +90,7 @@
 
 ### Removed
 
-- Removed the example with ID tags in the [Lyrics](/en-us/lyrics/) section due to the refusal to use them.
+- Removed example with ID tags in the [Lyrics](/en-us/lyrics/) section due to refusal to use them.
 
 ### Fixed
 
@@ -95,7 +116,7 @@
 
 ---
 
-## Second Edition - 2026-08-18
+## 2026-08-18
 
 ### Changed
 
@@ -160,7 +181,7 @@
 
 ---
 
-## First Edition - 2026-08-10
+## 2026-08-10
 
 ### Added
 
