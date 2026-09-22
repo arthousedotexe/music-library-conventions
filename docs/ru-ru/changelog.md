@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD024 -->
 
-# История изменений <!-- {docsify-ignore-all} -->
+# История изменений
 
 ## 20-09-2026
 

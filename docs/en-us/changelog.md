@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD024 -->
 
-# Changelog <!-- {docsify-ignore-all} -->
+# Changelog
 
 ## 2026-09-20
 

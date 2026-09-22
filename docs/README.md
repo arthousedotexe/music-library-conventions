@@ -1,11 +1,8 @@
-<!-- markdownlint-disable MD041 -->
-## Music library conventions
+# Welcome
 
 These conventions define how I organize and maintain my music library, with the goal of keeping it **consistent**.
 
 I originally intended to document only my tagging rules, but decided to expand the scope and standardize the library as a whole, including its structure, naming conventions, covers, booklets, and other related items.
-
-[Read document](/en-us/ 'Table of Contents')
 
 For any suggestions, ideas, improvements, issues, questions, general feedback or just to get in touch, write here: [@arthousedotexe](https://t.me/arthousedotexe)
 
