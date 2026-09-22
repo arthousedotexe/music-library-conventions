@@ -8,6 +8,9 @@ When converting from other lossless formats (`ALAC`, `WAV`) to `FLAC`, I preserv
 
 If I was not able to obtain a release in lossless format, then I look for the highest-quality lossy version I can obtain, taking both the codec and bitrate into account.
 
+When transferring lossless releases to devices with a small amount of memory (for example, a phone) they are converted to the `Opus` codec. Used encoder: [libopus 1.6.1](https://opus-codec.org/release/stable/2026/01/14/libopus-1_6_1.html ), selected bitrate: `192 kbps VBR`.  
+Lossy releases are not converted when transferred to devices.
+
 ## Checksums
 
 I use `MD5` checksums only for `FLAC`, because they are already built into it for unencoded audio data. They are stored in metadata in the `STREAMINFO` block (more details [here](https://www.rfc-editor.org/rfc/rfc9639.html#name-streaminfo)) and can therefore be used to verify the integrity of unencoded audio independently of metadata changes.  
