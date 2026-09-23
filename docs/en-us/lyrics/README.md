@@ -4,7 +4,7 @@
 
 Lyrics files are located in the same folder as the audio files, and use the same base filename with the `.lrc` extension.
 
-For example: next to a song named `1.03. Evening calm,Somewhere,Fireworks.flac` there will be a lyrics file `1.03. Evening calm,Somewhere,Fireworks.lrc`.
+For example: next to a song named `1.10. When the Moon's Reaching out Stars -Reload-.flac` there will be a lyrics file `1.10. When the Moon's Reaching out Stars -Reload-.lrc`.
 
 `UTF-8` encoding is used for all lyrics files.
 
@@ -21,12 +21,8 @@ I refused to use these tags.
 
 ## Lyrics Content
 
-For consistency, I avoid the following characters:
-
-- Alternative quotes and apostrophes: `„`, `“`, `’`, `‘` and other typography;
-- Control ASCII characters;
-- Non-breaking spaces;
-- Other nonstandard or unsupported characters that cause parsing or rendering issues in the players I use.
+I avoid characters that cause parsing or rendering issues in music players I use.
+There is no specific list, i rely on [MusicHoarders Wiki](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks) and some other characters that were listed in the [Library Structure](/en-us/library-structure/) section.
 
 I use synchronized lyrics, which look like this:
 

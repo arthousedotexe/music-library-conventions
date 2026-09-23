@@ -17,16 +17,18 @@ For example:
 - `Music/Ice Cube/1992 - The Predator`
 - `Music/Lana Del Rey/2012 - Born to Die – The Paradise Edition (Special Version)`
 
-Forbidden characters in directory names:
+Forbidden characters in directory names (replaced with the underscore character `_`):
 
 - Characters that are invalid in Windows: `/\\:*?"<>|`;
 - ASCII control characters;
 - Windows-reserved device names;
 - Non-breaking spaces.
 - The dot character `.`, because directory names cannot end with it on Windows;
-- Fancy Unicode characters that replace or resemble punctuation marks and any other characters from ASCII. For more details, see [MusicHoarders Wiki](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks).
-
-All forbidden characters in directory names are replaced with the underscore character `_`.
+- Fancy Unicode characters that replace or resemble punctuation marks and any other characters from ASCII. For more details, see [MusicHoarders Wiki](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks).  
+  **Note:** This point is not always applicable, but only if these Unicode characters do not make much sense in ordinary verbal constructions and can be replaced with corresponding ASCII characters.
+  For example, slash in release name `S⁄T` is replaced with ASCII slash, i.e. `S/T`.  
+  This point does not apply to situations where these Unicode characters are used intentionally (for example, in this [Bandcamp release](https://00000ooooo.bandcamp.com/album/--5)) or are [part of writing system](https://en.wikipedia.org/wiki/Japanese_punctuation).  
+  For example, in artist's name `(V)・∀・(V)`, Unicode characters are not replaced with underscores `_`.
 
 ## File Naming
 
@@ -48,15 +50,17 @@ The corresponding lyrics files use the same base filename with the `.lrc` extens
 
 I use the original names of artists, releases and tracks and do not translate or transliterate them, as this may lead to a loss of nuances and errors.
 
-Forbidden characters in file names:
+Forbidden characters in file names (replaced with the underscore character `_`):
 
 - Characters that are invalid in Windows: `\/:*?"<>|`;
 - ASCII control characters;
 - Windows-reserved device names;
 - Non-breaking spaces;
-- Fancy Unicode characters that replace or resemble punctuation marks and any other characters from ASCII. For more details, see [MusicHoarders Wiki](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks).
-
-All forbidden characters in file names are replaced with the underscore character `_`.
+- Fancy Unicode characters that replace or resemble punctuation marks and any other characters from ASCII. For more details, see [MusicHoarders Wiki](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks).  
+  **Note:** This point is not always applicable, but only if these Unicode characters do not make much sense in ordinary verbal constructions and can be replaced with corresponding ASCII characters.  
+  For example, apostrophe in track name `1.07. Nobody‛s Home` is replaced with apostrophe from ASCII, i.e. `1.07. Nobody's Home`.  
+  This point does not apply to situations where these Unicode characters are used intentionally (for example, in this [Bandcamp release](https://00000ooooo.bandcamp.com/album/--5)) or are [part of writing system](https://en.wikipedia.org/wiki/Japanese_punctuation).  
+  For example, commas in track name `1.03. 夕凪、某、花惑い` are not replaced with commas `,` from ASCII.
 
 ## Album Structure
 

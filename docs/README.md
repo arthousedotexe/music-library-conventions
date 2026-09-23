@@ -12,6 +12,6 @@ For any suggestions, ideas, improvements, issues, questions, general feedback or
 
 ---
 
-P.S. I use the following audio players: [foobar2000](https://www.foobar2000.org/) (PC) and [Poweramp](https://powerampapp.com/) (Android). Some things mentioned here are based on the features and limitations of these audio players.
+P.S. I use the following music players: [foobar2000](https://www.foobar2000.org/) (PC) and [Poweramp](https://powerampapp.com/) (Android). Some things mentioned here are based on the features and limitations of these music players.
 
 P.P.S. I use the following taggers: [MusicBrainz Picard](https://picard.musicbrainz.org/), [Mp3tag](https://www.mp3tag.de/en/).

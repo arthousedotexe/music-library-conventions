@@ -46,7 +46,7 @@ A typical file with the main tags filled looks like this:
 
 **Extended tags** provide additional information about a release. They are quite useful, and almost all of them can be applied to almost all releases.
 
-For subsequent tags, I also indicate whether they can be displayed and used for sorting in the audio players I use.
+For subsequent tags, I also indicate whether they can be displayed and used for sorting in the music players I use.
 
 - `Arranger` - arranger;  
   **Display:** Poweramp (-), foobar2000 (+)  
@@ -126,7 +126,7 @@ How it will look like:
   **Example:**  
   Consider [this release on Spotify](https://open.spotify.com/album/6eOuqhCfrTPp1H0YbQ9PmL); it contains two symphonies: No. 5 and No. 7.  
   ![Example with the Grouping tag](grouping.png)
-  If you add `Symphony No. 5 in C Minor, Op. 67` to `Grouping` tag for tracks 1-4 and `Symphony No. 7 in A Major, Op. 92` for tracks 5 onward, then track 1 will display a badge for Symphony No. 5 and track 5 will display a badge for Symphony No. 7 (if the audio player supports such display)  
+  If you add `Symphony No. 5 in C Minor, Op. 67` to `Grouping` tag for tracks 1-4 and `Symphony No. 7 in A Major, Op. 92` for tracks 5 onward, then track 1 will display a badge for Symphony No. 5 and track 5 will display a badge for Symphony No. 7 (if music player supports such display)  
   **Display:** Poweramp (-) ([discussion](https://forum.powerampapp.com/topic/28102-grouping-tag-support/)), foobar2000 (+) (pattern setup required)
 
 - `Label` — label;  

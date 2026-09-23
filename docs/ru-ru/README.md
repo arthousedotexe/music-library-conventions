@@ -11,6 +11,6 @@
 
 ---
 
-P.S. Я использую следующие плееры: [foobar2000](https://www.foobar2000.org/) (ПК) и [Poweramp](https://powerampapp.com/) (Андроид). Некоторые вещи будут сказаны здесь, основываясь на функционале и возможностях этих плееров.
+P.S. Я использую следующие музыкальные плееры: [foobar2000](https://www.foobar2000.org/) (ПК) и [Poweramp](https://powerampapp.com/) (Андроид). Некоторые вещи будут сказаны здесь, основываясь на функционале и возможностях этих музыкальных плееров.
 
 P.P.S. Я использую следующие теггеры: [MusicBrainz Picard](https://picard.musicbrainz.org/), [Mp3tag](https://www.mp3tag.de/en/).

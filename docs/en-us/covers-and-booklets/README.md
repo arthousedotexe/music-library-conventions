@@ -76,7 +76,7 @@ I do not use or save animated covers for the following reasons:
 
 1. Many animated covers are just pulsating static images, which look rather strange in my opinion;
 2. They take up a lot of space;
-3. Support for embedding and displaying animated covers is inconsistent across tag formats and audio players;
+3. Support for embedding and displaying animated covers is inconsistent across tag formats and music players;
 4. As of August 2026, animated covers are not natively supported almost anywhere, specifically:  
   **foobar2000** — not supported natively, requires a plugin ([discussion №1](https://www.reddit.com/r/musichoarder/comments/1aeucbn/comment/koa83a9/), [discussion №2](https://www.reddit.com/r/foobar2000/comments/1dpgijy/does_animated_cover_art_work/)):
   ![Discussion of animated covers on Reddit](foobar-animated.png)
