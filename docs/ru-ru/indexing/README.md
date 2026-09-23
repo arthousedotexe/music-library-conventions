@@ -1,5 +1,7 @@
 # Индексация
 
+## Структура индексного файла
+
 Индексный файл (`index.txt`) находится рядом с аудиофайлами. Файл использует Telegram-синтаксис.  
 В нем содержится краткая информация о релизе, а именно:
 
@@ -58,9 +60,9 @@
   - Язык вокала или исполнения, например: `english`, `russian`, `german`, `japanese`;  
   - Другие хештеги.
 
-Примеры индексаций:
+## Примеры
 
-- Альбом:
+### Альбом
 
 ```text
 💿 **Album:** Nininshou
@@ -106,7 +108,7 @@ External cover, lyrics, additional covers
 #web, #2026y, #2020s, #pop, #jazz, #jazzpop, #indiepop, #jpop, #femalevocalist, #indie, #japanese
 ```
 
-- Альбом / компиляция:
+### Альбом / компиляция
 
 ```text
 💿 **Album / Compilation:** TOHO EUROBEAT VOL.4 PERFECT CHERRY BLOSSOM
@@ -138,7 +140,7 @@ External cover, lyrics, additional covers, booklet, .cue and .log files
 #cd, #2011y, #2010s, #electronic, #doujin, #eurobeat, #touhou, #femalevocalist, #malevocalist, #english, #japanese
 ```
 
-- Сингл:
+### Сингл
 
 ```text
 💿 **Single:** ''''''

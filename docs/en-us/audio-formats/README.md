@@ -2,6 +2,8 @@
 
 # Audio Formats
 
+## Lossless and lossy
+
 I aim to obtain the highest possible quality releases, so almost my entire library consists of lossless files.  
 The lossless codec I use is `FLAC`, compression level 8.  
 When converting from other lossless formats (`ALAC`, `WAV`) to `FLAC`, I preserve the original bit depth and sample rate.

@@ -2,6 +2,8 @@
 
 # Lyrics
 
+## Lyrics files
+
 Lyrics files are located in the same folder as the audio files, and use the same base filename with the `.lrc` extension.
 
 For example: next to a song named `1.10. When the Moon's Reaching out Stars -Reload-.flac` there will be a lyrics file `1.10. When the Moon's Reaching out Stars -Reload-.lrc`.

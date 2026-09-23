@@ -2,9 +2,9 @@
 
 # Tags
 
-Let's start with what tags I actually use, given the huge number of them.
-
 ## Tag Priority
+
+Let's start with what tags I actually use, given the huge number of them.
 
 **Note:** the tag names used in this section are format-neutral concepts. Their actual representation depends on the metadata format.  
 For example, `Album Artist` corresponds to `ALBUMARTIST` tag in **Vorbis Comment (FLAC)**, `aART` atom in **iTunes MP4 (ALAC, AAC)**, and `TPE2` frame in **ID3v2 (MP3)**.

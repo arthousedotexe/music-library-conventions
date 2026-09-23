@@ -2,6 +2,8 @@
 
 # Indexing
 
+## Index file structure
+
 The index file (`index.txt`) is located in the same folder as the audio files. The file uses Telegram syntax.  
 It contains brief information about the release, specifically:
 
@@ -60,9 +62,9 @@ It contains brief information about the release, specifically:
   - Vocal or performance language, for example: `english`, `russian`, `german`, `japanese`;
   - Other hashtags.
 
-Examples of indexing:
+## Examples
 
-- Album:
+### Album
 
 ```text
 💿 **Album:** Nininshou
@@ -108,7 +110,7 @@ External cover, lyrics, additional covers
 #web, #2026y, #2020s, #pop, #jazz, #jazzpop, #indiepop, #jpop, #femalevocalist, #indie, #japanese
 ```
 
-- Album / compilation:
+### Album / compilation
 
 ```text
 💿 **Album / Compilation:** TOHO EUROBEAT VOL.4 PERFECT CHERRY BLOSSOM
@@ -140,7 +142,7 @@ External cover, lyrics, additional covers, booklet, .cue and .log files
 #cd, #2011y, #2010s, #electronic, #doujin, #eurobeat, #touhou, #femalevocalist, #malevocalist, #english, #japanese
 ```
 
-- Single:
+### Single
 
 ```text
 💿 **Single:** ''''''
