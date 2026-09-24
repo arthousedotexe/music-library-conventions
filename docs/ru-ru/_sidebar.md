@@ -5,6 +5,7 @@
   - [Аудиоформаты](/ru-ru/audio-formats/)
   - [Тексты песен](/ru-ru/lyrics/)
   - [Обложки, буклеты](/ru-ru/covers-and-booklets/)
+  - [Риппинг](/ru-ru/ripping/)
   - [Теги](/ru-ru/tags/)
   - [Индексация](/ru-ru/indexing/)
 

@@ -72,7 +72,7 @@ Each album directory follows this structure:
 - Index file (`index.txt`), see [Indexing](/en-us/indexing/) section;
 - Booklet directory (`booklet`), when applicable, see [Covers and Booklets](/en-us/covers-and-booklets/?id=Booklets) section;
 - Additional-cover directory (`covers`), when applicable, see [Covers and Booklets](/en-us/covers-and-booklets/?id=Additional-covers) section;
-- `.cue` и `.log` files, when applicable
+- `.cue`, `.log` and `.accurip` files, when applicable, see [Ripping](/en-us/ripping/) section.
 
 For example:
 

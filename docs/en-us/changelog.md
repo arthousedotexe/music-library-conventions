@@ -2,6 +2,19 @@
 
 # Changelog
 
+## 24-09-2026
+
+### Added
+
+- Added the [Ripping](/en-us/ripping/) section.
+
+### Changed
+
+- Added adjustments to naming rules for files and directories in the [Library structure](/en-us/library-structure/) section and lyrics files in the [Lyrics](/en-us/lyrics/) section;
+- Improved structure of section headings in the document.
+
+---
+
 ## 2026-09-23
 
 ### Added
