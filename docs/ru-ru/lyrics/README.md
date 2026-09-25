@@ -23,7 +23,7 @@
 ## Содержание текстов
 
 Я избегаю символов, которые вызывают проблемы в музыкальных плеерах, которые я использую.  
-Конкретного списка нет, я опираюсь на информацию в документе [MusicHoarders Wiki](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks) и некоторые другие символы, которые были перечислены в разделе [Структура библиотеки](/ru-ru/library-structure/).
+Конкретного списка нет, я опираюсь на информацию в документе [MusicHoarders вики](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks) и некоторые другие символы, которые были перечислены в разделе [Структура библиотеки](/ru-ru/library-structure/).
 
 Я использую синхронизированные тексты песен, которые выглядят таким образом:
 

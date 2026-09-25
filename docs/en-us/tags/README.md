@@ -156,7 +156,7 @@ How it will look like:
   - `MusicBrainz Work ID` - tag containing the MBID for the Work if a related work exists.  
   **Display:** Poweramp (-), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)  
-  **Note:** read more in MusicBrainz docs: [MusicBrainz Identifiers](https://musicbrainz.org/doc/MusicBrainz_Identifier), [Basic Tags](https://picard-docs.musicbrainz.org/en/latest/variables/tags_basic.html) and [Tag Mapping](https://picard-docs.musicbrainz.org/en/latest/appendices/tag_mapping.html).  
+  **Note:** read more in MusicBrainz Docs: [MusicBrainz Identifiers](https://musicbrainz.org/doc/MusicBrainz_Identifier), [Basic Tags](https://picard-docs.musicbrainz.org/en/latest/variables/tags_basic.html) and [Tag Mapping](https://picard-docs.musicbrainz.org/en/latest/appendices/tag_mapping.html).  
   These tags are also useful for linking with media-servers ([Navidrome](https://www.navidrome.org/), [Jellyfin](https://jellyfin.org/)), scrobblers ([ListenBrainz](https://listenbrainz.org/), self-hosted scrobblers, for example, [Koito](https://github.com/gabehf/Koito)), and [MusicBrainz](https://musicbrainz.org/) database.
 
 - `Performer` — tags containing performer names together with their instruments or roles;  
@@ -199,7 +199,7 @@ The final result looks like this:
 ---
 
 - `Artists` - multi-value tag that stores a list of several artists;  
-  **Note:** This tag is generated and filled automatically by MusicBrainz Picard if the relevant information is available in the MusicBrainz database. More details see in [Basic Tags](https://picard-docs.musicbrainz.org/en/latest/variables/tags_basic.html) section in MusicBrainz docs.
+  **Note:** This tag is generated and filled automatically by MusicBrainz Picard if the relevant information is available in the MusicBrainz database. More details see in [Basic Tags](https://picard-docs.musicbrainz.org/en/latest/variables/tags_basic.html) section in MusicBrainz Docs.
 
 - `Encoder` — the encoder program/library that created/re-encoded the audio file;
 
@@ -246,7 +246,7 @@ The final result looks like this:
 - `URL` — a link to anything (source of the track, streaming service, and so on);
 
 - `Work` - a distinct intellectual or artistic creation, which can be expressed in the form of one or more audio recordings. A work does not have to be musical. For example, a work could be a novel, play, poem or essay, later recorded as an audiobook;  
-  **Note:** for more details, see [MusicBrainz docs on Works](https://musicbrainz.org/doc/Work).  
+  **Note:** for more details, see [MusicBrainz Docs on Works](https://musicbrainz.org/doc/Work).  
 
 - `Writer` — the person who creates musical compositions or writes lyrics for songs, or both.
 
