@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD059 -->
 
-# Covers and Booklets
+# Covers, Scans and Booklets
 
 ## Embedded Covers
 

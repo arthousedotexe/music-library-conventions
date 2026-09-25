@@ -36,7 +36,7 @@ For example, `Album Artist` corresponds to `ALBUMARTIST` tag in **Vorbis Comment
 
 - `Track Total` — total number of tracks;
 
-- `Cover` — embedded cover for the track. More details see in [Covers and Booklets](/en-us/covers-and-booklets/?id=Embedded-covers) section.
+- `Cover` — embedded cover for the track. More details see in [Covers, Scans and Booklets](/en-us/covers-and-booklets/?id=Embedded-covers) section.
 
 A typical file with the main tags filled looks like this:
 ![Example 1](../../images/tags-example1.png)

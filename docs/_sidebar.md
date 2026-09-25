@@ -4,7 +4,7 @@
   - [Library Structure](/en-us/library-structure/)
   - [Audio Formats](/en-us/audio-formats/)
   - [Lyrics](/en-us/lyrics/)
-  - [Covers and Booklets](/en-us/covers-and-booklets/)
+  - [Covers, Scans and Booklets](/en-us/covers-and-booklets/)
   - [Ripping](/en-us/ripping/)
   - [Tags](/en-us/tags/)
   - [Indexing](/en-us/indexing/)
