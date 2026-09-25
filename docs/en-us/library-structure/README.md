@@ -76,4 +76,4 @@ Each album directory follows this structure:
 
 For example:
 
-![Example](example.png)
+![Example](../../images/library-example.png)

@@ -39,7 +39,7 @@ For example, `Album Artist` corresponds to `ALBUMARTIST` tag in **Vorbis Comment
 - `Cover` — embedded cover for the track. More details see in [Covers and Booklets](/en-us/covers-and-booklets/?id=Embedded-covers) section.
 
 A typical file with the main tags filled looks like this:
-![Example 1](example1.png)
+![Example 1](../../images/tags-example1.png)
 **Note:** in Mp3tag, the `Date` tag is displayed as `YEAR`.
 
 ### Extended Tags
@@ -80,7 +80,7 @@ For subsequent tags, I also indicate whether they can be displayed and used for 
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
 How it will look like:
-![Example 2](example2.png)
+![Example 2](../../images/tags-example2.png)
 
 ### Specialized Tags
 
@@ -126,7 +126,7 @@ How it will look like:
 - `Grouping` — a tag that provides an additional grouping level between the release and individual tracks;  
   **Example:**  
   Consider [this release on Spotify](https://open.spotify.com/album/6eOuqhCfrTPp1H0YbQ9PmL); it contains two symphonies: No. 5 and No. 7.  
-  ![Example with the Grouping tag](grouping.png)
+  ![Example with the Grouping tag](../../images/tags-grouping.png)
   If you add `Symphony No. 5 in C Minor, Op. 67` to `Grouping` tag for tracks 1-4 and `Symphony No. 7 in A Major, Op. 92` for tracks 5 onward, then track 1 will display a badge for Symphony No. 5 and track 5 will display a badge for Symphony No. 7 (if music player supports such display)  
   **Display:** Poweramp (-) ([discussion](https://forum.powerampapp.com/topic/28102-grouping-tag-support/)), foobar2000 (+) (pattern setup required)
 
@@ -185,7 +185,7 @@ How it will look like:
 
 The final result looks like this:
 
-![Example 3](example3.png)
+![Example 3](../../images/tags-example3.png)
 
 ### Excluded Tags
 

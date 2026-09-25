@@ -74,4 +74,4 @@
 
 Например:
 
-![Пример](example.png)
+![Пример](../../images/library-example.png)
