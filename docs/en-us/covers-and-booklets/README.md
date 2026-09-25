@@ -23,7 +23,7 @@ I embed only one cover per track, using the Front Cover picture type.
 ## Additional Covers
 
 Additional covers are an addition to the album or single.  
-For example: alternative single/album covers, materials from physical edition (front, back, medium), unreleased materials, posters.  
+For example: alternative single/album covers, materials from physical edition (front, back, disc), unreleased materials, posters.  
 Consider the following example:
 
 1. In 2019, the single Fly Out West is released and has the following cover:
@@ -45,7 +45,7 @@ For example: `cover-1-03.jpg`, `cover-1-09.png`.
 **Album-cover filenames:** `cover-<Cover number>`.  
 For example: `cover-3` means the third alternative album cover.
 
-**Other cover filenames:** `back-spine`, `medium`, `tray`, `back-spine-front` and so on.  
+**Other cover filenames:** `back-spine`, `disc`, `tray`, `back-spine-front` and so on.  
 For more details, see [Cover Art Types guide on MusicBrainz](https://musicbrainz.org/doc/Cover_Art/Types).  
 
 **Format:** `.png`, when the original cover is available in this format; otherwise `.jpg`. Conversion from `.jpg` to `.png` is not allowed.

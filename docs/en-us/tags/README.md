@@ -87,6 +87,7 @@ How it will look like:
 **Specialized tags** are optional and used only when relevant. Some may be filled automatically by taggers.
 
 - `Album Artist Sort` — controls how the album artist is sorted, for example by surname or while ignoring leading articles;  
+  For more information about sorting rules for artist names, see [MusicBrainz documentation](https://musicbrainz.org/doc/Style/Artist/Sort_Name).  
   **Example:** `Beatles, The` instead of `The Beatles`, so they will sort by B rather than T.  
   **Sorting by this tag:** Poweramp (-) (there is another setting to ignore articles), foobar2000 (+) (pattern setup required)
 

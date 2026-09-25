@@ -83,15 +83,15 @@ WEB [FLAC/24-bit/96 kHz]
 External cover, lyrics, additional covers
 
 📝 **Tracklist:**
-1.  Shouchou, Yuubin-uke
-2.  Kumo ni Naru
-3.  Hana mo Zawameku
-4.  Mashou
-5.  Play Sick
-6.  Post Haru
-7.  Taiyou
-8.  Haru
-9.  Wasurete Kudasai
+01. Shouchou, Yuubin-uke
+02. Kumo ni Naru
+03. Hana mo Zawameku
+04. Mashou
+05. Play Sick
+06. Post Haru
+07. Taiyou
+08. Haru
+09. Wasurete Kudasai
 10. Shura
 11. Kaseijin
 12. Rubato
@@ -124,18 +124,18 @@ External cover, lyrics, additional covers
 CD [FLAC/16-bit/44.1 kHz]
 
 📦 **Extra:**
-External cover, lyrics, additional covers, booklet, .cue and .log files
+External cover, lyrics, additional covers, booklet, .cue, .log, .accurip
 
 📝 **Tracklist:**
-01.  Honeypocket - Zenmai Koi Dokei (T.E.B Summer Mix)
-02.  Ranko - Dreamin' Girl
-03.  Aniroku!, Mao Devil - Break into the Dark
-04.  Odyssey - Adequate
-05.  Shihori - Bloody Night
-06.  (V)・∀・(V) - Anything for You
-07.  Odyssey, The DNA Team - FINAL BREATH
-08.  Nagisa, Tetsuco - Wish Upon the Sky
-09.  3L - Leave My Key
+01. はにーぽけっと - ゼンマイ恋時計 (T.E.B Summer Mix)
+02. ランコ - Dreamin' Girl
+03. あにろく!, 魔王デビル - Break into the Dark
+04. Odyssey - Adequate
+05. Shihori - Bloody Night
+06. (V)・∀・(V) - Anything for You
+07. Odyssey, The DNA Team - FINAL BREATH
+08. Nagisa, Tetsuco - Wish Upon the Sky
+09. 3L - Leave My Key
 10. AXEL.K - Get it Done
 
 📌 **Tags:**

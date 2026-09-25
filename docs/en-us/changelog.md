@@ -2,6 +2,14 @@
 
 # Changelog
 
+## 2026-09-25
+
+### Fixed
+
+- Minor document corrections.
+
+---
+
 ## 24-09-2026
 
 ### Added
