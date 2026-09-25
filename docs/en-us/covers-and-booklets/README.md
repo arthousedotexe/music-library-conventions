@@ -24,7 +24,7 @@ I embed only one cover per track, using the Front Cover picture type.
 
 For more information about types of covers and scans, see [MusicBrainz Docs](https://musicbrainz.org/doc/Cover_Art/Types).  
 You can read about scanning process in [MusicHoarders Wiki](https://musichoarders.xyz/guides/scanning-media).  
-And about naming scans you can also read [there](https://musichoarders.xyz/reference/naming-scans), however, I name scans in lowercase.
+Scan naming rules are covered in the [same place](https://musichoarders.xyz/reference/naming-scans). However, I keep all scan filenames in lowercase.
 
 **Format:** `.png`, when the original cover is available in this format; otherwise `.jpg`. Conversion from `.jpg` to `.png` is not allowed.
 
@@ -35,8 +35,11 @@ And about naming scans you can also read [there](https://musichoarders.xyz/refer
 ## Additional Covers
 
 > [!WARNING]
-> Covers obtained from physical releases **do not belong** to this section, even if they serve the same purpose.
-> This covers belongs to "Physical release scans" section and are saved in the `scans` directory.
+> Materials scanned directly from physical releases **does not belong** in this section, even if it serves a similar purpose.  
+> They are covered in the "Physical release scans" section and should be stored as follows:
+>
+> - in the `scans` directory, if release is physical and scans were made directly from it;
+> - in the `other materials` directory, if release is digital and/or scans were sourced elsewhere.
 
 Additional covers are an addition to the album or single.  
 For example: alternative single/album covers, unreleased materials, posters.  
@@ -45,10 +48,10 @@ Consider the following example:
 1. In 2019, the single Fly Out West is released and has the following cover:
 ![Single cover](../../images/covers-example-single.png)
 
-2. Later that same year, the album Bipolar is released, including the song as track 5 and using the album cover:
+1. Later that same year, the album Bipolar is released, including the song as track 5 and using the album cover:
 ![Album](../../images/covers-example-album.png)
 
-3. Thus the single cover is lost, which is not good, so I save it separately and add it to the `other materials` folder.
+1. Thus the single cover is lost, which is not good, so I save it separately and add it to the `other materials` folder.
 
 Additional covers can also come from other places, for example, unreleased materials or videos.  
 A funny example is a [Reddit post](https://www.reddit.com/r/lanadelrey/comments/14x4amo/did_you_know_that_theres_a_tunnel_under_ocean/); this album has six covers in total!
@@ -71,6 +74,12 @@ For example: `cover 3` means the third alternative album cover.
 
 ## Booklets
 
+> [!WARNING]
+> Booklets are stored as follows:
+>
+> - in the `scans` directory, if release is physical and booklet was scanned directly from it;
+> - in the `other materials` directory, if release is digital and/or booklet was sourced elsewhere.
+
 A booklet does not necessarily have to match a specific release.  
 For example: a digital release may contain a CD booklet; a UK release may contain a booklet sourced from the Japanese edition.
 
@@ -84,9 +93,6 @@ For example: `booklet 11-12.jpg`, `booklet 06.png`.
 **Resolution:** highest available resolution.
 
 **Location:** in the `other materials` directory.
-
-> [!WARNING]
-> Booklets obtained from physical releases are saved in the `scans` directory.
 
 ## Animated Covers
 

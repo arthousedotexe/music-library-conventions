@@ -6,8 +6,8 @@
 
 Let's start with what tags I actually use, given the huge number of them.
 
-**Note:** the tag names used in this section are format-neutral concepts. Their actual representation depends on the metadata format.  
-For example, `Album Artist` corresponds to `ALBUMARTIST` tag in **Vorbis Comment (FLAC)**, `aART` atom in **iTunes MP4 (ALAC, AAC)**, and `TPE2` frame in **ID3v2 (MP3)**.
+**Note:** tag names in this section are format-agnostic concepts. Their exact representation depends on the metadata container.  
+For example, `Album Artist` maps to `ALBUMARTIST` field in **Vorbis Comment (FLAC)**, `aART` atom in **iTunes MP4 (ALAC, AAC)**, and `TPE2` frame in **ID3v2 (MP3)**.
 
 ### Main Tags
 
@@ -18,8 +18,8 @@ For example, `Album Artist` corresponds to `ALBUMARTIST` tag in **Vorbis Comment
 - `Album Artist` — album artist;
 
 - `Artist` — track artist or artists;  
-  **Note:** this tag is a multi-valued tag.  
-  I do not use the following separators for artists: `feat.`, `&`, `,`, `;`, as well as any others.  
+  **Note:** this is a multi-valued tag.  
+  I do not combine multiple artists into a single string using separators like `feat.`, `&`, `,`, or `;`.  
   **Example in Vorbis Comment:** `ARTIST=Lana Del Rey; ARTIST=Zella Day; ARTIST=Weyes Blood`, `ARTIST=Zachz Winner; ARTIST=Frozy; ARTIST=joyful` (meaning three separate tag fields are used for three artists).
 
 - `Date` — release date of a specific release;  
@@ -125,9 +125,9 @@ How it will look like:
 
 - `Grouping` — a tag that provides an additional grouping level between the release and individual tracks;  
   **Example:**  
-  Consider [this release on Spotify](https://open.spotify.com/album/6eOuqhCfrTPp1H0YbQ9PmL); it contains two symphonies: No. 5 and No. 7.  
+  [This release on Spotify](https://open.spotify.com/album/6eOuqhCfrTPp1H0YbQ9PmL) contains two works: Symphony No. 5 and Symphony No. 7.  
   ![Example with the Grouping tag](../../images/tags-grouping.png)
-  If you add `Symphony No. 5 in C Minor, Op. 67` to `Grouping` tag for tracks 1-4 and `Symphony No. 7 in A Major, Op. 92` for tracks 5 onward, then track 1 will display a badge for Symphony No. 5 and track 5 will display a badge for Symphony No. 7 (if music player supports such display)  
+  If tracks 1–4 have `Symphony No. 5 in C Minor, Op. 67` in their Grouping tag and subsequent tracks use `Symphony No. 7 in A Major, Op. 92`, supported audio players will display distinct section headers for each symphony.  
   **Display:** Poweramp (-) ([discussion](https://forum.powerampapp.com/topic/28102-grouping-tag-support/)), foobar2000 (+) (pattern setup required)
 
 - `Label` — label;  
@@ -176,7 +176,7 @@ How it will look like:
 - `ReplayGain Tags` - tags that are responsible for ReplayGain;  
   **Specifically:**
   - `ReplayGain Track Gain` - tag that contains the volume correction value (in dB) for one specific track to match the 89 dB SPL level;
-  - `ReplayGain Track Peak` - tag that contains the maximum peak volume level within one track. If gain exceeds the maximum allowable digital level (0 dBFS), then clipping will occur;
+  - `ReplayGain Track Peak` - tag that contains peak amplitude within one track. Allows music players to prevent clipping if the applied `ReplayGain Track Gain` would otherwise exceed 0 dBFS;
   - `ReplayGain Album Gain` - tag that contains the volume correction value (in dB) for the entire album. This equalizes the overall level of the album relative to 89 dB SPL, but at the same time completely preserves contrast between quiet and loud songs inside the album;
   - `ReplayGain Album Peak` - tag that contains the maximum peak volume level among all album tracks.
 

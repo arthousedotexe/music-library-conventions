@@ -37,8 +37,8 @@
     WEB [AAC/192 kbps VBR/48 kHz]: track 9
     CD [FLAC/16-bit/44.1 kHz]: track 15
     ```
-
-- Экстра-материалы (буклеты, обложки, тексты, другие файлы) - при необходимости;
+  
+  - Для CD-релизов также указывается log score в формате `[XX% log]`: `CD [FLAC/16-bit/44.1 kHz] [100% log]`
 
 - Треклист - при необходимости;  
   **Примечание №1:** если релиз содержит один диск, то номера треков пишутся без номера диска, но сохраняется лидирующий ноль, например: `01`, `09`.  
@@ -51,13 +51,13 @@
 - Хештеги для поиска:
   - Источник;
   - Год выхода релиза;  
-    Примечание: сначала пишется год, а потом буква y, потому что теги, содержащие только числа, воспринимаются как цвета. Например: `2012y`.
-  - Десятилетие, в котором вышел релиз, например: `2010s`, `1980s`;
-  - Жанры, которые нормализованы до хештегов путем приведения к нижнему регистру с удалением пробелов и дефисов. Подробнее о жанрах и стилях смотрите в [руководстве Discogs](https://support.discogs.com/hc/en-us/articles/360005055213-Database-Guidelines-9-Genres-Styles);
-  - Поджанры, которые нормализованы до хештегов путем приведения к нижнему регистру с удалением пробелов и дефисов;  
-  - Классификация вокала, например: `instrumental`, `femalevocalist`, `malevocalist`, `choir`;
-  - Инди-хештег (`indie`);
-  - Язык вокала или исполнения, например: `english`, `russian`, `german`, `japanese`;  
+    Примечание: сначала пишется год, а потом буква y, потому что хештеги, содержащие только числа, воспринимаются Telegram как HEX-коды цветов. Например: `#2012y`.
+  - Десятилетие выхода: `#2010s`, `#1980s`;
+  - Жанры и поджанры: нормализуются в хештеги (нижний регистр, пробелы и дефисы удаляются).  
+    Подробнее о классификации жанров и стилей смотрите в [руководстве Discogs](https://support.discogs.com/hc/en-us/articles/360005055213-Database-Guidelines-9-Genres-Styles);
+  - Классификация вокала, например: `#instrumental`, `#femalevocalist`, `#malevocalist`, `#choir`;
+  - Инди-хештег (`#indie`);
+  - Язык вокала или исполнения, например: `#english`, `#russian`, `#german`, `#japanese`;  
   - Другие хештеги.
 
 ## Примеры
@@ -76,9 +76,6 @@
 
 🎧 **Quality:**
 WEB [FLAC/24-bit/96 kHz]
-
-📦 **Extra:**
-External cover, lyrics, additional covers
 
 📝 **Tracklist:**
 01. Shouchou, Yuubin-uke
@@ -119,10 +116,7 @@ External cover, lyrics, additional covers
 🕰 **Total duration:** 44:34
 
 🎧 **Quality:**
-CD [FLAC/16-bit/44.1 kHz]
-
-📦 **Extra:**
-External cover, lyrics, additional covers, booklet, .cue, .log, .accurip
+CD [FLAC/16-bit/44.1 kHz] [100% log]
 
 📝 **Tracklist:**
 01. はにーぽけっと - ゼンマイ恋時計 (T.E.B Summer Mix)
@@ -152,9 +146,6 @@ External cover, lyrics, additional covers, booklet, .cue, .log, .accurip
 
 🎧 **Quality:**
 WEB [FLAC/24-bit/44.1 kHz]
-
-📦 **Extra:**
-External cover, lyrics, additional covers
 
 📌 **Tags:**
 #web, #2021y, #2020s, #pop, #jpop, #femalevocalist, #indie, #japanese

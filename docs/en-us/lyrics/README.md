@@ -19,12 +19,12 @@ More details about ID tags and lyrics files can be read on [Wikipedia article](h
 
 ## ID Tags
 
-I refused to use these tags.
+I do not use these tags.
 
 ## Lyrics Content
 
-I avoid characters that cause parsing or rendering issues in music players I use.
-There is no specific list, i rely on [MusicHoarders Wiki](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks) and some other characters that were listed in the [Library Structure](/en-us/library-structure/) section.
+I avoid characters that cause parsing or rendering issues in music players I use.  
+There is no fixed list, i rely on [MusicHoarders Wiki](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks) guidelines and other characters that listed in the [Library Structure](/en-us/library-structure/) section.
 
 I use synchronized lyrics, which look like this:
 

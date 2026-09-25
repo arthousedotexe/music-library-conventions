@@ -40,7 +40,7 @@ It contains brief information about the release, specifically:
     CD [FLAC/16-bit/44.1 kHz]: track 15
     ```
 
-- Extras (booklets, covers, lyrics, other files), when applicable;
+  - For CD releases, the log score is also specified in the format `[XX% log]`: `CD [FLAC/16-bit/44.1 kHz] [100% log]`
 
 - Tracklist, when applicable;  
   **Note №1:** if the release has one disc, track numbers omit the disc number while keeping the leading zero, for example: `01`, `09`.  
@@ -53,13 +53,13 @@ It contains brief information about the release, specifically:
 - Search hashtags:
   - Source;
   - Release year;  
-    Note: the year comes first, followed by the letter y, because tags containing only numbers are interpreted as colors. For example: `2012y`.
-  - The decade in which the release was released, for example: `2010s`, `1980s`;
-  - Genre names normalized for hashtags by converting them to lowercase and removing spaces and hyphens. For more details, see [Discogs Database Guidelines (Genres & Styles)](https://support.discogs.com/hc/en-us/articles/360005055213-Database-Guidelines-9-Genres-Styles);
-  - Subgenre names normalized for hashtags by converting them to lowercase and removing spaces and hyphens;
-  - Vocal classification, for example: `instrumental`, `femalevocalist`, `malevocalist`, `choir`;
-  - Indie hashtag (`indie`);
-  - Vocal or performance language, for example: `english`, `russian`, `german`, `japanese`;
+    Note: the year comes first, followed by the letter y, because tags containing only numbers are interpreted Telegram as HEX color codes. For example: `#2012y`.
+  - Release decade: `#2010s`, `#1980s`;
+  - Genres and subgenres: normalized into hashtags (converted to lowercase, spaces and hyphens stripped).  
+    For more details, see [Discogs Database Guidelines (Genres & Styles)](https://support.discogs.com/hc/en-us/articles/360005055213-Database-Guidelines-9-Genres-Styles);
+  - Vocal classification, for example: `#instrumental`, `#femalevocalist`, `#malevocalist`, `#choir`;
+  - Indie hashtag (`#indie`);
+  - Vocal or performance language, for example: `#english`, `#russian`, `#german`, `#japanese`;
   - Other hashtags.
 
 ## Examples
@@ -78,9 +78,6 @@ It contains brief information about the release, specifically:
 
 🎧 **Quality:**
 WEB [FLAC/24-bit/96 kHz]
-
-📦 **Extra:**
-External cover, lyrics, additional covers
 
 📝 **Tracklist:**
 01. Shouchou, Yuubin-uke
@@ -121,10 +118,7 @@ External cover, lyrics, additional covers
 🕰 **Total duration:** 44:34
 
 🎧 **Quality:**
-CD [FLAC/16-bit/44.1 kHz]
-
-📦 **Extra:**
-External cover, lyrics, additional covers, booklet, .cue, .log, .accurip
+CD [FLAC/16-bit/44.1 kHz] [100% log]
 
 📝 **Tracklist:**
 01. はにーぽけっと - ゼンマイ恋時計 (T.E.B Summer Mix)
@@ -154,9 +148,6 @@ External cover, lyrics, additional covers, booklet, .cue, .log, .accurip
 
 🎧 **Quality:**
 WEB [FLAC/24-bit/44.1 kHz]
-
-📦 **Extra:**
-External cover, lyrics, additional covers
 
 📌 **Tags:**
 #web, #2021y, #2020s, #pop, #jpop, #femalevocalist, #indie, #japanese

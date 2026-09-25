@@ -25,10 +25,10 @@ Forbidden characters in directory names (replaced with the underscore character 
 - Non-breaking spaces.
 - The dot character `.`, because directory names cannot end with it on Windows;
 - Fancy Unicode characters that replace or resemble punctuation marks and any other characters from ASCII. For more details, see [MusicHoarders Wiki](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks).  
-  **Note:** This point is not always applicable, but only if these Unicode characters do not make much sense in ordinary verbal constructions and can be replaced with corresponding ASCII characters.
-  For example, slash in release name `S⁄T` is replaced with ASCII slash, i.e. `S/T`.  
-  This point does not apply to situations where these Unicode characters are used intentionally (for example, in this [Bandcamp release](https://00000ooooo.bandcamp.com/album/--5)) or are [part of writing system](https://en.wikipedia.org/wiki/Japanese_punctuation).  
-  For example, in artist's name `(V)・∀・(V)`, Unicode characters are not replaced with underscores `_`.
+  **Note:** This applies only when such Unicode characters carry no semantic weight and can be safely replaced with ASCII equivalents.  
+  For example, slash in release name `S⁄T` is replaced with ASCII slash: `S/T`.  
+  This does not apply when Unicode characters are used intentionally (as in this [Bandcamp release](https://00000ooooo.bandcamp.com/album/--5)) or are [part of a writing system](https://en.wikipedia.org/wiki/Japanese_punctuation).  
+  For example, Unicode characters in artist name `(V)・∀・(V)` are not replaced with underscores.
 
 ## File Naming
 
@@ -57,9 +57,9 @@ Forbidden characters in file names (replaced with the underscore character `_`):
 - Windows-reserved device names;
 - Non-breaking spaces;
 - Fancy Unicode characters that replace or resemble punctuation marks and any other characters from ASCII. For more details, see [MusicHoarders Wiki](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks).  
-  **Note:** This point is not always applicable, but only if these Unicode characters do not make much sense in ordinary verbal constructions and can be replaced with corresponding ASCII characters.  
-  For example, apostrophe in track name `1.07. Nobody‛s Home` is replaced with apostrophe from ASCII, i.e. `1.07. Nobody's Home`.  
-  This point does not apply to situations where these Unicode characters are used intentionally (for example, in this [Bandcamp release](https://00000ooooo.bandcamp.com/album/--5)) or are [part of writing system](https://en.wikipedia.org/wiki/Japanese_punctuation).  
+  **Note:** This applies only when such Unicode characters carry no semantic weight and can be safely replaced with ASCII equivalents.  
+  For example, apostrophe in track name `1.07. Nobody‛s Home` is replaced with apostrophe from ASCII: `1.07. Nobody's Home`.  
+  This does not apply when Unicode characters are used intentionally (as in this [Bandcamp release](https://00000ooooo.bandcamp.com/album/--5)) or are [part of a writing system](https://en.wikipedia.org/wiki/Japanese_punctuation).  
   For example, commas in track name `1.03. 夕凪、某、花惑い` are not replaced with commas `,` from ASCII.
 
 ## Album Structure

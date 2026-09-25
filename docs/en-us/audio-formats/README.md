@@ -15,9 +15,9 @@ Lossy releases are not converted when transferred to devices.
 
 ## Checksums
 
-I use `MD5` checksums only for `FLAC`, because they are already built into it for unencoded audio data. They are stored in metadata in the `STREAMINFO` block (for more details, see [FLAC specification (RFC 9639, 8.2. Streaminfo section)](https://www.rfc-editor.org/rfc/rfc9639.html#name-streaminfo)) and can therefore be used to verify the integrity of unencoded audio independently of metadata changes.  
-I convert other lossless formats to FLAC, so they are not discussed here.
+I use `MD5` checksums only for `FLAC`, as checksum of the unencoded audio data is natively stored in the `STREAMINFO` metadata block (for more details, see [FLAC specification (RFC 9639, 8.2. Streaminfo section)](https://www.rfc-editor.org/rfc/rfc9639.html#name-streaminfo)). This allows validating audio integrity independently of metadata updates.  
+I convert other lossless formats to `FLAC`, so they are not discussed here.
 
-I do not use audio stream checksums for lossy formats. They are non-deterministic because of compiler differences, architectures, codec implementations (for example, `Opus` has fixed-point and floating-point implementations, for more details, see [Opus repository README on Github](https://github.com/xiph/opus/blob/main/README) in the Portability notes section), decoders, conversion settings, and other variables. Thus, decoded PCM output is not necessarily bit-identical each time, which makes the integrity check meaningless.
+For lossy formats, uncompressed audio checksums are impractical due to non-deterministic decoding: compiler differences, architectures, codec implementations (for example, `Opus` has fixed-point and floating-point implementations, for more details, see [Opus repository README on Github](https://github.com/xiph/opus/blob/main/README) in the Portability notes section), decoders, conversion settings, and other variables. Thus, decoded PCM output is not necessarily bit-identical each time, which makes the integrity check meaningless.
 
-I also do not use whole-file checksums, because changes to metadata, embedded cover, tag padding, or other non-audio data would change this checksum even if the audio itself remained identical.
+I also do not use whole-file checksums, because changes to metadata, embedded cover, tag padding, or other non-audio data would change this checksum even if the underlying audio stream remains identical.

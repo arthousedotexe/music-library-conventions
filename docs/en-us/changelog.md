@@ -4,6 +4,13 @@
 
 ## 2026-09-25
 
+### Changed
+
+- Moved all images to the `docs/images` directory in the project root;
+- Renamed the "Covers, booklets" section to [Covers, scans, booklets](/en-us/covers-and-booklets/) section;
+- Changed naming rules for covers and other materials, added information about physical release scans in the [Covers, scans, booklets](/en-us/covers-and-booklets/) section;
+- Improved wording across the document.
+
 ### Fixed
 
 - Minor document corrections.
