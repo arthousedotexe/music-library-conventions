@@ -20,10 +20,26 @@ I embed only one cover per track, using the Front Cover picture type.
 
 **Location:** in the same folder as the audio files.
 
+## Physical release scans
+
+For more information about types of covers and scans, see [MusicBrainz Docs](https://musicbrainz.org/doc/Cover_Art/Types).  
+You can read about scanning process in [MusicHoarders Wiki](https://musichoarders.xyz/guides/scanning-media).  
+And about naming scans you can also read [there](https://musichoarders.xyz/reference/naming-scans), however, I name scans in lowercase.
+
+**Format:** `.png`, when the original cover is available in this format; otherwise `.jpg`. Conversion from `.jpg` to `.png` is not allowed.
+
+**Resolution:** highest available resolution.
+
+**Location:** in the `scans` directory.
+
 ## Additional Covers
 
+> [!WARNING]
+> Covers obtained from physical releases **do not belong** to this section, even if they serve the same purpose.
+> This covers belongs to "Physical release scans" section and are saved in the `scans` directory.
+
 Additional covers are an addition to the album or single.  
-For example: alternative single/album covers, materials from physical edition (front, back, disc), unreleased materials, posters.  
+For example: alternative single/album covers, unreleased materials, posters.  
 Consider the following example:
 
 1. In 2019, the single Fly Out West is released and has the following cover:
@@ -32,43 +48,45 @@ Consider the following example:
 2. Later that same year, the album Bipolar is released, including the song as track 5 and using the album cover:
 ![Album](../../images/covers-example-album.png)
 
-3. Thus the single cover is lost, which is not good, so I save it separately and add it to the covers folder.
+3. Thus the single cover is lost, which is not good, so I save it separately and add it to the `other materials` folder.
 
-Additional covers can also come from other places, for example, unreleased materials, scans, and so on.  
+Additional covers can also come from other places, for example, unreleased materials or videos.  
 A funny example is a [Reddit post](https://www.reddit.com/r/lanadelrey/comments/14x4amo/did_you_know_that_theres_a_tunnel_under_ocean/); this album has six covers in total!
 
 ---
 
-**Track-cover filenames:** `cover-<Disc number>-<Track number with leading zero>`.  
-For example: `cover-1-03.jpg`, `cover-1-09.png`.
+**Track-cover filenames:** `cover <Disc number>.<Track number with leading zero>`.  
+For example: `cover 1.03.jpg`, `cover 1.09.png`.
 
-**Album-cover filenames:** `cover-<Cover number>`.  
-For example: `cover-3` means the third alternative album cover.
+**Album-cover filenames:** `cover <Cover number>`.  
+For example: `cover 3` means the third alternative album cover.
 
-**Other cover filenames:** `back-spine`, `disc`, `tray`, `back-spine-front` and so on.  
-For more details, see [Cover Art Types guide on MusicBrainz](https://musicbrainz.org/doc/Cover_Art/Types).  
+**Other cover filenames:** `video background`, `poster`.  
 
 **Format:** `.png`, when the original cover is available in this format; otherwise `.jpg`. Conversion from `.jpg` to `.png` is not allowed.
 
 **Resolution:** highest available resolution.
 
-**Location:** in the `covers` directory.
+**Location:** in the `other materials` directory.
 
 ## Booklets
 
 A booklet does not necessarily have to match a specific release.  
 For example: a digital release may contain a CD booklet; a UK release may contain a booklet sourced from the Japanese edition.
 
-**Name:** `booklet-<Page number with leading zero>` or `booklet-<Page number with leading zero>-<Next page number with leading zero>`.  
-For example: `booklet-11-12.jpg`, `booklet-06.png`.
+**Name:** `booklet <Page number with leading zero>` or `booklet <Page number with leading zero>-<Next page number with leading zero>`.  
+For example: `booklet 11-12.jpg`, `booklet 06.png`.
 
-**Other names:** `booklet-outside`.  
+**Other names:** `booklet outside`, `booklet lyrics 01`, `booklet inside`.  
 
 **Format:** `.png`, when the original cover is available in this format; otherwise `.jpg`. Conversion from `.jpg` to `.png` is not allowed.
 
 **Resolution:** highest available resolution.
 
-**Location:** in the `booklet` directory.
+**Location:** in the `other materials` directory.
+
+> [!WARNING]
+> Booklets obtained from physical releases are saved in the `scans` directory.
 
 ## Animated Covers
 
