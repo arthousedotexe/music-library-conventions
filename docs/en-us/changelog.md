@@ -2,6 +2,14 @@
 
 # Changelog
 
+## 27-09-2026
+
+### Fixed
+
+- Pages now properly reset scroll position to the top when the route is changed.
+
+---
+
 ## 2026-09-25
 
 ### Changed
