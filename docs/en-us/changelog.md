@@ -6,7 +6,8 @@
 
 ### Fixed
 
-- Pages now properly reset scroll position to the top when the route is changed.
+- Pages now properly reset scroll position to the top when the route is changed;
+- Minor document corrections.
 
 ---
 

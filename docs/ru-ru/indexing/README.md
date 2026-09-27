@@ -2,7 +2,7 @@
 
 ## Структура индексного файла
 
-Индексный файл (`index.txt`) находится рядом с аудиофайлами. Файл использует Telegram-синтаксис.  
+Индексный файл (`index.txt`) находится рядом с аудиофайлами и имеет атрибут скрытого файла. Файл использует Telegram-синтаксис.  
 В нем содержится краткая информация о релизе, а именно:
 
 - Название релиза (тег `Album`);  
@@ -65,10 +65,10 @@
 ### Альбом
 
 ```text
-💿 **Album:** Nininshou
-🔗 **Album aliases:** 二人称, Second Person
-👤 **Artist:** Yorushika
-🔗 **Artist aliases:** ヨルシカ
+💿 **Album:** 二人称
+🔗 **Album aliases:** Nininshou, Second Person
+👤 **Artist:** ヨルシカ
+🔗 **Artist aliases:** Yorushika
 📅 **Release year:** 2026
 🎺 **Genre:** Pop, Jazz
 🎺 **Style:** Jazz Pop, Indie Pop, J-Pop
@@ -78,28 +78,28 @@
 WEB [FLAC/24-bit/96 kHz]
 
 📝 **Tracklist:**
-01. Shouchou, Yuubin-uke
-02. Kumo ni Naru
-03. Hana mo Zawameku
-04. Mashou
-05. Play Sick
-06. Post Haru
-07. Taiyou
-08. Haru
-09. Wasurete Kudasai
-10. Shura
-11. Kaseijin
-12. Rubato
-13. Kasou
-14. Aporia
-15. Hebi
-16. Umeki
-17. Kitsutsuki
-18. Hitchcock (Re-Recording)
-19. Gekkouyoku
-20. Chidori
-21. Kai
-22. Umi e
+01. 早朝、郵便受け
+02. 雲になる
+03. 花も騒めく
+04. 魔性
+05. プレイシック
+06. ポスト春
+07. 太陽
+08. 晴る
+09. 忘れてください
+10. 修羅
+11. 火星人
+12. ルバート
+13. 火葬
+14. アポリア
+15. へび
+16. うめき
+17. 啄木鳥
+18. ヒッチコック (Re-Recording)
+19. 月光浴
+20. 千鳥
+21. 櫂
+22. 海へ
 
 📌 **Tags:**
 #web, #2026y, #2020s, #pop, #jazz, #jazzpop, #indiepop, #jpop, #femalevocalist, #indie, #japanese
