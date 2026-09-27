@@ -35,10 +35,18 @@
     WEB [FLAC/16-bit/44.1 kHz]: tracks 1-7, 10-14
     WEB [MP3/320 kbps CBR/44.1 kHz]: track 8
     WEB [AAC/192 kbps VBR/48 kHz]: track 9
-    CD [FLAC/16-bit/44.1 kHz]: track 15
     ```
   
-  - Для CD-релизов также указывается log score в формате `[XX% log]`: `CD [FLAC/16-bit/44.1 kHz] [100% log]`
+  - Для CD-релиза также указываются:
+    - Каталожный номер (тег `Catalog Number`) в формате `[Catalog Number]`: `[ARCH-0001]`
+    - Оценка лога (log score) в формате `[XX%LOG]`: `[100%LOG]`;
+    - Отметка о самостоятельном рипе: `[SELF-RIP]`.
+
+    В итоге:
+
+    ```text
+    CD [FLAC/16-bit/44.1 kHz] [ARCH-0001] [100%LOG] [SELF-RIP]
+    ```
 
 - Треклист - при необходимости;  
   **Примечание №1:** если релиз содержит один диск, то номера треков пишутся без номера диска, но сохраняется лидирующий ноль, например: `01`, `09`.  
@@ -116,7 +124,7 @@ WEB [FLAC/24-bit/96 kHz]
 🕰 **Total duration:** 44:34
 
 🎧 **Quality:**
-CD [FLAC/16-bit/44.1 kHz] [100% log]
+CD [FLAC/16-bit/44.1 kHz] [AONE-0011] [100%LOG]
 
 📝 **Tracklist:**
 01. はにーぽけっと - ゼンマイ恋時計 (T.E.B Summer Mix)

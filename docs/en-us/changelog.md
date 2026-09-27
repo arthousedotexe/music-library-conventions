@@ -4,6 +4,10 @@
 
 ## 27-09-2026
 
+### Changed
+
+- Split directory structure into digital and physical releases in the [Library structure](/en-us/library-structure/) section.
+
 ### Fixed
 
 - Pages now properly reset scroll position to the top when the route is changed;

@@ -6,16 +6,27 @@
 
 The library root folder is `Music`.
 
-The path to each album follows this structure:
+The path to digital release follows this structure:
 
 ```text
-<Album Artist>/<Release Year> - <Album Title>
+WEB/<Album Artist>/<Release Year> - <Album Title>
 ```
 
 For example:
 
-- `Music/Ice Cube/1992 - The Predator`
-- `Music/Lana Del Rey/2012 - Born to Die – The Paradise Edition (Special Version)`
+- `Music/WEB/Ice Cube/1992 - The Predator`
+- `Music/WEB/Lana Del Rey/2012 - Born to Die – The Paradise Edition (Special Version)`
+
+The path to each physical release follows this structure:
+
+```text
+CD/<Album Artist>/[<Catalog Number>] [Log score] [Self-rip tag] <Release Year> - <Album Title>
+```
+
+For example:
+
+- `Music/CD/妖精帝國/[ARCH-0001] [100%LOG] 2005 - stigma`
+- `Music/CD/Demetori/[DECD-0006] [100%LOG] [SELF-RIP] 2009 - 曼衍珠汝華 ~ Nada Upasana Pundarika`
 
 Forbidden characters in directory names (replaced with the underscore character `_`):
 
