@@ -2,7 +2,15 @@
 
 # Changelog
 
-## 27-09-2026
+## 2026-10-09
+
+### Changed
+
+- Changed styles of alerts in document.
+
+---
+
+## 2026-09-27
 
 ### Changed
 
