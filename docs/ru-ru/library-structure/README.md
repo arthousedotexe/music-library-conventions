@@ -4,8 +4,8 @@
 
 Аудиофайлы распределены по двум директориям:
 
-- `music library` — основная директория библиотеки. Используется для раздач;
-- `music sharing` — вспомогательная директория для раздачи релизов, исключенных из основной библиотеки (например, физических релизов при наличии их цифровых версий более высокого качества в `music library`).
+- `music library` - основная директория библиотеки. Используется для раздач;
+- `music sharing` - вспомогательная директория для раздачи релизов, исключенных из основной библиотеки (например, физических релизов при наличии их цифровых версий более высокого качества в `music library`).
 
 Обе директории имеют одинаковую структуру, поэтому все описанное ниже относится к каждой из них.
 
@@ -20,7 +20,7 @@ WEB/<Исполнитель альбома>/<Год выхода альбома>
 Например:
 
 - `music library/WEB/Ice Cube/1992 - The Predator`
-- `music library/WEB/Lana Del Rey/2012 - Born to Die – The Paradise Edition (Special Version)`
+- `music library/WEB/Lana Del Rey/2012 - Born to Die - The Paradise Edition (Special Version)`
 
 ---
 
@@ -46,7 +46,7 @@ CD/<Исполнитель альбома>/[<Каталожный номер>] [
 - Символ точки `.`, поскольку названия директорий не могут заканчиваться этим символом в Windows.
 
 > [!WARNING]
-> Символы Юникода, похожие на буквы, цифры и знаки препинания ASCII, заменяются на их ASCII-эквиваленты, а при отсутствии таковых — на знак подчеркивания. Подробнее об этом можно прочитать в [MusicHoarders вики](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks).  
+> Символы Юникода, похожие на буквы, цифры и знаки препинания ASCII, заменяются на их ASCII-эквиваленты, а при отсутствии таковых - на знак подчеркивания. Подробнее об этом можно прочитать в [MusicHoarders вики](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks).  
 > Это правило применяется только тогда, когда такие символы Юникода не несут смысловой нагрузки.  
 > В случаях, когда символы Юникода используются намеренно (например, в [этом релизе на Bandcamp](https://00000ooooo.bandcamp.com/album/--5)) или являются [частью национальной письменности](https://en.wikipedia.org/wiki/Japanese_punctuation), они не заменяются.  
 
@@ -90,7 +90,7 @@ CD/<Исполнитель альбома>/[<Каталожный номер>] [
 - Неразрывные пробелы.
 
 > [!WARNING]
-> Символы Юникода, похожие на буквы, цифры и знаки препинания ASCII, заменяются на их ASCII-эквиваленты, а при отсутствии таковых — на знак подчеркивания. Подробнее об этом можно прочитать в [MusicHoarders вики](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks).  
+> Символы Юникода, похожие на буквы, цифры и знаки препинания ASCII, заменяются на их ASCII-эквиваленты, а при отсутствии таковых - на знак подчеркивания. Подробнее об этом можно прочитать в [MusicHoarders вики](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks).  
 > Это правило применяется только тогда, когда такие символы Юникода не несут смысловой нагрузки.  
 > В случаях, когда символы Юникода используются намеренно (например, в [этом релизе на Bandcamp](https://00000ooooo.bandcamp.com/album/--5)) или являются [частью национальной письменности](https://en.wikipedia.org/wiki/Japanese_punctuation), они не заменяются.  
 

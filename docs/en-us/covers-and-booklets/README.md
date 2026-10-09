@@ -102,9 +102,9 @@ I do not use or save animated covers for the following reasons:
 2. They take up a lot of space;
 3. Support for embedding and displaying animated covers is inconsistent across tag formats and music players;
 4. As of August 2026, animated covers are not natively supported almost anywhere, specifically:  
-  **foobar2000** — not supported natively, requires a plugin ([discussion №1](https://www.reddit.com/r/musichoarder/comments/1aeucbn/comment/koa83a9/), [discussion №2](https://www.reddit.com/r/foobar2000/comments/1dpgijy/does_animated_cover_art_work/)):
+  **foobar2000** - not supported natively, requires a plugin ([discussion №1](https://www.reddit.com/r/musichoarder/comments/1aeucbn/comment/koa83a9/), [discussion №2](https://www.reddit.com/r/foobar2000/comments/1dpgijy/does_animated_cover_art_work/)):
   ![Discussion of animated covers on Reddit](../../images/covers-foobar.png)
-  **Poweramp** — not supported ([discussion](https://forum.powerampapp.com/topic/29600-animated-song-cover/)):
+  **Poweramp** - not supported ([discussion](https://forum.powerampapp.com/topic/29600-animated-song-cover/)):
   ![Discussion of animated covers on the Poweramp forum](../../images/covers-poweramp.png)
-  **MusicBee** — not supported and not planned ([discussion](https://getmusicbee.com/forum/index.php?topic=370.msg187355#msg187355)):
+  **MusicBee** - not supported and not planned ([discussion](https://getmusicbee.com/forum/index.php?topic=370.msg187355#msg187355)):
   ![Discussion of animated covers on the MusicBee forum](../../images/covers-musicbee.png)

@@ -13,30 +13,30 @@ For example, `Album Artist` maps to `ALBUMARTIST` field in **Vorbis Comment (FLA
 
 **Main tags** are required in every audio file.
 
-- `Album` — album title;
+- `Album` - album title;
 
-- `Album Artist` — album artist;
+- `Album Artist` - album artist;
 
-- `Artist` — track artist or artists;  
+- `Artist` - track artist or artists;  
   **Note:** this is a multi-valued tag.  
   I do not combine multiple artists into a single string using separators like `feat.`, `&`, `,`, or `;`.  
   **Example in Vorbis Comment:** `ARTIST=Lana Del Rey; ARTIST=Zella Day; ARTIST=Weyes Blood`, `ARTIST=Zachz Winner; ARTIST=Frozy; ARTIST=joyful` (meaning three separate tag fields are used for three artists).
 
-- `Date` — release date of a specific release;  
+- `Date` - release date of a specific release;  
   **Format:** `YYYY-MM-DD` (or `YYYY` if the exact day and month are unknown)  
   **ID3v2.3 Feature**: [ID3v2.3](https://id3.org/id3v2.3.0) specification limits the `TYER` frame to only year (`YYYY`), but taggers write the full date directly into `TYER` without separating it from the `TDAT` frame, as prescribed by the standard.
 
-- `Disc Number` — disc number;
+- `Disc Number` - disc number;
 
-- `Disc Total` — total number of discs;
+- `Disc Total` - total number of discs;
 
-- `Title` — track title;
+- `Title` - track title;
 
-- `Track Number` — track number;
+- `Track Number` - track number;
 
-- `Track Total` — total number of tracks;
+- `Track Total` - total number of tracks;
 
-- `Cover` — embedded cover for the track. More details see in [Covers, Scans and Booklets](/en-us/covers-and-booklets/?id=Embedded-covers) section.
+- `Cover` - embedded cover for the track. More details see in [Covers, Scans and Booklets](/en-us/covers-and-booklets/?id=Embedded-covers) section.
 
 A typical file with the main tags filled looks like this:
 ![Example 1](../../images/tags-example1.png)
@@ -52,30 +52,30 @@ For subsequent tags, I also indicate whether they can be displayed and used for 
   **Display:** Poweramp (-), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
-- `Composer` — composer;  
+- `Composer` - composer;  
   **Display:** Poweramp (+), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (+), foobar2000 (+)
 
-- `Genre` — genres;  
+- `Genre` - genres;  
   **Display:** Poweramp (+), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (+), foobar2000 (+)
 
-- `Lyrics` — synchronized or unsynchronized song lyrics;  
+- `Lyrics` - synchronized or unsynchronized song lyrics;  
   **Display:** Poweramp (+), foobar2000 (+)  
   **Note:** instead of this tag, I use `.lrc` files, see [Lyrics](/en-us/lyrics/) section.
 
-- `Original Date` — original release date;  
+- `Original Date` - original release date;  
   **Format:** `YYYY-MM-DD` (or `YYYY` if the exact day and month are unknown)  
   **Example:** this tag stores the album's original release date (for example, 1973), while the `Date` tag stores the year of a specific reissue or remaster (for example, 2011).  
   **Note:** if the values of `Date` and `Original Date` are identical, I omit `Original Date`.  
   **Display:** Poweramp (-) ([discussion](https://forum.powerampapp.com/topic/28077-originaldate-tag-support/)), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
-- `Producer` — producer;  
+- `Producer` - producer;  
   **Display:** Poweramp (-) ([discussion](https://forum.powerampapp.com/topic/21511-producer-tag/)), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
-- `Style` — subgenres;  
+- `Style` - subgenres;  
   **Display:** Poweramp (-), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
@@ -86,66 +86,66 @@ How it will look like:
 
 **Specialized tags** are optional and used only when relevant. Some may be filled automatically by taggers.
 
-- `Album Artist Sort` — controls how the album artist is sorted, for example by surname or while ignoring leading articles;  
+- `Album Artist Sort` - controls how the album artist is sorted, for example by surname or while ignoring leading articles;  
   For more information about sorting rules for artist names, see [MusicBrainz documentation](https://musicbrainz.org/doc/Style/Artist/Sort_Name).  
   **Example:** `Beatles, The` instead of `The Beatles`, so they will sort by B rather than T.  
   **Sorting by this tag:** Poweramp (-) (there is another setting to ignore articles), foobar2000 (+) (pattern setup required)
 
-- `Artist Sort` — similar to the previous tag, but controls how the track artist is sorted;  
+- `Artist Sort` - similar to the previous tag, but controls how the track artist is sorted;  
   **Sorting by this tag:** Poweramp (-) (there is another setting to ignore articles), foobar2000 (+) (pattern setup required)
 
-- `Barcode` — a unique barcode for the music release, useful for identifying it across databases, digital stores, streaming services and other services;  
+- `Barcode` - a unique barcode for the music release, useful for identifying it across databases, digital stores, streaming services and other services;  
   **Display:** Poweramp (-), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
-- `BPM` — beats per minute;  
+- `BPM` - beats per minute;  
   **Display:** Poweramp (-) ([discussion](https://forum.powerampapp.com/topic/24384-sort-option-for-beats-per-minute-bpm/)), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
-- `Catalog Number` — a unique serial number of the music label's release, used to identify releases within the label's catalog;  
+- `Catalog Number` - a unique serial number of the music label's release, used to identify releases within the label's catalog;  
   **Display:** Poweramp (-), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
-- `Comment` — comment;  
+- `Comment` - comment;  
   **Display:** Poweramp (+), foobar2000 (+)  
 
-- `Compilation` — a flag indicating that a track is part of a compilation;  
+- `Compilation` - a flag indicating that a track is part of a compilation;  
   **Sorting by this tag:** Poweramp (-), foobar2000 (pattern setup required)
 
 - `Composer Sort` - similar to the `Album Artist Sort` and `Artist Sort` tags, but controls how the track composer is sorted;  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+) (pattern setup required)
 
-- `Copyright` — copyright information for the release;  
+- `Copyright` - copyright information for the release;  
   **Example:** `A Polydor Records Release / An Interscope Records Release in the USA; ℗ 2021 Lana Del Rey, under exclusive licence to Universal Music Operations Limited`.  
   **Display:** Poweramp (-), foobar2000 (+)  
 
-- `ISRC` — a unique international code assigned to audio recording, useful for identifying it across databases, digital stores, streaming services and other services;  
+- `ISRC` - a unique international code assigned to audio recording, useful for identifying it across databases, digital stores, streaming services and other services;  
   **Display:** Poweramp (-), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
-- `Grouping` — a tag that provides an additional grouping level between the release and individual tracks;  
+- `Grouping` - a tag that provides an additional grouping level between the release and individual tracks;  
   **Example:**  
   [This release on Spotify](https://open.spotify.com/album/6eOuqhCfrTPp1H0YbQ9PmL) contains two works: Symphony No. 5 and Symphony No. 7.  
   ![Example with the Grouping tag](../../images/tags-grouping.png)
-  If tracks 1–4 have `Symphony No. 5 in C Minor, Op. 67` in their Grouping tag and subsequent tracks use `Symphony No. 7 in A Major, Op. 92`, supported audio players will display distinct section headers for each symphony.  
+  If tracks 1-4 have `Symphony No. 5 in C Minor, Op. 67` in their Grouping tag and subsequent tracks use `Symphony No. 7 in A Major, Op. 92`, supported audio players will display distinct section headers for each symphony.  
   **Display:** Poweramp (-) ([discussion](https://forum.powerampapp.com/topic/28102-grouping-tag-support/)), foobar2000 (+) (pattern setup required)
 
-- `Label` — label;  
+- `Label` - label;  
   **Display:** Poweramp (-) ([discussion](https://forum.powerampapp.com/topic/28045-support-for-displaying-publisher-tag/)), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
-- `Language` — the language or languages spoken or sung in the track;  
+- `Language` - the language or languages spoken or sung in the track;  
   **Note:** this is a three-character language code. MusicBrainz [uses codes](https://picard-docs.musicbrainz.org/en/latest/variables/tags_advanced.html) from the [ISO 639-3](https://en.wikipedia.org/wiki/ISO_639-3) standard, and [ID3v2.3](https://id3.org/id3v2.3.0) and [ID3v2.4](https://id3.org/id3v2.4.0-frames) specifications refer to the [ISO 639-2](https://en.wikipedia.org/wiki/ISO_639-2) standard when it comes to the `TLAN` frame.  
   **Examples:** `eng`, `rus`, `jpn`, `zxx` (instrumental)  
   **Display:** Poweramp (-), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
-- `Media` — source of the release;  
+- `Media` - source of the release;  
   **Examples:** `CD`, `WEB`, `SACD`, `Vinyl`  
   **Display:** Poweramp (-), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
-- `MusicBrainz IDs` — unique identifiers from the MusicBrainz database;  
+- `MusicBrainz IDs` - unique identifiers from the MusicBrainz database;  
   **Specifically:**
   - `MusicBrainz Artist ID` - multi-value tag containing the MBIDs for the track artists;
   - `MusicBrainz Recording ID` - tag containing the MBID for the recording;
@@ -159,17 +159,17 @@ How it will look like:
   **Note:** read more in MusicBrainz Docs: [MusicBrainz Identifiers](https://musicbrainz.org/doc/MusicBrainz_Identifier), [Basic Tags](https://picard-docs.musicbrainz.org/en/latest/variables/tags_basic.html) and [Tag Mapping](https://picard-docs.musicbrainz.org/en/latest/appendices/tag_mapping.html).  
   These tags are also useful for linking with media-servers ([Navidrome](https://www.navidrome.org/), [Jellyfin](https://jellyfin.org/)), scrobblers ([ListenBrainz](https://listenbrainz.org/), self-hosted scrobblers, for example, [Koito](https://github.com/gabehf/Koito)), and [MusicBrainz](https://musicbrainz.org/) database.
 
-- `Performer` — tags containing performer names together with their instruments or roles;  
+- `Performer` - tags containing performer names together with their instruments or roles;  
   **Examples:** `Yuri Kaplan (Vocals, Electric Guitar)`, `Vladimir Yakovlev (Drums)`, `Konstantin Pyzhov (Electric Guitar)`, `Stanislav Murashko (Bass Guitar)`  
   **Display:** Poweramp (-), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
-- `Release Country` — the country associated with the release;  
+- `Release Country` - the country associated with the release;  
   **Examples:** `US`, `JP`, `GB`, `XW` (worldwide).  
   **Display:** Poweramp (-), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
-- `Remixer` — the person responsible for remixing the track;  
+- `Remixer` - the person responsible for remixing the track;  
   **Display:** Poweramp (-), foobar2000 (+)  
   **Sorting by this tag:** Poweramp (-), foobar2000 (+)
 
@@ -201,54 +201,54 @@ The final result looks like this:
 - `Artists` - multi-value tag that stores a list of several artists;  
   **Note:** This tag is generated and filled automatically by MusicBrainz Picard if the relevant information is available in the MusicBrainz database. More details see in [Basic Tags](https://picard-docs.musicbrainz.org/en/latest/variables/tags_basic.html) section in MusicBrainz Docs.
 
-- `Encoder` — the encoder program/library that created/re-encoded the audio file;
+- `Encoder` - the encoder program/library that created/re-encoded the audio file;
 
-- `Encoded By` — the person or organization responsible for encoding or re-encoding the audio file;
+- `Encoded By` - the person or organization responsible for encoding or re-encoding the audio file;
 
 - `Engineer` - tags containing sound engineers, recording engineers, assistant engineers;
 
-- `First Played` — the date when the person first played the track;  
+- `First Played` - the date when the person first played the track;  
   **Format:** usually `YYYY-MM-DD HH:MM:SS`
 
-- `Last Played` — the date when the person last played the track;  
+- `Last Played` - the date when the person last played the track;  
   **Format:** usually `YYYY-MM-DD HH:MM:SS`
 
-- `Lyricist` — the person who writes lyrics for the song;
+- `Lyricist` - the person who writes lyrics for the song;
 
-- `Mixer` — the person responsible for mixing the audio recording;
+- `Mixer` - the person responsible for mixing the audio recording;
 
-- `Mood` — the mood of the track;  
+- `Mood` - the mood of the track;  
   **Note:** a decent mood methodology is outlined in [Tufts University's Music Mood Classification guide](https://sites.tufts.edu/eeseniordesignhandbook/2015/music-mood-classification/).
 
-- `Play Count` — number of times the track has been played;
+- `Play Count` - number of times the track has been played;
 
-- `Original Year` — original release year of the album;  
+- `Original Year` - original release year of the album;  
   **Format:** `YYYY`
 
-- `Rating` — rating of the track;
+- `Rating` - rating of the track;
 
-- `Recording Copyright` — copyright information for a specific recording;
+- `Recording Copyright` - copyright information for a specific recording;
 
-- `Release Status` — the release's distribution status;  
+- `Release Status` - the release's distribution status;  
   **Examples**: `official`, `bootleg`.
 
-- `Release Type` — the release's classification;  
+- `Release Type` - the release's classification;  
   **Examples**: `album`, `single`, `ep`, `remix`.
 
-- `Script` — the script used to write the release's tracklist;  
+- `Script` - the script used to write the release's tracklist;  
   **Note:** script here means set of graphic characters used for the written form of one or more languages. For more details, see [ISO 15924 Wikipedia](https://en.wikipedia.org/wiki/ISO_15924) article.  
   **Examples:** `Latn`, `Jpan`, `Cyrl`.
 
-- `Subtitle` — track subtitle;  
+- `Subtitle` - track subtitle;  
   **Example:** if `Subtitle` tag contains `Acoustic version`, `Title` tag can remain `Track title`.  
   Without a separate `Subtitle` tag, the title would instead be stored as `Track title (Acoustic version)`.
 
-- `URL` — a link to anything (source of the track, streaming service, and so on);
+- `URL` - a link to anything (source of the track, streaming service, and so on);
 
 - `Work` - a distinct intellectual or artistic creation, which can be expressed in the form of one or more audio recordings. A work does not have to be musical. For example, a work could be a novel, play, poem or essay, later recorded as an audiobook;  
   **Note:** for more details, see [MusicBrainz Docs on Works](https://musicbrainz.org/doc/Work).  
 
-- `Writer` — the person who creates musical compositions or writes lyrics for songs, or both.
+- `Writer` - the person who creates musical compositions or writes lyrics for songs, or both.
 
 ## Tag Mapping Tables
 

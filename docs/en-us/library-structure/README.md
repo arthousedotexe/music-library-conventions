@@ -22,7 +22,7 @@ WEB/<Album Artist>/<Release Year> - <Album Title>
 For example:
 
 - `music library/WEB/Ice Cube/1992 - The Predator`
-- `music library/WEB/Lana Del Rey/2012 - Born to Die – The Paradise Edition (Special Version)`
+- `music library/WEB/Lana Del Rey/2012 - Born to Die - The Paradise Edition (Special Version)`
 
 ---
 
