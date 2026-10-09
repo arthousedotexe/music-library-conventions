@@ -6,7 +6,8 @@
 
 ### Changed
 
-- Changed styles of alerts in document.
+- Changed styles of alerts in document;
+- Updated directory structure and significantly improved the [Library structure](/en-us/library-structure/) section.
 
 ### Fixed
 
