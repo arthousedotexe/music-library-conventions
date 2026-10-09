@@ -152,7 +152,7 @@ CD [FLAC/16-bit/44.1 kHz] [AONE-0011] [100%LOG]
 📅 **Release year:** 2021
 🎺 **Genre:** Pop
 🎺 **Style:** J-Pop
-🕰 **Total duration:** 2:32
+🕰 **Duration:** 2:32
 
 🎧 **Quality:**
 WEB [FLAC/24-bit/44.1 kHz]

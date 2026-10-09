@@ -8,6 +8,10 @@
 
 - Changed styles of alerts in document.
 
+### Fixed
+
+- Minor document corrections.
+
 ---
 
 ## 2026-09-27
@@ -38,7 +42,7 @@
 
 ---
 
-## 24-09-2026
+## 2026-09-24
 
 ### Added
 
@@ -127,7 +131,7 @@
 
 - Date format changed from `YYYY-MM-DD` to `DD-MM-YYYY` in the Russian version of Changelog;
 - Minor corrections in [Covers, Scans and Booklets](/en-us/covers-and-booklets/) and [Indexing](/en-us/indexing/) sections;
-- Other minor correction in the Changelog.
+- Other minor corrections in the Changelog.
 
 ---
 
@@ -151,7 +155,7 @@
 
 ### Changed
 
-- In the [Tags](/en-us/tags/) section, a mention of `Opus` has been added;
+- Added mention of `Opus` in the [Tags](/en-us/tags/) section;
 - Reformulated content on the main page of the website;
 - Increased offset between text and underline in links to improve readability.
 
@@ -184,7 +188,7 @@
 
 ### Added
 
-- The `Work`, `Mixer`, `Release Country`, `Release Status`, `Release Type`, and `Script` tags were added to Excluded Tags in the [Tags](/en-us/tags/) section;
+- Added `Work`, `Mixer`, `Release Country`, `Release Status`, `Release Type`, `Script` tags to Excluded Tags in the [Tags](/en-us/tags/) section;
 
 ### Changed
 
@@ -192,7 +196,7 @@
 
 ### Fixed
 
-- Cover art filenames.
+- Fixed cover art filenames.
 
 ---
 
@@ -208,9 +212,9 @@
 
 ### Added
 
-- Descriptions for all MusicBrainz identifiers and ReplayGain tags;
-- MusicBrainz identifiers and ReplayGain tags have been added to the table;
-- Format-specific notes before the tag mapping tables.
+- Added descriptions for all MusicBrainz identifiers and ReplayGain tags;
+- Added MusicBrainz identifiers and ReplayGain tags to the tag mapping table;
+- Added format-specific notes before the tag mapping tables.
 
 ### Changed
 
@@ -218,12 +222,12 @@
 
 ### Removed
 
-- Section with allowed characters in filenames ([Library Structure](/en-us/library-structure/) section);
-- The following MusicBrainz identifiers in the [Tags](/en-us/tags/) section: `MusicBrainz Composer ID`, `MusicBrainz Disc ID`, `MusicBrainz Original Artist ID`, `MusicBrainz Original Release ID`.
+- Removed section with allowed characters in filenames ([Library Structure](/en-us/library-structure/) section);
+- Removed the following MusicBrainz identifiers in the [Tags](/en-us/tags/) section: `MusicBrainz Composer ID`, `MusicBrainz Disc ID`, `MusicBrainz Original Artist ID`, `MusicBrainz Original Release ID`.
 
 ### Fixed
 
-- Russian localization in page navigation bars;
+- Fixed Russian localization in page navigation bars;
 - Improved wording across multiple parts of the document;
 - Incorrect display of horizontal divider borders;
 - Incorrect rendering and incorrect field names in tag mapping tables in the [Tags](/en-us/tags/) section.
