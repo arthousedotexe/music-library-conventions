@@ -11,7 +11,8 @@
 
 ### Changed
 
-- Restructured the [Covers, Scans, Booklets](/en-us/covers-and-booklets/) section, improved readability, and added details about scanner used.
+- Restructured the [Covers, Scans, Booklets](/en-us/covers-and-booklets/) section, improved readability, and added details about scanner used;
+- Clarified wording regarding checksum verification for lossy and lossless formats in the [Audio Formats](/en-us/audio-formats/) section.
 
 ### Fixed
 
