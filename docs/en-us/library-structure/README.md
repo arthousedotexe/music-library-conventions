@@ -110,10 +110,10 @@ Each album directory follows this structure:
 
 - Audio files (`.flac`, `.m4a`, `.mp3` and so on), see [Audio Formats](/en-us/audio-formats/) section;
 - Lyrics files (`.lrc`), see [Lyrics](/en-us/lyrics/) section;
-- External album cover (`cover`), see [Covers, Scans and Booklets](/en-us/covers-and-booklets/?id=External-album-cover) section;
+- External album cover (`cover`), see [Covers, Scans, Booklets](/en-us/covers-and-booklets/?id=Cover-types-and-formats) section;
 - Index file (`index.txt`), see [Indexing](/en-us/indexing/) section;
-- Directory with physical release scans (`scans`), when applicable, see [Covers, scans, booklets](en-us/covers-and-booklets/?id=physical-release-scans) section;
-- Directory with other materials (`other materials`), when applicable, see [Covers, scans, booklets](/en-us/covers-and-booklets/?id=Additional-covers) section;
+- Directory with physical release scans (`scans`), when applicable, see [Covers, Scans, Booklets](en-us/covers-and-booklets/?id=Scanning) section;
+- Directory with other materials (`other materials`), when applicable, see [Covers, Scans, Booklets](/en-us/covers-and-booklets/?id=Additional-covers) section;
 - `.cue`, `.log` and `.accurip` files, when applicable, see [Ripping](/en-us/ripping/) section.
 
 For example:

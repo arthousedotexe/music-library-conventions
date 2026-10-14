@@ -1,76 +1,67 @@
 <!-- markdownlint-disable MD059 -->
 
-# Covers, Scans and Booklets
+# Covers, Scans, Booklets
 
-## Embedded Covers
+## Cover types and formats
 
-I embed only one cover per track, using the Front Cover picture type.
+To embed covers in tracks, I use Mp3tag with the following parameters:
 
-**Format:** always `JPEG`.
+- Format: `JPEG`;
+- Resolution: 1200x1200 (max. size). Scale proportionally;
+- Quality: High (80).
 
-**Resolution:** 1200x1200 pixels max. If cover at that resolution is unavailable, I use the highest available resolution without upscaling.
+Only one cover is embedded, the Front Cover.
 
-## External Album Cover
+---
 
-**Name:** `cover`.
+For other types of covers, `PNG` format is used if they are available in this format, otherwise `JPEG`. Conversion from `JPEG` to `PNG` is not allowed.  
+I use [oxipng](https://github.com/oxipng/oxipng) for efficient lossless compression of files in `PNG` format, optimization level: 2 (default). Thus, covers take up 10–25% less space.
 
-**Format:** `.png`, when the original cover is available in this format; otherwise `.jpg`. Conversion from `.jpg` to `.png` is not allowed.
+External release cover is named `cover` and is located next to audio files.
 
-**Resolution:** highest available resolution.
+## Scanning
 
-**Location:** in the same folder as the audio files.
+> [!TIP]
+> For more information about types of covers and scans, see [MusicBrainz Docs](https://musicbrainz.org/doc/Cover_Art/Types).  
+> About scanning process, see [MusicHoarders Wiki](https://musichoarders.xyz/guides/scanning-media).  
+> Scan naming rules are covered in the [same place](https://musichoarders.xyz/reference/naming-scans). However, I keep all scans and other covers filenames in lowercase.
 
-## Physical release scans
+To scan covers from physical releases, I use HP LaserJet Professional M1132 MFP (Contact Image Sensor scanner).  
+Scanning is performed at a resolution of 600 dpi.
 
-For more information about types of covers and scans, see [MusicBrainz Docs](https://musicbrainz.org/doc/Cover_Art/Types).  
-You can read about scanning process in [MusicHoarders Wiki](https://musichoarders.xyz/guides/scanning-media).  
-Scan naming rules are covered in the [same place](https://musichoarders.xyz/reference/naming-scans). However, I keep all scan filenames in lowercase.
+Scanned covers are stored in the `scans` directory, even if scan was not made by me.
 
-**Format:** `.png`, when the original cover is available in this format; otherwise `.jpg`. Conversion from `.jpg` to `.png` is not allowed.
-
-**Resolution:** highest available resolution.
-
-**Location:** in the `scans` directory.
+> [!WARNING]
+> Scanned covers will be stored in the `other materials` directory if release is digital and scans were taken from its physical version.
 
 ## Additional Covers
 
-> [!WARNING]
-> Materials scanned directly from physical releases **does not belong** in this section, even if it serves a similar purpose.  
-> They are covered in the "Physical release scans" section and should be stored as follows:
->
-> - in the `scans` directory, if release is physical and scans were made directly from it;
-> - in the `other materials` directory, if release is digital and/or scans were sourced elsewhere.
-
-Additional covers are an addition to the album or single.  
-For example: alternative single/album covers, unreleased materials, posters.  
+Additional covers include alternative single/album covers, unreleased materials, posters, and so on.  
+Booklets do not belong to this category, they are described in the next section.
 Consider the following example:
 
-1. In 2019, the single Fly Out West is released and has the following cover:
+1. In 2019, single Fly Out West is released and has the following cover:
 ![Single cover](../../images/covers-example-single.png)
 
-1. Later that same year, the album Bipolar is released, including the song as track 5 and using the album cover:
+2. Later that same year, the album Bipolar is released, including the song as track 5 and using the album cover:
 ![Album](../../images/covers-example-album.png)
 
-1. Thus the single cover is lost, which is not good, so I save it separately and add it to the `other materials` folder.
+3. Thus the single cover is lost, which is not good, so I save it separately.
 
 Additional covers can also come from other places, for example, unreleased materials or videos.  
 A funny example is a [Reddit post](https://www.reddit.com/r/lanadelrey/comments/14x4amo/did_you_know_that_theres_a_tunnel_under_ocean/); this album has six covers in total!
 
 ---
 
-**Track-cover filenames:** `cover <Disc number>.<Track number with leading zero>`.  
-For example: `cover 1.03.jpg`, `cover 1.09.png`.
+Additional covers are stored in the `other materials` directory.
 
-**Album-cover filenames:** `cover <Cover number>`.  
+Naming for alternative covers for tracks: `cover <Disc number>.<Track number with leading zero>`.  
+For example: `cover 1.03`, `cover 1.09`.
+
+Naming for alternative covers for releases: `cover <Cover number>`.  
 For example: `cover 3` means the third alternative album cover.
 
-**Other cover filenames:** `video background`, `poster`.  
-
-**Format:** `.png`, when the original cover is available in this format; otherwise `.jpg`. Conversion from `.jpg` to `.png` is not allowed.
-
-**Resolution:** highest available resolution.
-
-**Location:** in the `other materials` directory.
+Naming for other covers: `video background`, `poster`.  
 
 ## Booklets
 
@@ -83,16 +74,10 @@ For example: `cover 3` means the third alternative album cover.
 A booklet does not necessarily have to match a specific release.  
 For example: a digital release may contain a CD booklet; a UK release may contain a booklet sourced from the Japanese edition.
 
-**Name:** `booklet <Page number with leading zero>` or `booklet <Page number with leading zero>-<Next page number with leading zero>`.  
-For example: `booklet 11-12.jpg`, `booklet 06.png`.
+Naming for booklet pages: `booklet page <Scan number>`.  
+For example: `booklet page 01`, `booklet page 12`.
 
-**Other names:** `booklet outside`, `booklet lyrics 01`, `booklet inside`.  
-
-**Format:** `.png`, when the original cover is available in this format; otherwise `.jpg`. Conversion from `.jpg` to `.png` is not allowed.
-
-**Resolution:** highest available resolution.
-
-**Location:** in the `other materials` directory.
+Examples of other names related with booklet: `booklet outside`, `booklet inside`, `booklet lyrics page 02`.
 
 ## Animated Covers
 
@@ -101,7 +86,7 @@ I do not use or save animated covers for the following reasons:
 1. Many animated covers are just pulsating static images, which look rather strange in my opinion;
 2. They take up a lot of space;
 3. Support for embedding and displaying animated covers is inconsistent across tag formats and music players;
-4. As of August 2026, animated covers are not natively supported almost anywhere, specifically:  
+4. As of October 2026, animated covers are not natively supported almost anywhere, specifically:  
   **foobar2000** - not supported natively, requires a plugin ([discussion №1](https://www.reddit.com/r/musichoarder/comments/1aeucbn/comment/koa83a9/), [discussion №2](https://www.reddit.com/r/foobar2000/comments/1dpgijy/does_animated_cover_art_work/)):
   ![Discussion of animated covers on Reddit](../../images/covers-foobar.png)
   **Poweramp** - not supported ([discussion](https://forum.powerampapp.com/topic/29600-animated-song-cover/)):

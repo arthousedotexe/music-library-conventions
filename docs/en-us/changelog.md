@@ -8,6 +8,10 @@
 
 - Added a mention of encoder used for FLAC (libFLAC 1.5.0) in the [Audio Formats](/en-us/audio-formats/) section.
 
+### Changed
+
+- Restructured the [Covers, Scans, Booklets](/en-us/covers-and-booklets/) section, improved readability, and added details about scanner used.
+
 ### Fixed
 
 - Minor document corrections.
@@ -46,8 +50,8 @@
 ### Changed
 
 - Moved all images to the `docs/images` directory in the project root;
-- Renamed the "Covers, booklets" section to [Covers, scans, booklets](/en-us/covers-and-booklets/) section;
-- Changed naming rules for covers and other materials, added information about physical release scans in the [Covers, scans, booklets](/en-us/covers-and-booklets/) section;
+- Renamed the "Covers, booklets" section to [Covers, Scans, Booklets](/en-us/covers-and-booklets/) section;
+- Changed naming rules for covers and other materials, added information about physical release scans in the [Covers, Scans, Booklets](/en-us/covers-and-booklets/) section;
 - Improved wording across the document.
 
 ### Fixed
@@ -144,7 +148,7 @@
 ### Fixed
 
 - Date format changed from `YYYY-MM-DD` to `DD-MM-YYYY` in the Russian version of Changelog;
-- Minor corrections in [Covers, Scans and Booklets](/en-us/covers-and-booklets/) and [Indexing](/en-us/indexing/) sections;
+- Minor corrections in [Covers, Scans, Booklets](/en-us/covers-and-booklets/) and [Indexing](/en-us/indexing/) sections;
 - Other minor corrections in the Changelog.
 
 ---
@@ -206,7 +210,7 @@
 
 ### Changed
 
-- Improved wording in the [Covers, Scans and Booklets](/en-us/covers-and-booklets/) section.
+- Improved wording in the [Covers, Scans, Booklets](/en-us/covers-and-booklets/) section.
 
 ### Fixed
 
@@ -255,7 +259,7 @@
 - Added the [Library Structure](/en-us/library-structure/) section: regulated directory hierarchy and filename formats;
 - Added the [Audio Formats](/en-us/audio-formats/) section: defined the primary lossless format, added a section on checksums;
 - Added the [Lyrics](/en-us/lyrics/) section: standardized formats for synchronized `.lrc` lyrics;
-- Added the [Covers, Scans and Booklets](/en-us/covers-and-booklets/) section: defined requirements for Covers, Scans and Booklets and reasons for declining animated covers;
+- Added the [Covers, Scans, Booklets](/en-us/covers-and-booklets/) section: defined requirements for Covers, Scans and Booklets and reasons for declining animated covers;
 - Added the [Tags](/en-us/tags/) section: implemented a tag priority system and created tag mapping tables for the following formats: `Vorbis Comment`, `iTunes MP4`, `ID3v2.3`, and `ID3v2.4`;
 - Added the [Indexing](/en-us/indexing/) section: standardized the content of the release index file.
 

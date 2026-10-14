@@ -36,7 +36,7 @@ For example, `Album Artist` maps to `ALBUMARTIST` field in **Vorbis Comment (FLA
 
 - `Track Total` - total number of tracks;
 
-- `Cover` - embedded cover for the track. More details see in [Covers, Scans and Booklets](/en-us/covers-and-booklets/?id=Embedded-covers) section.
+- `Cover` - embedded cover for the track. More details see in [Covers, Scans, Booklets](/en-us/covers-and-booklets/?id=Cover-types-and-formats) section.
 
 A typical file with the main tags filled looks like this:
 ![Example 1](../../images/tags-example1.png)
