@@ -4,8 +4,11 @@
 
 ## Index file structure
 
-The index file (`index.txt`) is located in the same folder as the audio files and is set as hidden. The file uses Telegram syntax.  
-It contains brief information about the release, specifically:
+The index file (`index.txt`) is located in the same folder as the audio files and is set as hidden.  
+The encoding used is `UTF-8`.  
+The examples use formatting markers for manual posting via Telegram.
+
+File contains brief information about the release, specifically:
 
 - Album title (`Album` tag);  
   **Note:** Release type name may vary depending on the type of release: `Album`, `Compilation`, `Album + Soundtrack`, `Single`, etc.  
@@ -34,14 +37,14 @@ It contains brief information about the release, specifically:
   - For a release containing tracks from multiple sources or quality levels:
 
     ```text
-    WEB [FLAC/16-bit/44.1 kHz]: tracks 1-7, 10-14
-    WEB [MP3/320 kbps CBR/44.1 kHz]: track 8
-    WEB [AAC/192 kbps VBR/48 kHz]: track 9
+    WEB [FLAC/16-bit/44.1 kHz]: tracks 1.01-1.07, 1.10, 2.01-2.08
+    WEB [MP3/320 kbps CBR/44.1 kHz]: track 1.08
+    WEB [AAC/192 kbps VBR/48 kHz]: track 1.09
     ```
 
   - For CD release, the following are also specified:
     - Catalog number (`Catalog Number` tag) in the format `[Catalog Number]`: `[ARCH-0001]`
-    - Log score in the format `[XX%LOG]`: `[100%LOG]`;
+    - Log score obtained with cambia, in the format `[XX%LOG]`: `[100%LOG]`;
     - Self-rip tag: `[SELF-RIP]`.
 
     Result:
@@ -60,10 +63,11 @@ It contains brief information about the release, specifically:
 
 - Search hashtags:
   - Source;
+  - Self-rip hashtag (`#selfrip`);
   - Release year;  
-    Note: the year comes first, followed by the letter y, because tags containing only numbers are interpreted Telegram as HEX color codes. For example: `#2012y`.
+    Note: the year comes first, followed by the letter y, because hashtags containing only numbers are not recognized by Telegram and do not become clickable. For example: `#2012y`.
   - Release decade: `#2010s`, `#1980s`;
-  - Genres and subgenres: normalized into hashtags (converted to lowercase, spaces and hyphens stripped).  
+  - Genres and subgenres: normalized into hashtags (converted to lowercase, spaces, hyphens and other punctuation are removed).  
     For more details, see [Discogs Database Guidelines (Genres & Styles)](https://support.discogs.com/hc/en-us/articles/360005055213-Database-Guidelines-9-Genres-Styles);
   - Vocal classification, for example: `#instrumental`, `#femalevocalist`, `#malevocalist`, `#choir`;
   - Indie hashtag (`#indie`);

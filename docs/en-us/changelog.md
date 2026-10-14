@@ -16,7 +16,7 @@
 
 ### Fixed
 
-- Minor document corrections.
+- Lots of corrections in the document.
 
 ---
 
@@ -24,7 +24,7 @@
 
 ### Changed
 
-- Changed styles of alerts in document;
+- Changed styles of alerts in the document;
 - Replaced em dashes and en dashes with hyphens across all document;
 - Updated directory structure and significantly improved the [Library structure](/en-us/library-structure/) section.
 

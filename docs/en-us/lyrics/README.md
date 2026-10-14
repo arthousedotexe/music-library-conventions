@@ -12,7 +12,7 @@ For example: next to a song named `1.10. When the Moon's Reaching out Stars -Rel
 
 A lyrics file consists of two main parts:
 
-- ID Tags at the beginning of the file, enclosed in square brackets;
+- Optional ID Tags at the beginning of the file, enclosed in square brackets;
 - Lyrics content.
 
 More details about ID tags and lyrics files can be read on [Wikipedia article](https://en.wikipedia.org/wiki/LRC_(file_format)).
@@ -24,7 +24,7 @@ I do not use these tags.
 ## Lyrics Content
 
 I avoid characters that cause parsing or rendering issues in music players I use.  
-There is no fixed list, i rely on [MusicHoarders Wiki](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks) guidelines and other characters that listed in the [Library Structure](/en-us/library-structure/) section.
+There is no fixed list, i rely on [MusicHoarders Wiki](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks) guidelines.
 
 I use synchronized lyrics, which look like this:
 

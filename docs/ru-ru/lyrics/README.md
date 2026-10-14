@@ -11,7 +11,7 @@
 
 Содержимое lyrics-файлов можно разделить на две составляющие:
 
-- ID-теги в начале файла, заключенные в квадратные скобочки;
+- Необязательные ID-теги в начале файла, заключенные в квадратные скобочки;
 - Содержание текстов.
 
 Подробнее об ID-тегах и lyrics-файлах можно прочитать в [статье на Википедии](https://en.wikipedia.org/wiki/LRC_(file_format)).
@@ -23,7 +23,7 @@
 ## Содержание текстов
 
 Я избегаю символов, вызывающих сбои отображения или парсинга в музыкальных плеерах, которые я использую.  
-Строгого списка нет, я опираюсь на информацию в [MusicHoarders вики](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks) и другие символы, упомянутые в разделе [Структура библиотеки](/ru-ru/library-structure/).
+Строгого списка нет, я опираюсь на информацию в [MusicHoarders вики](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks).
 
 Я использую синхронизированные тексты песен, которые выглядят таким образом:
 

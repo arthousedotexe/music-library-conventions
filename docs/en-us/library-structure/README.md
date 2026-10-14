@@ -6,14 +6,14 @@
 
 Audio files are stored in two directories:
 
-- `music library` is main library directory. Used for sharing;
+- `music library` is the main library directory and is used for sharing;
 - `music sharing` is dedicated for sharing releases excluded from the main library (for example, physical releases when a higher-quality digital version exists in `music library`).
 
-Both directories have same structure, so everything described below applies to each of them.
+Both directories have the same structure, so everything described below applies to each of them.
 
 ---
 
-The path to digital release follows this structure:
+The path to a digital release follows this structure:
 
 ```text
 WEB/<Album Artist>/<Release Year> - <Album Title>
@@ -64,7 +64,7 @@ I use the original names of artists, releases and tracks and do not translate or
 
 ## File Naming
 
-Each track within release directory follows this naming convention:
+Each track within a release directory follows this naming convention:
 
 ```text
 <Disc Number>.<Track Number with leading zero>. <Track Title>.<Extension>
@@ -88,7 +88,6 @@ Forbidden characters in file names (replaced with underscore character `_`):
 
 - Characters that are invalid in Windows: `\/:*?"<>|`;
 - ASCII control characters;
-- Windows-reserved device names;
 - Non-breaking spaces.
 
 > [!WARNING]
