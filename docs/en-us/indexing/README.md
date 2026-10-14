@@ -8,8 +8,8 @@ The index file (`index.txt`) is located in the same folder as the audio files an
 It contains brief information about the release, specifically:
 
 - Album title (`Album` tag);  
-  **Note:** Release type name may vary depending on the type of release: `Album`, `Compilation`, `Album/ Soundtrack`, `Single`, etc.  
-  **For example:** `**Album / Soundtrack:** Persona 3 Reload: Original Soundtrack`, `**Album:** Stories That Last Through the Sleepless Nights`.
+  **Note:** Release type name may vary depending on the type of release: `Album`, `Compilation`, `Album + Soundtrack`, `Single`, etc.  
+  **For example:** `**Album + Soundtrack:** Persona 3 Reload: Original Soundtrack`, `**Album:** Stories That Last Through the Sleepless Nights`.
 
 - Alternative release titles, transliterations and translations, when applicable;  
   **For example:** `エルマ, Eruma`
@@ -115,10 +115,10 @@ WEB [FLAC/24-bit/96 kHz]
 #web, #2026y, #2020s, #pop, #jazz, #jazzpop, #indiepop, #jpop, #femalevocalist, #indie, #japanese
 ```
 
-### Album / compilation
+### Album + Compilation
 
 ```text
-💿 **Album / Compilation:** TOHO EUROBEAT VOL.4 PERFECT CHERRY BLOSSOM
+💿 **Album + Compilation:** TOHO EUROBEAT VOL.4 PERFECT CHERRY BLOSSOM
 👤 **Artist:** A-One
 📅 **Release year:** 2011
 🎺 **Genre:** Electronic, Doujin

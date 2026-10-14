@@ -64,7 +64,7 @@ I use the original names of artists, releases and tracks and do not translate or
 
 ## File Naming
 
-Each track within album directory follows this naming convention:
+Each track within release directory follows this naming convention:
 
 ```text
 <Disc Number>.<Track Number with leading zero>. <Track Title>.<Extension>
@@ -104,13 +104,13 @@ Examples:
 - Unicode characters in the `ハートに火をつけて` are not replaced with underscores, as they are part of a writing system;
 - Unicode infinity symbol in `Miracle∞Hinacle` is not replaced with underscore, because it is used intentionally in title.
 
-## Album Structure
+## Release Structure
 
-Each album directory follows this structure:
+Each release directory follows this structure:
 
 - Audio files (`.flac`, `.m4a`, `.mp3` and so on), see [Audio Formats](/en-us/audio-formats/) section;
 - Lyrics files (`.lrc`), see [Lyrics](/en-us/lyrics/) section;
-- External album cover (`cover`), see [Covers, Scans, Booklets](/en-us/covers-and-booklets/?id=Cover-types-and-formats) section;
+- External release cover (`cover`), see [Covers, Scans, Booklets](/en-us/covers-and-booklets/?id=Cover-types-and-formats) section;
 - Index file (`index.txt`), see [Indexing](/en-us/indexing/) section;
 - Directory with physical release scans (`scans`), when applicable, see [Covers, Scans, Booklets](en-us/covers-and-booklets/?id=Scanning) section;
 - Directory with other materials (`other materials`), when applicable, see [Covers, Scans, Booklets](/en-us/covers-and-booklets/?id=Additional-covers) section;

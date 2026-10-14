@@ -59,7 +59,7 @@ Naming for alternative covers for tracks: `cover <Disc number>.<Track number wit
 For example: `cover 1.03`, `cover 1.09`.
 
 Naming for alternative covers for releases: `cover <Cover number>`.  
-For example: `cover 3` means the third alternative album cover.
+For example: `cover 3` means the third alternative release cover.
 
 Naming for other covers: `video background`, `poster`.  
 

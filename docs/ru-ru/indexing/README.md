@@ -6,8 +6,8 @@
 В нем содержится краткая информация о релизе, а именно:
 
 - Название релиза (тег `Album`);  
-  **Примечание:** название типа релиза может изменяться в зависимости от типа релиза: `Album`, `Compilation`, `Album / Soundtrack`, `Single` и так далее.  
-  **Например:** `**Album / Soundtrack:** Persona 3 Reload: Original Soundtrack`, `**Album:** Stories That Last Through the Sleepless Nights`.
+  **Примечание:** название типа релиза может изменяться в зависимости от типа релиза: `Album`, `Compilation`, `Album + Soundtrack`, `Single` и так далее.  
+  **Например:** `**Album + Soundtrack:** Persona 3 Reload: Original Soundtrack`, `**Album:** Stories That Last Through the Sleepless Nights`.
 
 - Альтернативные названия, транслитерации, переведенные названия релиза - при необходимости;  
   **Например:** `エルマ, Eruma`
@@ -27,8 +27,8 @@
 - Общая длительность;
 
 - Качество в формате: `<Источник> [<Кодек>/<Битовая глубина или битрейт и тип битрейта>/<Частота дискретизации>]: <Номера песен - при необходимости>`;  
-  - Например, для lossless релиза: `WEB [FLAC/24-bit/96 kHz]`  
-  - Для lossy релиза: `WEB [AAC/256 kbps VBR/48 kHz]`  
+  - Например, для релиза в формате без потерь: `WEB [FLAC/24-bit/96 kHz]`  
+  - Для релиза в формате с потерями: `WEB [AAC/256 kbps VBR/48 kHz]`  
   - Для релиза, содержащего треки из нескольких источников или разного качества:
 
     ```text
@@ -113,10 +113,10 @@ WEB [FLAC/24-bit/96 kHz]
 #web, #2026y, #2020s, #pop, #jazz, #jazzpop, #indiepop, #jpop, #femalevocalist, #indie, #japanese
 ```
 
-### Альбом / компиляция
+### Альбом + Компиляция
 
 ```text
-💿 **Album / Compilation:** TOHO EUROBEAT VOL.4 PERFECT CHERRY BLOSSOM
+💿 **Album + Compilation:** TOHO EUROBEAT VOL.4 PERFECT CHERRY BLOSSOM
 👤 **Artist:** A-One
 📅 **Release year:** 2011
 🎺 **Genre:** Electronic, Doujin
