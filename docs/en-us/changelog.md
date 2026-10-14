@@ -7,6 +7,7 @@
 ### Added
 
 - Added a mention of encoder used for FLAC (libFLAC 1.5.0) in the [Audio Formats](/en-us/audio-formats/) section.
+- Added information about ripping CDs in the [Ripping](/en-us/ripping/) section.
 
 ### Changed
 
