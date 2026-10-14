@@ -51,7 +51,7 @@ It contains brief information about the release, specifically:
     ```
 
 - Tracklist, when applicable;  
-  **Note №1:** if the release has one disc, track numbers omit the disc number while keeping the leading zero, for example: `01`, `09`.  
+  **Note №1:** if the release has one disc, track numbers omit the disc number while keeping leading zero, for example: `01`, `09`.  
   If the release has multiple discs, the disc number is included, for example: `1.02`, `2.13`.  
   **Note №2:** if track artist differs from album artist (for example, in compilations) or is a guest artist, this is indicated in tracklist.  
   For example: `05. Shihori - Bloody Night`, `11. For Free (feat. Zella Day & Weyes Blood)`.

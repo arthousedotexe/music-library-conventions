@@ -8,6 +8,10 @@
 
 - Added a mention of encoder used for FLAC (libFLAC 1.5.0) in the [Audio Formats](/en-us/audio-formats/) section.
 
+### Fixed
+
+- Minor document corrections.
+
 ---
 
 ## 2026-10-09
