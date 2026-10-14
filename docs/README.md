@@ -1,6 +1,6 @@
 # Welcome
 
-**_Last update: 2026-10-09_**
+**_Last update: 2026-10-14_**
 
 These conventions define how I organize and maintain my music library, with the goal of keeping it **consistent**.
 

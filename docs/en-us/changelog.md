@@ -2,6 +2,14 @@
 
 # Changelog
 
+## 2026-10-14
+
+### Added
+
+- Added a mention of encoder used for FLAC (libFLAC 1.5.0) in the [Audio Formats](/en-us/audio-formats/) section.
+
+---
+
 ## 2026-10-09
 
 ### Changed

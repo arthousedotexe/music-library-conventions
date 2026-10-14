@@ -5,7 +5,7 @@
 ## Lossless and lossy
 
 I aim to obtain the highest possible quality releases, so almost my entire library consists of lossless files.  
-The lossless codec I use is `FLAC`, compression level 8.  
+Used lossless codec: `FLAC`, encoder: [libFLAC 1.5.0](https://xiph.org/flac/download.html), compression level: 8.  
 When converting from other lossless formats (`ALAC`, `WAV`) to `FLAC`, I preserve the original bit depth and sample rate.
 
 If I was not able to obtain a release in lossless format, then I look for the highest-quality lossy version I can obtain, taking both the codec and bitrate into account.
