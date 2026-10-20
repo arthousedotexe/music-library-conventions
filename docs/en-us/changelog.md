@@ -2,6 +2,18 @@
 
 # Changelog
 
+## 2026-10-20
+
+### Changed
+
+- Updated [Lyrics](/en-us/lyrics/) section.
+
+### Fixed
+
+- Minor document corrections.
+
+---
+
 ## 2026-10-14
 
 ### Added

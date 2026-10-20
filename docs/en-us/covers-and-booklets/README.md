@@ -44,7 +44,7 @@ Consider the following example:
 1. In 2019, single Fly Out West is released and has the following cover:
 ![Single cover](../../images/covers-example-single.png)
 
-2. Later that same year, the EP Bipolar is released, including the song as track 5 and using the album cover:
+2. On the same day, the EP Bipolar is released, including this song as track 5 and using the album cover:
 ![Album](../../images/covers-example-album.png)
 
 3. Thus the single cover is lost, which is not good, so I save it separately.
@@ -66,7 +66,7 @@ Naming for other covers: `video background`, `poster`.
 
 ## Booklets
 
-> [!WARNING]
+> [!IMPORTANT]
 > Booklets are stored as follows:
 >
 > - in the `scans` directory, if release is physical and booklet was scanned directly from it, regardless of who performed scan;

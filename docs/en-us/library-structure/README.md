@@ -48,7 +48,7 @@ Forbidden characters in directory names (replaced with underscore character `_`)
 - The dot character `.`, because directory names cannot end with it on Windows.
 
 > [!WARNING]
-> Fancy Unicode characters that resemble ASCII letters, numbers, or punctuation marks are replaced with their ASCII equivalents, or with underscore if no equivalent exists. For more details, see [MusicHoarders Wiki](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks).  
+> Fancy Unicode characters that resemble ASCII letters, numbers, or punctuation marks are replaced with their ASCII equivalents, or with underscore if no equivalent exists. For more details, see [guide by a MusicHoarders member](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks).  
 > This applies only when such Unicode characters carry no semantic weight.
 > This does not apply when Unicode characters are used intentionally (as in this [Bandcamp release](https://00000ooooo.bandcamp.com/album/--5)) or are [part of a writing system](https://en.wikipedia.org/wiki/Japanese_punctuation).
 
@@ -91,7 +91,7 @@ Forbidden characters in file names (replaced with underscore character `_`):
 - Non-breaking spaces.
 
 > [!WARNING]
-> Fancy Unicode characters that resemble ASCII letters, numbers, or punctuation marks are replaced with their ASCII equivalents, or with underscore if no equivalent exists. For more details, see [MusicHoarders Wiki](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks).  
+> Fancy Unicode characters that resemble ASCII letters, numbers, or punctuation marks are replaced with their ASCII equivalents, or with underscore if no equivalent exists. For more details, see [guide by a MusicHoarders member](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks).  
 > This applies only when such Unicode characters carry no semantic weight.
 > This does not apply when Unicode characters are used intentionally (as in this [Bandcamp release](https://00000ooooo.bandcamp.com/album/--5)) or are [part of a writing system](https://en.wikipedia.org/wiki/Japanese_punctuation).
 

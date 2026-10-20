@@ -46,7 +46,7 @@ CD/<Исполнитель альбома>/[<Каталожный номер>] [
 - Символ точки `.`, поскольку названия директорий не могут заканчиваться этим символом в Windows.
 
 > [!WARNING]
-> Символы Юникода, похожие на буквы, цифры и знаки препинания ASCII, заменяются на их ASCII-эквиваленты, а при отсутствии таковых - на знак подчеркивания. Подробнее об этом можно прочитать в [MusicHoarders вики](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks).  
+> Символы Юникода, похожие на буквы, цифры и знаки препинания ASCII, заменяются на их ASCII-эквиваленты, а при отсутствии таковых - на знак подчеркивания. Подробнее об этом можно прочитать в [руководстве от участника MusicHoarders](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks).  
 > Это правило применяется только тогда, когда такие символы Юникода не несут смысловой нагрузки.  
 > В случаях, когда символы Юникода используются намеренно (например, в [этом релизе на Bandcamp](https://00000ooooo.bandcamp.com/album/--5)) или являются [частью национальной письменности](https://en.wikipedia.org/wiki/Japanese_punctuation), они не заменяются.  
 
@@ -89,7 +89,7 @@ CD/<Исполнитель альбома>/[<Каталожный номер>] [
 - Неразрывные пробелы.
 
 > [!WARNING]
-> Символы Юникода, похожие на буквы, цифры и знаки препинания ASCII, заменяются на их ASCII-эквиваленты, а при отсутствии таковых - на знак подчеркивания. Подробнее об этом можно прочитать в [MusicHoarders вики](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks).  
+> Символы Юникода, похожие на буквы, цифры и знаки препинания ASCII, заменяются на их ASCII-эквиваленты, а при отсутствии таковых - на знак подчеркивания. Подробнее об этом можно прочитать в [руководстве от участника MusicHoarders](https://musichoarders.xyz/reference/bibles/the-salty-bible/#35-do-not-use-fancy-unicode-symbols-for-common-punctuation-marks).  
 > Это правило применяется только тогда, когда такие символы Юникода не несут смысловой нагрузки.  
 > В случаях, когда символы Юникода используются намеренно (например, в [этом релизе на Bandcamp](https://00000ooooo.bandcamp.com/album/--5)) или являются [частью национальной письменности](https://en.wikipedia.org/wiki/Japanese_punctuation), они не заменяются.  
 
