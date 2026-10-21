@@ -2,6 +2,14 @@
 
 # Changelog
 
+## 2026-10-21
+
+### Fixed
+
+- Removed unnecessary markdownlint disable comments in the document.
+
+---
+
 ## 2026-10-20
 
 ### Changed

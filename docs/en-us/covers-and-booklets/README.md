@@ -1,5 +1,3 @@
-<!-- markdownlint-disable MD059 -->
-
 # Covers, Scans, Booklets
 
 ## Cover types and formats

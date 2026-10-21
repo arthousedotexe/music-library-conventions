@@ -1,5 +1,3 @@
-<!-- markdownlint-disable MD059 -->
-
 # Lyrics
 
 ## Lyrics files

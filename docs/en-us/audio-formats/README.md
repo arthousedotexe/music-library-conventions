@@ -1,5 +1,3 @@
-<!-- markdownlint-disable MD059 -->
-
 # Audio Formats
 
 ## Lossless and lossy

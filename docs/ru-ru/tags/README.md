@@ -1,4 +1,4 @@
-<!-- markdownlint-disable MD025 MD033 -->
+<!-- markdownlint-disable MD028 MD033 -->
 
 # Теги
 
