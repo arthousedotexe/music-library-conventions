@@ -16,7 +16,7 @@ For example: next to a song named `1.10. When the Moon's Reaching out Stars -Rel
 
 A lyrics file consists of two main parts:
 
-- Optional ID Tags at the beginning of the file, enclosed in square brackets;
+- Optional ID Tags at the beginning of the file, enclosed in square brackets.
 - Lyrics content.
 
 More details about ID tags and lyrics files can be read on [Wikipedia article](https://en.wikipedia.org/wiki/LRC_(file_format)).

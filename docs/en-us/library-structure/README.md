@@ -4,7 +4,7 @@
 
 Audio files are stored in two directories:
 
-- `music library` is the main library directory and is used for sharing;
+- `music library` is the main library directory and is used for sharing.
 - `music sharing` is dedicated for sharing releases excluded from the main library (for example, physical releases when a higher-quality digital version exists in `music library`).
 
 Both directories have the same structure, so everything described below applies to each of them.
@@ -39,10 +39,10 @@ For example:
 
 Forbidden characters in directory names (replaced with underscore character `_`):
 
-- Characters that are invalid in Windows: `\/:*?"<>|`;
-- ASCII control characters;
-- Windows-reserved device names;
-- Non-breaking spaces;
+- Characters that are invalid in Windows: `\/:*?"<>|`.
+- ASCII control characters.
+- Windows-reserved device names.
+- Non-breaking spaces.
 - The dot character `.`, because directory names cannot end with it on Windows.
 
 > [!WARNING]
@@ -52,9 +52,9 @@ Forbidden characters in directory names (replaced with underscore character `_`)
 
 Examples:
 
-- `TOHO EUROBEAT VOL.1` is replaced by `TOHO EUROBEAT VOL_1`;
-- `POST HUMAN: SURVIVAL HORROR` is replaced by `POST HUMAN_ SURVIVAL HORROR`;
-- Unicode characters in `妖精帝國` are not replaced with underscores, as they are part of a writing system;
+- `TOHO EUROBEAT VOL.1` is replaced by `TOHO EUROBEAT VOL_1`.
+- `POST HUMAN: SURVIVAL HORROR` is replaced by `POST HUMAN_ SURVIVAL HORROR`.
+- Unicode characters in `妖精帝國` are not replaced with underscores, as they are part of a writing system.
 - Unicode characters in `(V)・∀・(V)` are not replaced with underscores, because they are used intentionally by artist.
 
 > [!NOTE]
@@ -84,8 +84,8 @@ The corresponding lyrics files use the same base filename with the `.lrc` extens
 
 Forbidden characters in file names (replaced with underscore character `_`):
 
-- Characters that are invalid in Windows: `\/:*?"<>|`;
-- ASCII control characters;
+- Characters that are invalid in Windows: `\/:*?"<>|`.
+- ASCII control characters.
 - Non-breaking spaces.
 
 > [!WARNING]
@@ -95,22 +95,22 @@ Forbidden characters in file names (replaced with underscore character `_`):
 
 Examples:
 
-- `why you gotta kick me when i'm down?` is replaced by `why you gotta kick me when i'm down_`;
-- `Light travel distance / RAYTO MIX` is replaced by `Light travel distance _ RAYTO MIX`;
-- `感情の魔天楼 ～ World's End` (tilde Unicode) is replaced by `感情の魔天楼 ~ World's End` (tilde ASCII);
-- Unicode characters in the `ハートに火をつけて` are not replaced with underscores, as they are part of a writing system;
+- `why you gotta kick me when i'm down?` is replaced by `why you gotta kick me when i'm down_`.
+- `Light travel distance / RAYTO MIX` is replaced by `Light travel distance _ RAYTO MIX`.
+- `感情の魔天楼 ～ World's End` (tilde Unicode) is replaced by `感情の魔天楼 ~ World's End` (tilde ASCII).
+- Unicode characters in the `ハートに火をつけて` are not replaced with underscores, as they are part of a writing system.
 - Unicode infinity symbol in `Miracle∞Hinacle` is not replaced with underscore, because it is used intentionally in title.
 
 ## Release Structure
 
 Each release directory follows this structure:
 
-- Audio files (`.flac`, `.m4a`, `.mp3` and so on), see [Audio Formats](/en-us/audio-formats/) section;
-- Lyrics files (`.lrc`), see [Lyrics](/en-us/lyrics/) section;
-- External release cover (`cover`), see [Covers, Scans, Booklets](/en-us/covers-and-booklets/?id=Cover-types-and-formats) section;
-- Index file (`index.txt`), see [Indexing](/en-us/indexing/) section;
-- Directory with physical release scans (`scans`), when applicable, see [Covers, Scans, Booklets](en-us/covers-and-booklets/?id=Scanning) section;
-- Directory with other materials (`other materials`), when applicable, see [Covers, Scans, Booklets](/en-us/covers-and-booklets/?id=Additional-covers) section;
+- Audio files (`.flac`, `.m4a`, `.mp3` and so on), see [Audio Formats](/en-us/audio-formats/) section.
+- Lyrics files (`.lrc`), see [Lyrics](/en-us/lyrics/) section.
+- External release cover (`cover`), see [Covers, Scans, Booklets](/en-us/covers-and-booklets/?id=Cover-types-and-formats) section.
+- Index file (`index.txt`), see [Indexing](/en-us/indexing/) section.
+- Directory with physical release scans (`scans`), when applicable, see [Covers, Scans, Booklets](en-us/covers-and-booklets/?id=Scanning) section.
+- Directory with other materials (`other materials`), when applicable, see [Covers, Scans, Booklets](/en-us/covers-and-booklets/?id=Additional-covers) section.
 - `.cue`, `.log` and `.accurip` files, when applicable, see [Ripping](/en-us/ripping/) section.
 
 For example:

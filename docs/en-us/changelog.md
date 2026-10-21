@@ -7,6 +7,7 @@
 ### Fixed
 
 - Removed unnecessary markdownlint disable comments in the document.
+- Replaced semicolons with periods in list items across all document.
 
 ---
 
@@ -31,7 +32,7 @@
 
 ### Changed
 
-- Restructured the [Covers, Scans, Booklets](/en-us/covers-and-booklets/) section, improved readability, and added details about scanner used;
+- Restructured the [Covers, Scans, Booklets](/en-us/covers-and-booklets/) section, improved readability, and added details about scanner used.
 - Clarified wording regarding checksum verification for lossy and lossless formats in the [Audio Formats](/en-us/audio-formats/) section.
 
 ### Fixed
@@ -44,8 +45,8 @@
 
 ### Changed
 
-- Changed styles of alerts in the document;
-- Replaced em dashes and en dashes with hyphens across all document;
+- Changed styles of alerts in the document.
+- Replaced em dashes and en dashes with hyphens across all document.
 - Updated directory structure and significantly improved the [Library structure](/en-us/library-structure/) section.
 
 ### Fixed
@@ -62,7 +63,7 @@
 
 ### Fixed
 
-- Pages now properly reset scroll position to the top when the route is changed;
+- Pages now properly reset scroll position to the top when the route is changed.
 - Minor document corrections.
 
 ---
@@ -71,9 +72,9 @@
 
 ### Changed
 
-- Moved all images to the `docs/images` directory in the project root;
-- Renamed the "Covers, booklets" section to [Covers, Scans, Booklets](/en-us/covers-and-booklets/) section;
-- Changed naming rules for covers and other materials, added information about physical release scans in the [Covers, Scans, Booklets](/en-us/covers-and-booklets/) section;
+- Moved all images to the `docs/images` directory in the project root.
+- Renamed the "Covers, booklets" section to [Covers, Scans, Booklets](/en-us/covers-and-booklets/) section.
+- Changed naming rules for covers and other materials, added information about physical release scans in the [Covers, Scans, Booklets](/en-us/covers-and-booklets/) section.
 - Improved wording across the document.
 
 ### Fixed
@@ -90,7 +91,7 @@
 
 ### Changed
 
-- Added adjustments to naming rules for files and directories in the [Library structure](/en-us/library-structure/) section and lyrics files in the [Lyrics](/en-us/lyrics/) section;
+- Added adjustments to naming rules for files and directories in the [Library structure](/en-us/library-structure/) section and lyrics files in the [Lyrics](/en-us/lyrics/) section.
 - Improved structure of section headings in the document.
 
 ---
@@ -99,15 +100,15 @@
 
 ### Added
 
-- Added multilingual footer indicating the license under which the document is distributed;
-- Added information about converting to Opus for devices with limited storage in the [Audio Formats](/en-us/audio-formats/) section;
+- Added multilingual footer indicating the license under which the document is distributed.
+- Added information about converting to Opus for devices with limited storage in the [Audio Formats](/en-us/audio-formats/) section.
 - Added a "Last updated" date to the [document's main page](/).
 
 ### Changed
 
-- The document structure is made more convenient. Separated Russian and English versions;
-- Removed underlines in links, changed link hover color;
-- Improved link clarity across the document to explicitly indicate sources;
+- The document structure is made more convenient. Separated Russian and English versions.
+- Removed underlines in links, changed link hover color.
+- Improved link clarity across the document to explicitly indicate sources.
 - Updated rules for naming files and directories in the [Library structure](/en-us/library-structure/) section, added new forbidden characters.
 
 ### Deleted
@@ -148,15 +149,15 @@
 
 ### Changed
 
-- `Comment` tag is no longer used to store the artist, track, and release original names in another language;
+- `Comment` tag is no longer used to store the artist, track, and release original names in another language.
 - Original names in another language are no longer indicated in parentheses in tracklist in the [Indexing](/en-us/indexing/) section.
 
 ## 2026-09-13
 
 ### Added
 
-- `Arranger` tag added to Extended Tags [Tags](/en-us/tags/) section;
-- `Composer Sort` tag added to Specialized Tags [Tags](/en-us/tags/) section;
+- `Arranger` tag added to Extended Tags [Tags](/en-us/tags/) section.
+- `Composer Sort` tag added to Specialized Tags [Tags](/en-us/tags/) section.
 - `Engineer`, `Lyricist` tags added to Excluded Tags [Tags](/en-us/tags/) section.
 
 ### Fixed
@@ -169,8 +170,8 @@
 
 ### Fixed
 
-- Date format changed from `YYYY-MM-DD` to `DD-MM-YYYY` in the Russian version of Changelog;
-- Minor corrections in [Covers, Scans, Booklets](/en-us/covers-and-booklets/) and [Indexing](/en-us/indexing/) sections;
+- Date format changed from `YYYY-MM-DD` to `DD-MM-YYYY` in the Russian version of Changelog.
+- Minor corrections in [Covers, Scans, Booklets](/en-us/covers-and-booklets/) and [Indexing](/en-us/indexing/) sections.
 - Other minor corrections in the Changelog.
 
 ---
@@ -195,8 +196,8 @@
 
 ### Changed
 
-- Added mention of `Opus` in the [Tags](/en-us/tags/) section;
-- Reformulated content on the main page of the website;
+- Added mention of `Opus` in the [Tags](/en-us/tags/) section.
+- Reformulated content on the main page of the website.
 - Increased offset between text and underline in links to improve readability.
 
 ---
@@ -213,12 +214,12 @@
 
 ### Changed
 
-- Completed a comprehensive stylistic revision of all documentation sections to improve precision and phrasing quality;
-- Added Windows-reserved device names to the list of forbidden characters in filenames ([Library Structure](/en-us/library-structure/) section);
+- Completed a comprehensive stylistic revision of all documentation sections to improve precision and phrasing quality.
+- Added Windows-reserved device names to the list of forbidden characters in filenames ([Library Structure](/en-us/library-structure/) section).
 - Significantly improved the [Tags](/en-us/tags/) section:
-  - Clarified specifics of the `ID3v2.3` format;
-  - Added references to other tag mapping tables: HydrogenAudio, Mp3tag, and MusicBrainz;
-  - Added a disclaimer about tag mapping rules before the tables;
+  - Clarified specifics of the `ID3v2.3` format.
+  - Added references to other tag mapping tables: HydrogenAudio, Mp3tag, and MusicBrainz.
+  - Added a disclaimer about tag mapping rules before the tables.
   - Updated `MusicBrainz Recording ID` mapping: `ID3v2.3/ID3v2.4` -> `UFID:http://musicbrainz.org`.
 - Replaced triple backticks with single backticks for inline code across all Markdown files.
 
@@ -228,7 +229,7 @@
 
 ### Added
 
-- Added `Work`, `Mixer`, `Release Country`, `Release Status`, `Release Type`, `Script` tags to Excluded Tags in the [Tags](/en-us/tags/) section;
+- Added `Work`, `Mixer`, `Release Country`, `Release Status`, `Release Type`, `Script` tags to Excluded Tags in the [Tags](/en-us/tags/) section.
 
 ### Changed
 
@@ -244,7 +245,7 @@
 
 ### Changed
 
-- Improved wording across multiple parts of the document;
+- Improved wording across multiple parts of the document.
 
 ---
 
@@ -252,8 +253,8 @@
 
 ### Added
 
-- Added descriptions for all MusicBrainz identifiers and ReplayGain tags;
-- Added MusicBrainz identifiers and ReplayGain tags to the tag mapping table;
+- Added descriptions for all MusicBrainz identifiers and ReplayGain tags.
+- Added MusicBrainz identifiers and ReplayGain tags to the tag mapping table.
 - Added format-specific notes before the tag mapping tables.
 
 ### Changed
@@ -262,14 +263,14 @@
 
 ### Removed
 
-- Removed section with allowed characters in filenames ([Library Structure](/en-us/library-structure/) section);
+- Removed section with allowed characters in filenames ([Library Structure](/en-us/library-structure/) section).
 - Removed the following MusicBrainz identifiers in the [Tags](/en-us/tags/) section: `MusicBrainz Composer ID`, `MusicBrainz Disc ID`, `MusicBrainz Original Artist ID`, `MusicBrainz Original Release ID`.
 
 ### Fixed
 
-- Fixed Russian localization in page navigation bars;
-- Improved wording across multiple parts of the document;
-- Incorrect display of horizontal divider borders;
+- Fixed Russian localization in page navigation bars.
+- Improved wording across multiple parts of the document.
+- Incorrect display of horizontal divider borders.
 - Incorrect rendering and incorrect field names in tag mapping tables in the [Tags](/en-us/tags/) section.
 
 ---
@@ -278,11 +279,11 @@
 
 ### Added
 
-- Added the [Library Structure](/en-us/library-structure/) section: regulated directory hierarchy and filename formats;
-- Added the [Audio Formats](/en-us/audio-formats/) section: defined the primary lossless format, added a section on checksums;
-- Added the [Lyrics](/en-us/lyrics/) section: standardized formats for synchronized `.lrc` lyrics;
-- Added the [Covers, Scans, Booklets](/en-us/covers-and-booklets/) section: defined requirements for Covers, Scans and Booklets and reasons for declining animated covers;
-- Added the [Tags](/en-us/tags/) section: implemented a tag priority system and created tag mapping tables for the following formats: `Vorbis Comment`, `iTunes MP4`, `ID3v2.3`, and `ID3v2.4`;
+- Added the [Library Structure](/en-us/library-structure/) section: regulated directory hierarchy and filename formats.
+- Added the [Audio Formats](/en-us/audio-formats/) section: defined the primary lossless format, added a section on checksums.
+- Added the [Lyrics](/en-us/lyrics/) section: standardized formats for synchronized `.lrc` lyrics.
+- Added the [Covers, Scans, Booklets](/en-us/covers-and-booklets/) section: defined requirements for Covers, Scans and Booklets and reasons for declining animated covers.
+- Added the [Tags](/en-us/tags/) section: implemented a tag priority system and created tag mapping tables for the following formats: `Vorbis Comment`, `iTunes MP4`, `ID3v2.3`, and `ID3v2.4`.
 - Added the [Indexing](/en-us/indexing/) section: standardized the content of the release index file.
 
 ### Fixed

@@ -8,30 +8,30 @@ The examples use formatting markers for manual posting via Telegram.
 
 File contains brief information about the release, specifically:
 
-- Album title (`Album` tag);  
+- Album title (`Album` tag).  
   **Note:** Release type name may vary depending on the type of release: `Album`, `Compilation`, `Album + Soundtrack`, `Single`, etc.  
   **For example:** `**Album + Soundtrack:** Persona 3 Reload: Original Soundtrack`, `**Album:** Stories That Last Through the Sleepless Nights`.
 
-- Alternative release titles, transliterations and translations, when applicable;  
+- Alternative release titles, transliterations and translations, when applicable.  
   **For example:** `エルマ, Eruma`
 
-- Album artist (`Album Artist` tag);
+- Album artist (`Album Artist` tag).
 
-- Artist aliases, transliterations and translations, when applicable;  
+- Artist aliases, transliterations and translations, when applicable.  
   **For example:** `Lana Del Ray, Lizzy Grant, Elizabeth Grant, May Jailer, Sparkle Jump Rope Queen`
 
-- Release year (year from `Date` tag);
+- Release year (year from `Date` tag).
 
-- Genres (`Genre` tag);
+- Genres (`Genre` tag).
 
-- Subgenres (`Style` tag);  
+- Subgenres (`Style` tag).  
   **Note:** `Genre` and `Style` tags may overlap, for example `Drumstep`.
 
-- Total duration;
+- Total duration.
 
-- Quality in the format: `<Source> [<Codec>/<Bit depth or bitrate and bitrate type>/<Sample rate>]: <Track numbers if necessary>`;
-  - For example, for a lossless release: `WEB [FLAC/24-bit/96 kHz]`
-  - For a lossy release: `WEB [AAC/256 kbps VBR/48 kHz]`
+- Quality in the format `<Source> [<Codec>/<Bit depth or bitrate and bitrate type>/<Sample rate>]: <Track numbers if necessary>`:
+  - For example, for a lossless release: `WEB [FLAC/24-bit/96 kHz]`.
+  - For a lossy release: `WEB [AAC/256 kbps VBR/48 kHz]`.
   - For a release containing tracks from multiple sources or quality levels:
 
     ```text
@@ -41,8 +41,8 @@ File contains brief information about the release, specifically:
     ```
 
   - For CD release, the following are also specified:
-    - Catalog number (`Catalog Number` tag) in the format `[Catalog Number]`: `[ARCH-0001]`
-    - Log score obtained with cambia, in the format `[XX%LOG]`: `[100%LOG]`;
+    - Catalog number (`Catalog Number` tag) in the format `[Catalog Number]`: `[ARCH-0001]`.
+    - Log score obtained with cambia, in the format `[XX%LOG]`: `[100%LOG]`.
     - Self-rip tag: `[SELF-RIP]`.
 
     Result:
@@ -51,25 +51,25 @@ File contains brief information about the release, specifically:
     CD [FLAC/16-bit/44.1 kHz] [ARCH-0001] [100%LOG] [SELF-RIP]
     ```
 
-- Tracklist, when applicable;  
+- Tracklist, when applicable.  
   **Note №1:** if the release has one disc, track numbers omit the disc number while keeping leading zero, for example: `01`, `09`.  
   If the release has multiple discs, the disc number is included, for example: `1.02`, `2.13`.  
   **Note №2:** if track artist differs from album artist (for example, in compilations) or is a guest artist, this is indicated in tracklist.  
   For example: `05. Shihori - Bloody Night`, `11. For Free (feat. Zella Day & Weyes Blood)`.
 
-- Additional notes, when applicable;
+- Additional notes, when applicable.
 
 - Search hashtags:
-  - Source;
-  - Self-rip hashtag (`#selfrip`);
-  - Release year;  
-    Note: the year comes first, followed by the letter y, because hashtags containing only numbers are not recognized by Telegram and do not become clickable. For example: `#2012y`.
-  - Release decade: `#2010s`, `#1980s`;
+  - Source.
+  - Self-rip hashtag (`#selfrip`).
+  - Release year.  
+    **Note:** the year comes first, followed by the letter y, because hashtags containing only numbers are not recognized by Telegram and do not become clickable. For example: `#2012y`.
+  - Release decade: `#2010s`, `#1980s`.
   - Genres and subgenres: normalized into hashtags (converted to lowercase, spaces, hyphens and other punctuation are removed).  
-    For more details, see [Discogs Database Guidelines (Genres & Styles)](https://support.discogs.com/hc/en-us/articles/360005055213-Database-Guidelines-9-Genres-Styles);
-  - Vocal classification, for example: `#instrumental`, `#femalevocalist`, `#malevocalist`, `#choir`;
-  - Indie hashtag (`#indie`);
-  - Vocal or performance language, for example: `#english`, `#russian`, `#german`, `#japanese`;
+    For more details, see [Discogs Database Guidelines (Genres & Styles)](https://support.discogs.com/hc/en-us/articles/360005055213-Database-Guidelines-9-Genres-Styles).
+  - Vocal classification, for example: `#instrumental`, `#femalevocalist`, `#malevocalist`, `#choir`.
+  - Indie hashtag (`#indie`).
+  - Vocal or performance language, for example: `#english`, `#russian`, `#german`, `#japanese`.
   - Other hashtags.
 
 ## Examples

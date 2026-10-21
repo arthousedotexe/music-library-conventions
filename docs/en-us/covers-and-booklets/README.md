@@ -4,8 +4,8 @@
 
 To embed covers in tracks, I use Mp3tag with the following parameters:
 
-- Format: `JPEG`;
-- Resolution: 1200x1200 (max. size). Scale proportionally;
+- Format: `JPEG`.
+- Resolution: 1200x1200 (max. size). Scale proportionally.
 - Quality: High (80).
 
 Only one cover is embedded, with the Front Cover type.
@@ -41,10 +41,8 @@ Consider the following example:
 
 1. In 2019, single Fly Out West is released and has the following cover:
 ![Single cover](../../images/covers-example-single.png)
-
 2. On the same day, the EP Bipolar is released, including this song as track 5 and using the album cover:
 ![Album](../../images/covers-example-album.png)
-
 3. Thus the single cover is lost, which is not good, so I save it separately.
 
 Additional covers can also come from other places, for example, unreleased materials or videos.  
@@ -67,7 +65,7 @@ Naming for other covers: `video background`, `poster`.
 > [!IMPORTANT]
 > Booklets are stored as follows:
 >
-> - in the `scans` directory, if release is physical and booklet was scanned directly from it, regardless of who performed scan;
+> - in the `scans` directory, if release is physical and booklet was scanned directly from it, regardless of who performed scan.
 > - in the `other materials` directory, if release is digital and/or booklet was sourced elsewhere.
 
 A booklet does not necessarily have to match a specific release.  
@@ -82,9 +80,9 @@ Examples of other names related with booklet: `booklet outside`, `booklet inside
 
 I do not use or save animated covers for the following reasons:
 
-1. Many animated covers are just pulsating static images, which look rather strange in my opinion;
-2. They take up a lot of space;
-3. Support for embedding and displaying animated covers is inconsistent across tag formats and music players;
+1. Many animated covers are just pulsating static images, which look rather strange in my opinion.
+2. They take up a lot of space.
+3. Support for embedding and displaying animated covers is inconsistent across tag formats and music players.
 4. As of October 2026, animated covers are supported by only a limited number of music players (for example, Apple Music). Many popular players lack support for this feature, including:  
 
 - **foobar2000** - not supported natively, requires a plugin ([discussion №1](https://www.reddit.com/r/musichoarder/comments/1aeucbn/comment/koa83a9/), [discussion №2](https://www.reddit.com/r/foobar2000/comments/1dpgijy/does_animated_cover_art_work/)):
