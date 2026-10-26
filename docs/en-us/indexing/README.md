@@ -66,7 +66,6 @@ File contains brief information about the release, specifically:
     **Note:** the year comes first, followed by the letter y, because hashtags containing only numbers are not recognized by Telegram and do not become clickable. For example: `#2012y`.
   - Release decade: `#2010s`, `#1980s`.
   - Genres and subgenres: normalized into hashtags (converted to lowercase, spaces, hyphens and other punctuation are removed).  
-    For more details, see [Discogs Database Guidelines (Genres & Styles)](https://support.discogs.com/hc/en-us/articles/360005055213-Database-Guidelines-9-Genres-Styles).
   - Vocal classification, for example: `#instrumental`, `#femalevocalist`, `#malevocalist`, `#choir`.
   - Indie hashtag (`#indie`).
   - Vocal or performance language, for example: `#english`, `#russian`, `#german`, `#japanese`.

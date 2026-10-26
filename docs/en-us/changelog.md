@@ -4,6 +4,48 @@
 
 ## 2026-10-26
 
+### Changed
+
+- Major revision of the [Tags](/en-us/tags/) section:
+  - Changed section structure for easier navigation.
+  - Added explanatory notes to individual items.
+  - Improved accuracy and detail of descriptions.
+  - Added "Type" column to the tag mapping tables, which indicates the number of values stored in tag.
+
+- Changes in the [Tags](/en-us/tags/) section (tag groups):
+  - Added `AcoustID` to Excluded Tags;
+  - Added `Album Artists` to Excluded Tags;
+  - Added `ASIN` to Excluded Tags;
+  - Added `Conductor` to Excluded tags;
+  - Moved `Comment` from Specialized Tags to Excluded Tags;
+  - Added `Encoded Settings` to Excluded Tags;
+  - Moved `Lyrics` from Extended Tags to Excluded Tags;
+  - Added `MusicBrainz Composer ID` to Specialized Tags;
+  - Moved `Performer` from Specialized Tags to Excluded Tags;
+  - Moved `Remixer` from Specialized Tags to Extended Tags.
+
+- Changes in the [Tags](/en-us/tags/) section (tag names):
+  - Renamed `Grouping` to `Content Group`, behavior remains the same.
+
+- Changes in the [Tags](/en-us/tags/) section (tag mappings):
+  - `Cover` (Vorbis Comment): `METADATA_BLOCK_PICTURE` -> "FLAC: Picture metadata block, Opus: METADATA_BLOCK_PICTURE";
+  - `Date` (ID3v2.3): `TYER` -> `TYER + TDAT`;
+  - `Disc Total` (iTunes MP4): `----:com.apple.iTunes:DISCTOTAL` -> `disk`;
+  - `Disc Total` (ID3v2.3 и ID3v2.4): `TXXX:DISCTOTAL` -> `TPOS`;
+  - `Content Group` (Vorbis Comment): `GROUPING` -> `CONTENTGROUP`;
+  - `Content Group` (iTunes MP4): `----:com.apple.iTunes:GROUPING` -> `©grp`;
+  - `Content Group` (ID3v2.3 и ID3v2.4): `GRP1` -> `TIT1`;
+  - `Original Date` (iTunes MP4): `----:com.apple.iTunes:ORIGINALYEAR` -> `----:com.apple.iTunes:ORIGINALDATE`;
+  - `Original Date` (ID3v2.3): `TXXX:ORIGINALDATE` -> `TORY`;
+  - `Original Date` (ID3v2.4): `TXXX:ORIGINALDATE` -> `TDOR`;
+  - `Label` (ID3v2.3 и ID3v2.4): `TXXX:LABEL` -> `TPUB`;
+  - `Producer` (iTunes MP4): `----:com.apple.iTunes:PRODUCER` -> `©prd`;
+  - `Remixer` (ID3v2.3 и ID3v2.4): `TXXX:REMIXER` -> `TPE4`;
+  - `ReplayGain Track Gain` (Vorbis Comment): `REPLAYGAIN_TRACK_GAIN` -> "FLAC: `REPLAYGAIN_TRACK_GAIN`, Opus: `R128_TRACK_GAIN`"
+  - `ReplayGain Album Gain` (Vorbis Comment): `REPLAYGAIN_ALBUM_GAIN` -> "FLAC: `REPLAYGAIN_ALBUM_GAIN`, Opus: `R128_ALBUM_GAIN`"
+  - `Track Total` (iTunes MP4): `----:com.apple.iTunes:TRACKTOTAL` -> `trkn`;
+  - `Track Total` (ID3v2.3 и ID3v2.4): `TXXX:TRACKTOTAL` -> `TRCK`.
+
 ### Fixed
 
 - Minor document corrections.
@@ -222,7 +264,7 @@
 
 ### Changed
 
-- Completed a comprehensive stylistic revision of all documentation sections to improve precision and phrasing quality.
+- Comprehensive stylistic revision of all document sections to improve precision and phrasing quality.
 - Added Windows-reserved device names to the list of forbidden characters in filenames ([Library Structure](/en-us/library-structure/) section).
 - Significantly improved the [Tags](/en-us/tags/) section:
   - Clarified specifics of the `ID3v2.3` format.
