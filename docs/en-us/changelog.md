@@ -2,6 +2,14 @@
 
 # Changelog
 
+## 2026-10-26
+
+### Fixed
+
+- Minor document corrections.
+
+---
+
 ## 2026-10-21
 
 ### Fixed

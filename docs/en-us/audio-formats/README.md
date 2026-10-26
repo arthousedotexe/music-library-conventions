@@ -6,7 +6,7 @@ I aim to obtain the highest possible quality releases, so almost my entire libra
 Used lossless codec: `FLAC`, encoder: [libFLAC v1.5.0](https://xiph.org/flac/download.html), compression level: 8.  
 When converting from other lossless formats (`ALAC`, `WAV`) to `FLAC`, I preserve the original bit depth and sample rate, channel count and order.
 
-If I was not able to obtain a release in lossless format, then I look for the highest-quality lossy version I can obtain, taking both the codec and bitrate into account.
+If I was not able to obtain a release in lossless format, then I look for the highest-quality lossy version I can obtain, taking both the codec and bitrate into account. If it turns out to be `MP3`, I use the [ID3v2.4](https://id3.org/id3v2.4.0-frames) standard for storing metadata.
 
 When transferring lossless releases to devices with limited storage (for example, a phone) they are converted to `Opus`. Used encoder: [libopus v1.6.1](https://opus-codec.org/release/stable/2026/01/14/libopus-1_6_1.html), selected bitrate: `192 kbps VBR`.  
 Lossy releases are not converted when transferred to devices.

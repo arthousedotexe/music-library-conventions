@@ -41,7 +41,6 @@ Forbidden characters in directory names (replaced with underscore character `_`)
 
 - Characters that are invalid in Windows: `\/:*?"<>|`.
 - ASCII control characters.
-- Windows-reserved device names.
 - Non-breaking spaces.
 - The dot character `.`, because directory names cannot end with it on Windows.
 
