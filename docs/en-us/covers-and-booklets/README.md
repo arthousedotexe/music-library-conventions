@@ -14,7 +14,7 @@ Only one cover is embedded, with the Front Cover type.
 
 For other types of covers, `PNG` format is used if they are available in this format, otherwise `JPEG`. Conversion from `JPEG` to `PNG` is not allowed.  
 I use [oxipng](https://github.com/oxipng/oxipng) for efficient lossless compression of files in `PNG` format, optimization level: 2 (default).  
-According to my observations, covers take up 10–25% less space.
+According to my observations, covers take up 10-25% less space.
 
 External release cover is named `cover` and is located next to audio files.
 
