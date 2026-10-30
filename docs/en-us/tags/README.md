@@ -153,6 +153,8 @@ Main tags mapping table:
 - `Producer` - producer.
 - `Remixer` - track remixer or remixers.
 
+Extended tags mapping table:
+
 <table>
   <thead>
     <tr>
@@ -264,6 +266,8 @@ Main tags mapping table:
   - `ReplayGain Track Peak` - a tag containing the maximum peak signal level within a single track. It allows a music player to limit the gain and prevent clipping if the gain (`ReplayGain Track Gain`) exceeds the digital threshold of 0 dBFS<a href="#/en-us/tags/?id=note-20" id="ref-20"><sup>[20]</sup></a>;
   - `ReplayGain Album Gain` - a tag containing the volume adjustment value (in dB) for the entire album. This aligns the overall album level relative to -18 LUFS<a href="#/en-us/tags/?id=note-18" id="ref-18-2"><sup>[18]</sup></a> (or the nominal 89 dB SPL<a href="#/en-us/tags/?id=note-19" id="ref-19-2"><sup>[19]</sup></a> level in ReplayGain 1.0), while preserving the contrast between quiet and loud songs within it;
   - `ReplayGain Album Peak` - a tag containing the maximum peak signal level among all tracks in the album.
+
+Specialized tags mapping table:
 
 <table>
   <thead>
